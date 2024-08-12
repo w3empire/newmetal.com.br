@@ -86,7 +86,12 @@
     "url": "https://newmetal.com.br"
   }
 }
-</script><link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+</script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 </head>
 <body class="body">
 
@@ -249,6 +254,16 @@
         </h4>
         <div class="widget__content">
             <ul class="widget__list">
+                <li class="widget__item widget__sidebar-default"><a class="widget__image-link" href="/noticias/veja-a-performance-do-red-hot-chili-peppers-no-encerramento-das-olimpiadas-video/">
+                                <img data-src="https://newmetal.com.br/img/thumb-20240811233121_huee115d11f60eb54dfe16a76238de5f11_48202_48da49a8bb5f58707fd7dab54f426aaf.webp" alt="Veja a Performance do Red Hot Chili Peppers no Encerramento das Olimpíadas; Vídeo" class="lazy-img widget__image">
+                            </a><a class="widget__link" href="/noticias/veja-a-performance-do-red-hot-chili-peppers-no-encerramento-das-olimpiadas-video/">Veja a Performance do RED HOT CHILI PEPPERS no Encerramento das OLIMPÍADAS; Vídeo</a>
+
+                    <div class="widget__item-date">
+                        <time class="meta__text" datetime="2024-08-11T23:31:21-03:00">
+                        11 de agosto de 2024
+                        </time>
+                    </div>
+                </li>
                 <li class="widget__item widget__sidebar-default"><a class="widget__image-link" href="/noticias/historico-slipknot-toca-o-album-self-titled-completo-em-primeiro-show-da-turne-here-comes-the-pain/">
                                 <img data-src="https://newmetal.com.br/img/thumb-20240806235420_huab42017359aab8a90278224fd11ae94b_134276_969eafeb22f47225d8bea3b622b785d6.webp" alt="Histórico: Slipknot Toca o Álbum Self-Titled Completo em Primeiro Show da Turnê &#34;Here Comes the Pain&#34;" class="lazy-img widget__image">
                             </a><a class="widget__link" href="/noticias/historico-slipknot-toca-o-album-self-titled-completo-em-primeiro-show-da-turne-here-comes-the-pain/">Histórico: SLIPKNOT Toca o Álbum SELF-TITLED Completo em Primeiro Show da Turnê &#34;HERE COMES THE PAIN&#34;</a>
@@ -286,16 +301,6 @@
                     <div class="widget__item-date">
                         <time class="meta__text" datetime="2024-08-04T15:23:07-03:00">
                         4 de agosto de 2024
-                        </time>
-                    </div>
-                </li>
-                <li class="widget__item widget__sidebar-default"><a class="widget__image-link" href="/noticias/offspring-acaba-de-lancar-o-novo-single-light-it-up/">
-                                <img data-src="https://newmetal.com.br/img/thumb-20240802205626_huc678cdc35d95cb37d85b00c55b53e1a8_302516_ad96068d20c7bb57232cb84c0515b91f.webp" alt="ASSISTA: Offspring Acaba de Lançar o Novo Single &#34;Light It Up&#34;" class="lazy-img widget__image">
-                            </a><a class="widget__link" href="/noticias/offspring-acaba-de-lancar-o-novo-single-light-it-up/">ASSISTA: Offspring Acaba de Lançar o Novo Single &#34;Light It Up&#34;</a>
-
-                    <div class="widget__item-date">
-                        <time class="meta__text" datetime="2024-08-02T20:56:26-03:00">
-                        2 de agosto de 2024
                         </time>
                     </div>
                 </li>
@@ -357,7 +362,49 @@
 <script src="/js/app.js"></script>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
-</body>
+
+<script type="module">
+	import 'https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js';
+
+	const lightbox = GLightbox({
+    	touchNavigation: true,
+    	loop: true,
+    	autoplayVideos: true,
+   		plyr: {
+    		config: {
+	      		ratio: '9:16', 
+    	  		muted: false,
+      			hideControls: true
+    		}
+  		}
+	});
+</script>
+
+
+<script type="module">
+
+import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+
+const galleries = document.querySelectorAll('.gallery');
+
+
+if (galleries.length > 0) {
+
+  
+  galleries.forEach((gallery) => {
+    
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: gallery,  
+      children: 'a',
+      pswpModule: () => import('https://unpkg.com/photoswipe'),
+    });
+
+    lightbox.init();  
+  });
+
+}
+
+</script></body>
 </html>
