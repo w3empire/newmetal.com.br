@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autores on New Metal</title>
+    <link>https://newmetal.com.br/autores/</link>
+    <description>Recent content in Autores on New Metal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language><atom:link href="https://newmetal.com.br/autores/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gabriel Rodrigues no site NewMetal</title>
+      <link>https://newmetal.com.br/autores/gabriel-rodrigues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://newmetal.com.br/autores/gabriel-rodrigues/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
