@@ -317,6 +317,29 @@
 
     </article>
 </main>
+
+
+<script type="text/javascript">
+    
+    var paragraphs = document.getElementsByTagName('p');
+
+    
+    if (paragraphs.length >= 2) {
+        
+        var newDiv = document.createElement('div');
+        newDiv.setAttribute('data-type', '_mgwidget');
+        newDiv.setAttribute('data-widget-id', '1665488');
+
+        
+        var newScript = document.createElement('script');
+        newScript.innerHTML = '(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");';
+
+        
+        paragraphs[1].insertAdjacentElement('afterend', newDiv);
+        newDiv.insertAdjacentElement('afterend', newScript);
+    }
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />
