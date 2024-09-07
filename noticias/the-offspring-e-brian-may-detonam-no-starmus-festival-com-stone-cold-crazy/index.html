@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728155009_hu347ae164df06159eaa56aca1e4587dc7_64714_0dc6cbf3fa290ff528a47627d66c05e2.webp" alt="ASSISTA: The Offspring e Brian May Detonam no Starmus Festival com &#34;Stone Cold Crazy&#34;" title="ASSISTA: The Offspring e Brian May Detonam no Starmus Festival com &#34;Stone Cold Crazy&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>The Offspring</strong> detonou com um cover insano de &ldquo;Stone Cold Crazy&rdquo; e ainda trouxe <strong>Brian May</strong> do Queen pra festa. Sim, você leu certo! Essa parceria épica aconteceu em <strong>15 de maio</strong>, lá em Bratislava, Eslováquia, e a vibe foi pura eletricidade.</p>
 <p>A galera pirou! E se você é fã de punk rock e Queen, esse vídeo vai fazer seu coração bater mais rápido. Confere aí:</p>
 <div class="embed-container">
@@ -297,7 +297,9 @@
 </ul>
 <hr>
 <p>Não vacila e compartilha essa notícia com seus amigos. Deixa todo mundo por dentro do que tá rolando no mundo do rock! 🤘😎</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/the-offspring/" rel="tag">The offspring</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brian-may/" rel="tag">Brian may</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/queen/" rel="tag">Queen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/starmus-festival/" rel="tag">Starmus festival</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/punk-rock/" rel="tag">Punk rock</a></li>
@@ -321,6 +323,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

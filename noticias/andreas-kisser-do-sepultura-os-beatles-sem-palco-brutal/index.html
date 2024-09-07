@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728011535_hu64a0c877a8ed5f19bf9bda4296bee5c9_82478_e3b5b3d1364477ba232794399919dd6f.webp" alt="Sepultura: Andreas Kisser Sobre os Beatles &#34;Sem Palco? Brutal!&#34;" title="Sepultura: Andreas Kisser Sobre os Beatles &#34;Sem Palco? Brutal!&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Só por questão de contexto: uma das maiores bandas do mundo decidir parar de fazer shows! 😱 Foi exatamente isso que os Beatles fizeram em agosto de 1966.</p>
 <p>A partir daí, foi só estúdio. <strong>Andreas Kisser</strong>, guitarrista do Sepultura, entende a decisão, mas acha &ldquo;brutal&rdquo; uma banda largar o palco.</p>
 <blockquote>
@@ -285,7 +285,9 @@
 <p>Pois é, sim, eles tinham seus motivos para largar os shows ao vivo. Mas para nós, amantes do metal e do rock, ver uma banda como os Beatles abandonar o palco&hellip; é duro de engolir. É como se fosse contra a natureza do rock!</p>
 <p>Ah, e um detalhe final: toda essa mudança dos Beatles não só revolucionou a música, mas também influenciou comportamento, moda, e até atitudes em relação às drogas. Eles mudaram o mundo sem precisar estar em cima de um palco. 🚀</p>
 <p>Mas, como disse Kisser, negar o palco é brutal. Concorda?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/beatles/" rel="tag">Beatles</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li>
@@ -309,6 +311,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801161344_hu3fd8bab349a236c34bb80fd5ec6b92bc_146244_bfd74fc87c2a4be32335ebb74cfe2222.webp" alt="ASSISTA: Armahda Retorna com Single Misterioso &#34;The Lost City&#34;" title="ASSISTA: Armahda Retorna com Single Misterioso &#34;The Lost City&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🌿 Após um bom tempo fora do radar, os caras do Armahda estão de volta! E olha, eles não brincam em serviço.</p>
 <p>Desta vez, a banda nos leva numa viagem sonora pela Amazônia com o novo single &ldquo;<strong>The Lost City</strong>&rdquo;.</p>
 <p>Se você curte uma boa história de mistério e aventura, esse som é pra você.</p>
@@ -309,7 +309,9 @@
 <li><strong>Facebook</strong>: <a href="https://www.facebook.com/Armahda" target="_blank" rel="noopener noreferrer">Armahda</a></li>
 </ul>
 <p>Rock on. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/armahda/" rel="tag">Armahda</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/percy-fawcett/" rel="tag">Percy fawcett</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -333,6 +335,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

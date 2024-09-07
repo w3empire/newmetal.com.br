@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240814085757_huea42fd122c7d3e4f01e0d52b0aba7146_69692_09e414bbec19af649d66cf2eb797a647.webp" alt="Novo Álbum do Opeth &#34;The Last Will And Testament&#34; é Inspirado no TikTok?" title="Novo Álbum do Opeth &#34;The Last Will And Testament&#34; é Inspirado no TikTok?" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você acha que o <strong>Opeth</strong> já esgotou suas ideias, está na hora de rever seus conceitos. 💣</p>
 <p>Os suecos simplesmente chutaram o balde com o novo álbum, <strong>“The Last Will And Testament”</strong>, e deixaram claro que, mesmo depois de décadas na estrada, eles ainda têm muita lenha pra queimar.</p>
 <p>E digo mais: dessa vez, eles não economizaram na loucura!</p>
@@ -326,7 +326,9 @@
 <li><a href="https://open.spotify.com/artist/0ybFZ2Ab08V8hueghSXm6E" target="_blank" rel="noopener noreferrer">Spotify do Opeth</a></li>
 <li><a href="https://www.opeth.com/" target="_blank" rel="noopener noreferrer">Site Oficial</a></li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/opeth/" rel="tag">Opeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mikael-akerfeldt/" rel="tag">Mikael akerfeldt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-progressivo/" rel="tag">Metal progressivo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ian-anderson/" rel="tag">Ian anderson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joey-tempest/" rel="tag">Joey tempest</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-progressivo/" rel="tag">Rock progressivo</a></li>
@@ -350,6 +352,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802160003_hud9905bde202fabbb80d92fac9bfe4025_160938_0283c9819f17b54477538ad1847727ad.webp" alt="ASSISTA: PAPA ROACH e Carrie Underwood em Uma Colaboração Inesperada" title="ASSISTA: PAPA ROACH e Carrie Underwood em Uma Colaboração Inesperada" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Quem diria que o rock pesado de PAPA ROACH iria se unir ao poder vocal da superstar country Carrie Underwood? Pois é, aconteceu! E o resultado é simplesmente <strong>avassalador</strong>.</p>
 <p>A nova gravação de &ldquo;Leave A Light On (Talk Away The Dark)&rdquo; já ganhou um <strong>videoclipe</strong> oficial, dirigido pelos talentosos Bryson Roatch e Jeff Johnson. Parte das filmagens rolou no Prudential Center em Newark, Nova Jersey, e no East Iris Studios em Nashville, Tennessee.</p>
 <p>Tá uma mistura de locais icônicos e vibes diferentes, exatamente como essa colaboração.</p>
@@ -314,7 +314,9 @@
 <p>Além disso, ela é a pessoa mais premiada no <strong>CMT Music Awards</strong> e tem um <strong>Grammy Awards</strong> atrás do outro na prateleira.</p>
 <p>E não é só na música que ela manda bem. Carrie também é <strong>autora best-seller</strong> e uma empresária de sucesso.</p>
 <p>🎸🌟</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/papa-roach/" rel="tag">Papa roach</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/carrie-underwood/" rel="tag">Carrie underwood</a></li>
@@ -338,6 +340,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

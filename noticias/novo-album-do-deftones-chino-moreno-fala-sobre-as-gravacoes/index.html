@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730220021_hu87a8f63fd19199eb92b9dfec58b7f05d_69822_5de3be6af84b7aadbd9749095d1a85d2.webp" alt="Novo Álbum do Deftones? Chino Moreno Fala Sobre as Gravações" title="Novo Álbum do Deftones? Chino Moreno Fala Sobre as Gravações" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Tá na hora de você ficar ligado! Chino Moreno, o lendário vocalista do <strong>Deftones</strong>, deu uma palhinha sobre o próximo álbum da banda durante uma entrevista nos bastidores do Coachella.</p>
 <p>E, vamos ser sinceros, a ansiedade tá nas alturas!</p>
 <blockquote>
@@ -299,7 +299,9 @@
     </div></div>
 <p>Flw! 👍</p>
 <p>Se curtiu a notícia, compartilha aí com a galera.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deftones/" rel="tag">Deftones</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chino-moreno/" rel="tag">Chino moreno</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sergio-vega/" rel="tag">Sergio vega</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/fred-sablan/" rel="tag">Fred sablan</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nick-raskulinecz/" rel="tag">Nick raskulinecz</a></li>
@@ -323,6 +325,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

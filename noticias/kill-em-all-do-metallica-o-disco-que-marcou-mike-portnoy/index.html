@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728014839_hu51b94f22cc7ac03a808f3fb38661fa8d_228768_7a4c7a1104d8c514260e25f9af4beabb.webp" alt="&#34;Kill &#39;Em All&#34; do Metallica: O Disco Que Marcou Mike Portnoy" title="&#34;Kill &#39;Em All&#34; do Metallica: O Disco Que Marcou Mike Portnoy" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O Metallica, aquela banda que dispensa apresentações, lançou um disco que mudou a história do metal para sempre: <strong>&ldquo;Kill &lsquo;Em All&rdquo;</strong>. Este álbum de estreia, lançado em julho de 1983, é pura agressividade e velocidade.</p>
 <p>Você já ouviu &ldquo;Hit The Lights&rdquo;? Ou que tal &ldquo;The Four Horsemen&rdquo;? Esses sons estão no coração do thrash metal. E vamos falar sério, quem não conhece &ldquo;Seek and Destroy&rdquo;? 🔥</p>
 <p>Mas não sou só eu que estou dizendo isso. <strong>Mike Portnoy</strong>, baterista fodástico do Dream Theater, também teve sua vida virada de cabeça para baixo por esse álbum.</p>
@@ -283,7 +283,9 @@
 <p>Gravado por James Hetfield (guitarra/vocal), Kirk Hammett (guitarra), Cliff Burton (baixo) e Lars Ulrich (bateria), esse álbum é uma verdadeira aula de metal. Se você ainda não ouviu, pare tudo o que está fazendo e vá agora mesmo para o Spotify.</p>
 <p>E aí, qual foi a primeira vez que você ouviu &ldquo;Kill &lsquo;Em All&rdquo;?</p>
 <p>Compartilha sua experiência com a gente lá no nosso <a href="https://x.com/newmetalnews" target="_blank" rel="noopener noreferrer">twitter/x</a>! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-portnoy/" rel="tag">Mike portnoy</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dream-theater/" rel="tag">Dream theater</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li>
@@ -307,6 +309,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905195608_hu94e46124b251ccc31ce5f95d38347401_166340_4c66dee4624461a58edbb314de0623c4.webp" alt="Nova formação da banda Linkin Park em 2024. — Imagem: James Minchin III / Reprodução / Divulgação." title="Nova formação da banda Linkin Park em 2024. — Imagem: James Minchin III / Reprodução / Divulgação." class="lazy-img"><figcaption>Nova formação da banda Linkin Park em 2024. — Imagem: James Minchin III / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>LINKIN PARK</strong> está de volta. Sim, aquela banda que você achou que não voltaria tão cedo, chega com um lineup renovado e várias surpresas.</p>
 <p>Depois de sete anos sem lançar material novo, eles surgem com uma formação repaginada, que inclui a co-vocalista <strong>Emily Armstrong</strong> (do aclamado <strong>Dead Sara</strong>) e o baterista <strong>Colin Brittain</strong> (produtor de nomes como <strong>G FLIP</strong>, <strong>ILLENIUM</strong> e <strong>ONE OK ROCK</strong>).</p>
 <p>O que vem aí? Um single, clipe, turnê e um álbum fresquinho.</p>
@@ -354,7 +354,9 @@
 <p>Eles não estão tentando recriar o passado. Estão abraçando o presente com respeito e, ao mesmo tempo, abrindo espaço para o futuro.</p>
 <p>O título do álbum, <strong>&ldquo;From Zero&rdquo;</strong>, reflete bem isso. É um novo começo, mas também uma homenagem às raízes da banda. Eles voltam ao ponto de partida para poder seguir em frente.</p>
 <p>Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/linkin-park/" rel="tag">Linkin park</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-shinoda/" rel="tag">Mike shinoda</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brad-delson/" rel="tag">Brad delson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phoenix/" rel="tag">Phoenix</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-hahn/" rel="tag">Joe hahn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/emily-armstrong/" rel="tag">Emily armstrong</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dead-sara/" rel="tag">Dead sara</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/colin-brittain/" rel="tag">Colin brittain</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alternative-rock/" rel="tag">Alternative rock</a></li>
@@ -378,6 +380,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

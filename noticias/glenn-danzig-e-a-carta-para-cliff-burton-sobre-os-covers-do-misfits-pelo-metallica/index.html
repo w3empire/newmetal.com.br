@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728005512_hud4c08367550b53765ec7dd96e5861ba3_287426_007ae36280997cdec7ba26ab29c3ce87.webp" alt="Glenn Danzig e a Carta para Cliff Burton sobre os Covers do Misfits pelo Metallica" title="Glenn Danzig e a Carta para Cliff Burton sobre os Covers do Misfits pelo Metallica" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você sabia que antes do Metallica lançar seus famosos covers dos Misfits, rolou uma treta muito louca nos bastidores? 🤘</p>
 <p>Nos anos 80, o Metallica estava bombando com o seu thrash metal, uma mistura de Black Sabbath e Judas Priest com a velocidade insana do punk rock. James Hetfield, por exemplo, era mega fã do Johnny Ramone e sua palhetada para baixo.</p>
 <p>E não é segredo que os caras do Metallica adoravam os Misfits – tanto as músicas quanto a vibe de filme de terror.</p>
@@ -284,7 +284,9 @@
 <p>E falando de &ldquo;Die, Die My Darling&rdquo;, ela foi gravada originalmente em 1981 durante as sessões do álbum &ldquo;Walk Among Us&rdquo;, mas só saiu no disco &ldquo;Earth A.D.&rdquo; (1982) e como single em 1983. Detalhe nerd: a capa do single é uma ilustração de uma HQ de terror dos anos 50, a edição 19 de Chamber of Chills. 🌒</p>
 <p>Mas aí, da próxima vez que você ouvir esses covers, lembre-se dessa história cheia de atitude e respeito entre lendas do metal e do punk.</p>
 <p>E se você acha que o Metallica fez jus ao legado dos Misfits, já sabe&hellip; GRRRRR&hellip; 😉</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/misfits/" rel="tag">Misfits</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/glenn-danzig/" rel="tag">Glenn danzig</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cliff-burton/" rel="tag">Cliff burton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/james-hetfield/" rel="tag">James hetfield</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/johnny-ramone/" rel="tag">Johnny ramone</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/punk-rock/" rel="tag">Punk rock</a></li>
@@ -308,6 +310,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

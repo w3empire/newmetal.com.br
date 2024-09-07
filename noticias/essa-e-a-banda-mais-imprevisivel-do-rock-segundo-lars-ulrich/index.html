@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731185817_hue22f86608f7bd19b1a7bf184cb33d029_127504_8172c1453be59e00be2ac2342f035fed.webp" alt="Essa é a Banda Mais Imprevisível do Rock Segundo Lars Ulrich" title="Essa é a Banda Mais Imprevisível do Rock Segundo Lars Ulrich" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Lars Ulrich, o baterista do Metallica, não mede palavras quando se trata de rock.</p>
 <p>Em 2016, durante o discurso de introdução do Deep Purple ao Rock and Roll Hall of Fame, ele soltou uma bomba:</p>
 <p>o Deep Purple é mais imprevisível que o Led Zeppelin e o Black Sabbath.</p>
@@ -298,7 +298,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="eu5lv2Umn3M" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lars-ulrich/" rel="tag">Lars ulrich</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deep-purple/" rel="tag">Deep purple</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/led-zeppelin/" rel="tag">Led zeppelin</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-sabbath/" rel="tag">Black sabbath</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ritchie-blackmore/" rel="tag">Ritchie blackmore</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/david-coverdale/" rel="tag">David coverdale</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/glenn-hughes/" rel="tag">Glenn hughes</a></li>
@@ -322,6 +324,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

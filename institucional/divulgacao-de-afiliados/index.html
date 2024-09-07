@@ -211,7 +211,7 @@
         <header class="post__header">
             <h1 class="post__title">Divulgação de afiliados para o site NewMetal.com.br</h1>
             
-        </header><div class="content post__content clearfix">
+        </header><div class="content post__content clearfix" id="content">
             <p>Última Atualização: 20 de Outubro de 2023</p>
 <h2 id="1-introdução">1. Introdução</h2>
 <p>Bem-vindo à página de Divulgação de Afiliados do New Metal. Utilizamos o programa de Afiliados Amazon para oferecer mercadorias relevantes aos nossos leitores, ajudando a sustentar nosso site e permitindo que continuemos a fornecer conteúdo de alta qualidade.</p>
@@ -234,7 +234,9 @@
 <li><a href="/institucional/politica-de-privacidade/">Política de Privacidade</a></li>
 <li><a href="/institucional/termos-de-uso/">Termos de Uso</a></li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 
 
         
@@ -242,6 +244,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 
 
 

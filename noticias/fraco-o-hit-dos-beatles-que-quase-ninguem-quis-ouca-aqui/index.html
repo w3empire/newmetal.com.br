@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240825113459_hu90124a600f4e7d58c67bd60681c8bb5d_91818_758a5d1c9f0cf564d8812cd74b8dcbda.webp" alt="&#34;Fraco&#34;: O Hit dos Beatles Que Quase Ninguém Quis; Ouça Aqui" title="&#34;Fraco&#34;: O Hit dos Beatles Que Quase Ninguém Quis; Ouça Aqui" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 <strong>Todo mundo tem aquele som que, no começo, parece meio fora de lugar.</strong> A música que você ouve e pensa: &ldquo;Ok, é legalzinha, mas não vai muito longe&rdquo;. Agora imagina só se isso acontecesse com os Beatles. Pois é, <strong>aconteceu</strong>. E o resultado foi, no mínimo, curioso.</p>
 <p>Nos tempos em que os Beatles ainda eram quatro caras tentando arranjar qualquer showzinho em Liverpool, Paul McCartney tinha uma música na manga chamada <strong>&ldquo;Like Dreamers Do&rdquo;</strong>.</p>
 <p>Uma melodia que, segundo o próprio Paul, não era lá grande coisa, mas tinha potencial.</p>
@@ -313,7 +313,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="c60b6xpqyDQ" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/beatles/" rel="tag">Beatles</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/paul-mccartney/" rel="tag">Paul mccartney</a></li>
@@ -337,6 +339,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

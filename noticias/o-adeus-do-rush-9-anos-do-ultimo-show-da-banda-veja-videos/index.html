@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801141016_hu7718a2d7db5b450da0d5e2010aa04014_86878_a065578ea8135770640fc7483f62f4f4.webp" alt="O Adeus do Rush: 9 Anos do Último Show da Banda (Veja Vídeos)" title="O Adeus do Rush: 9 Anos do Último Show da Banda (Veja Vídeos)" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Lembra onde você estava em 1º de agosto de 2015? Bem, se você é fã de rock progressivo, essa data deve estar gravada na sua memória.</p>
 <p>Foi nesse dia que o <strong>Rush</strong> subiu ao palco pela última vez no The Forum em Inglewood, Califórnia. E, cara, que show foi aquele! 🎸</p>
 <p>Diferente de outras bandas que fazem mil despedidas, o Rush anunciou uma tour de 40 anos em janeiro de 2015.</p>
@@ -336,7 +336,9 @@
 <p>Além de serem músicos incríveis, os caras do Rush são conhecidos pelo senso de humor afiado e pela humildade.</p>
 <p>Eles nunca se levaram muito a sério, mesmo sendo venerados como deuses do rock. Suas entrevistas estão cheias de risadas e histórias hilárias, mostrando que eles são tão acessíveis quanto talentosos.</p>
 <p>Falou. Até mais. 👍</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rush/" rel="tag">Rush</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/neil-peart/" rel="tag">Neil peart</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/geddy-lee/" rel="tag">Geddy lee</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alex-lifeson/" rel="tag">Alex lifeson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-progressivo/" rel="tag">Rock progressivo</a></li>
@@ -360,6 +362,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905224204_hu655afdfae98fdead76d4aada97b53e45_66724_00f83e82802a20ae5e5f5f011d965ba7.webp" alt="Emily Armstrong, a nova vocalista do Linkin Park. — Imagem: Instagram / Reprodução / Divulgação." title="Emily Armstrong, a nova vocalista do Linkin Park. — Imagem: Instagram / Reprodução / Divulgação." class="lazy-img"><figcaption>Emily Armstrong, a nova vocalista do Linkin Park. — Imagem: Instagram / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O <strong>Linkin Park</strong> surpreendeu o mundo ao anunciar sua nova formação nesta quinta-feira, 5 de Setembro, e, entre as novidades, a inclusão da talentosa <strong>Emily Armstrong</strong> como co-vocalista.</p>
 <p>Mas quem é essa artista que agora faz parte de uma das maiores bandas de rock dos últimos tempos?</p>
 <p>Vamos entender um pouco a história dessa voz marcante e ver por que ela foi escolhida para ocupar esse papel de destaque na nova fase da banda.</p>
@@ -326,7 +326,9 @@
 <script async src="//www.instagram.com/embed.js"></script>
 
 </div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/linkin-park/" rel="tag">Linkin park</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/emily-armstrong/" rel="tag">Emily armstrong</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dead-sara/" rel="tag">Dead sara</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-shinoda/" rel="tag">Mike shinoda</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brad-delson/" rel="tag">Brad delson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phoenix/" rel="tag">Phoenix</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-hahn/" rel="tag">Joe hahn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alternative-rock/" rel="tag">Alternative rock</a></li>
@@ -350,6 +352,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731160434_hucd807f8b78b4df5de226f9ba4a836210_183622_9be15e37bdfd8a1a738e9bfba291e012.webp" alt="ASSISTA: Arch Enemy Lança Single Inédito &#34;Dream Stealer&#34;" title="ASSISTA: Arch Enemy Lança Single Inédito &#34;Dream Stealer&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Arch Enemy Está de Volta com &ldquo;Dream Stealer&rdquo;, e a Barreira do Som Acabou de Ser Quebrada!</p>
 <p>Segurem-se, headbangers! O <strong>Arch Enemy</strong> lançou um novo single, e está sensacional!</p>
 <p>Depois de um hiato desde 2022, eles voltaram com tudo. &ldquo;Dream Stealer&rdquo; não é apenas mais uma música. É a <strong>estreia oficial do guitarrista Joey Concepcion</strong>, que substituiu Jeff Loomis no início do ano.</p>
@@ -296,7 +296,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="cJBmX5aU1DA" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Dahora né? Compartilha aí. 👇</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/arch-enemy/" rel="tag">Arch enemy</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joey-concepcion/" rel="tag">Joey concepcion</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/michael-amott/" rel="tag">Michael amott</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/melodic-death-metal/" rel="tag">Melodic death metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jens-bogren/" rel="tag">Jens bogren</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tony-lindgren/" rel="tag">Tony lindgren</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alissa-white-gluz/" rel="tag">Alissa white gluz</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/angela-gossow/" rel="tag">Angela gossow</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/patric-ullaeus/" rel="tag">Patric ullaeus</a></li>
@@ -320,6 +322,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

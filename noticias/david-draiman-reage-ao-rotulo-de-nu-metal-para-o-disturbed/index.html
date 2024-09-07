@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240729163000_hu5b9438e5004217d5f474594e68777d76_84458_a1d064e4e53df8fcad39e8e35c77dddc.webp" alt="David Draiman Reage ao Rótulo de &#34;Nu-Metal&#34; para o Disturbed" title="David Draiman Reage ao Rótulo de &#34;Nu-Metal&#34; para o Disturbed" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Vamos falar a real: os rótulos musicais podem ser uma dor de cabeça. 🤦‍♂️ Ao longo das décadas, os fãs e críticos criaram tantas categorias e subcategorias que é fácil se perder.</p>
 <p>E se você é um metaleiro de verdade, sabe que o rock e o metal têm mais vertentes do que a internet tem memes.</p>
 <p>Desde o rock &rsquo;n&rsquo; roll dos anos 50, passando pelo heavy metal dos anos 70, o punk, glam, thrash, hair metal dos anos 80, até o grunge e, claro, o nu metal dos anos 90&hellip; a lista é longa!</p>
@@ -302,7 +302,9 @@
 <hr>
 <p>E aí, qual é sua opinião sobre os rótulos musicais?</p>
 <p>Eles ajudam a definir a música ou só complicam tudo?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/david-draiman/" rel="tag">David draiman</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/disturbed/" rel="tag">Disturbed</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -326,6 +328,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

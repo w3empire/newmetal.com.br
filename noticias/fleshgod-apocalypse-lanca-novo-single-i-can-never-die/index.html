@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240729165306_hu38048a6f33b2f3db1a5b2d4bbde8908d_208946_2edc0eb764d277de96a1b49d331a64b8.webp" alt="VÍDEO: Fleshgod Apocalypse Lança Novo Single &#34;I Can Never Die&#34;" title="VÍDEO: Fleshgod Apocalypse Lança Novo Single &#34;I Can Never Die&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você está pronto para um novo hino da banda Fleshgod Apocalypse?</p>
 <p>Os mestres do metal sinfônico italiano estão de volta com um single devastador: <strong>&ldquo;I Can Never Die&rdquo;</strong>.</p>
 <p>Este som faz parte do próximo álbum <strong>&ldquo;Opera&rdquo;</strong>, que será lançado no dia 23 de agosto pela Nuclear Blast Records. Marque na sua agenda, porque você não vai querer perder isso! 📅</p>
@@ -289,7 +289,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="dJNLVywVJ1U" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Prepare-se, porque a ópera está prestes a começar! 🎶</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/fleshgod-apocalypse/" rel="tag">Fleshgod apocalypse</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-sinfonico/" rel="tag">Metal sinfonico</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/opera-metal/" rel="tag">Opera metal</a></li>
@@ -313,6 +315,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

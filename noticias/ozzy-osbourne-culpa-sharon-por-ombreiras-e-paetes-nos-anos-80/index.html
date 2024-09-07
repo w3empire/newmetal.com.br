@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726201312_hue428c8e6f1aa197ad2fcd46f6ca75754_119124_4ed9a7af8e3f3fa292bf6167abc35742.webp" alt="Ozzy Osbourne Culpa Sharon por Ombreiras e Paetês nos Anos 80" title="Ozzy Osbourne Culpa Sharon por Ombreiras e Paetês nos Anos 80" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>💥 Ozzy Osbourne revela que as ombreiras e os paetês dos anos 80 não foram escolha dele!</p>
 <p>Você sabia que o look glamuroso do Ozzy nos anos 80 era uma criação da Sharon? Pois é, no último episódio do podcast &ldquo;The Madhouse Chronicles&rdquo;, Ozzy e Billy Morrison relembraram essa década icônica e, claro, falaram sobre o visual extravagante.</p>
 <blockquote>
@@ -291,7 +291,9 @@
     </div></div>
 <p>Aliás, já imaginou o que mais Sharon influenciou na carreira do Ozzy? Vale a pena conferir e ficar por dentro dessas revelações.</p>
 <p>Afinal, quem não ama uma boa história de bastidores com um toque de loucura e diversão? 🚀</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ozzy-osbourne/" rel="tag">Ozzy osbourne</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/billy-morrison/" rel="tag">Billy morrison</a></li>
@@ -315,6 +317,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

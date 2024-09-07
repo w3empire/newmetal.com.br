@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730163150_hu68326ee1d4f9e2745bb0b9678ecfa251_59830_f8ee442baaa0d6d846669c0c34cee435.webp" alt="ASSISTA: Metallica Destrói na Polônia com &#34;Blackened&#34; Ao Vivo" title="ASSISTA: Metallica Destrói na Polônia com &#34;Blackened&#34; Ao Vivo" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você piscou e o Metallica liberou mais uma bomba: <strong>&ldquo;Blackened&rdquo; ao vivo da Polônia</strong>. Essa apresentação, que rolou no dia 7 de julho, faz parte da épica perna europeia da <strong>M72 World Tour</strong>.</p>
 <p>Dá o play e prepare-se para ser destruído pelos riffs! 🎸🔥</p>
 <div class="embed-container">
@@ -321,7 +321,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="FHkpzSl5B8c" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>A M72 World Tour está pegando fogo, e a gente mal pode esperar pelo que vem por aí.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/james-hetfield/" rel="tag">James hetfield</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lars-ulrich/" rel="tag">Lars ulrich</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kirk-hammett/" rel="tag">Kirk hammett</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/robert-trujillo/" rel="tag">Robert trujillo</a></li>
@@ -345,6 +347,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

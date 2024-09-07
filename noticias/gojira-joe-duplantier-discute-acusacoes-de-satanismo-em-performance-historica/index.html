@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730155240_hu7e93391a68530a6260879fee0a36e3c5_90296_4f0a84608c21e09f096481e77bf9db21.webp" alt="Gojira: Joe Duplantier Discute Acusações de &#34;Satanismo&#34; em Performance Histórica" title="Gojira: Joe Duplantier Discute Acusações de &#34;Satanismo&#34; em Performance Histórica" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você ainda não ouviu falar, o Gojira tocou na abertura das Olimpíadas de Paris e foi simplesmente <strong>glorioso</strong>.</p>
 <p>O baterista do Gojira, Mario Duplantier, expressou sua gratidão em um post no Instagram, enquanto o vocalista Joe Duplantier teve muito mais a dizer em uma entrevista para a Rolling Stone.</p>
 <p>Duplantier comentou que o Comitê Olímpico poderia ter escolhido qualquer banda de metal maior para tocar a música &ldquo;Ah! Ça ira&rdquo;, e por que o Gojira foi provavelmente a escolha certa para capturar a atenção do mundo.</p>
@@ -298,7 +298,9 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gojira/" rel="tag">Gojira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-duplantier/" rel="tag">Joe duplantier</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mario-duplantier/" rel="tag">Mario duplantier</a></li>
@@ -322,6 +324,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

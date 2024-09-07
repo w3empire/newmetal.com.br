@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905142103_hua1c47676fabcc31f9a594d8d75bc9363_91012_dbe524e8424f8e7f40574a850dd661cb.webp" alt="Mark Tremonti. — Imagem: Scott Diussa / Reprodução / Divulgação." title="Mark Tremonti. — Imagem: Scott Diussa / Reprodução / Divulgação." class="lazy-img"><figcaption>Mark Tremonti. — Imagem: Scott Diussa / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Mark Tremonti, guitarrista do <strong>Creed</strong>, revelou em uma entrevista à <a href="https://guitar.com/news/music-news/mark-tremonti-says-other-creed-members-pushed-back-against-metal/" target="_blank" rel="noopener noreferrer">Guitar Player</a> que nem tudo na banda era como ele desejava. 🎸</p>
 <p>Enquanto o som do grupo explodia nas rádios com um estilo pós-grunge, o coração de Tremonti batia mais forte pelo <strong>metal</strong>. Só que havia um pequeno obstáculo: os outros membros da banda.</p>
 <p>Segundo Tremonti, ele adorava bandas como <strong>Alice in Chains</strong> e <strong>Soundgarden</strong>. Isso influenciou bastante a forma como ele via a música que queria fazer. &ldquo;Eu criava metal, mas eles sempre falavam que era ‘metal demais’&rdquo;, confessou.</p>
@@ -309,7 +309,9 @@
 <hr>
 <p>O metal que Tremonti tanto queria pode não ter sido o carro-chefe do Creed, mas isso não diminui a importância da banda para o rock dos anos 90.</p>
 <p>E agora com o <strong>Alter Bridge</strong>, Tremonti finalmente encontrou o equilíbrio que buscava.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mark-tremonti/" rel="tag">Mark tremonti</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/creed/" rel="tag">Creed</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alter-bridge/" rel="tag">Alter bridge</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alice-in-chains/" rel="tag">Alice in chains</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/soundgarden/" rel="tag">Soundgarden</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rush/" rel="tag">Rush</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/living-colour/" rel="tag">Living colour</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slayer/" rel="tag">Slayer</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pantera/" rel="tag">Pantera</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/grunge/" rel="tag">Grunge</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pos-grunge/" rel="tag">Pos grunge</a></li>
@@ -333,6 +335,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

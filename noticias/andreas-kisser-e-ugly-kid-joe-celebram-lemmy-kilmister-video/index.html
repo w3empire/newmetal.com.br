@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240808181954_hu290106b7afb3c312f85d03d3744acf1b_59332_bd5308ad65ce27e649365cca3c22014f.webp" alt="Andreas Kisser e Ugly Kid Joe Celebram Lemmy Kilmister; Vídeo" title="Andreas Kisser e Ugly Kid Joe Celebram Lemmy Kilmister; Vídeo" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🔥 O festival Bloodstock 2024 pegou fogo!</p>
 <p>E uma das chamas mais brilhantes foi acesa pelo lendário guitarrista brasileiro Andreas Kisser, do <strong>Sepultura</strong>, que se juntou ao Ugly Kid Joe para uma homenagem insana a Lemmy Kilmister do Motörhead.</p>
 <h2 id="o-mito-lemmy-kilmister">O Mito Lemmy Kilmister</h2>
@@ -329,7 +329,9 @@
     </div></div>
 <p><strong>Andreas Kisser</strong> e <strong>Ugly Kid Joe</strong> mostraram que Lemmy Kilmister pode ter nos deixado fisicamente, mas seu espírito vive em cada acorde de guitarra e em cada grito da plateia.</p>
 <p>Lemmy, onde quer que você esteja, essa foi para você. Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ugly-kid-joe/" rel="tag">Ugly kid joe</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lemmy-kilmister/" rel="tag">Lemmy kilmister</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/motorhead/" rel="tag">Motorhead</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li>
@@ -353,6 +355,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

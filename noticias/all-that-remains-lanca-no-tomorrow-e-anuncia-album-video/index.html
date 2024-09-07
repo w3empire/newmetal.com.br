@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240816105911_hu0cf56f70996e633f6f04e1fa81ad45c3_40416_58c38ff0c082fdaf92aac3bb157fcb9b.webp" alt="All That Remains Lança &#34;No Tomorrow&#34; e Anuncia Álbum; Vídeo" title="All That Remains Lança &#34;No Tomorrow&#34; e Anuncia Álbum; Vídeo" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Os caras do <strong>ALL THAT REMAINS</strong> estão de volta e, meu amigo, eles não estão de brincadeira! 🤘</p>
 <p>Se você é daqueles que fica ansioso toda vez que sua banda favorita lança algo novo, prepare-se, porque <strong>Philip Labonte</strong> e sua turma acabaram de lançar o videoclipe de <strong>&ldquo;No Tomorrow&rdquo;</strong>, dirigido por <strong>Tom Flynn</strong>. E olha, vou te dizer, essa é uma daquelas faixas que te pega pelo pescoço e não larga mais.</p>
 <p><strong>ALL THAT REMAINS</strong> está soltando as faixas aos poucos, como se fossem petiscos de um banquete metálico, e “No Tomorrow” é o terceiro single que eles lançam recentemente, sucedendo <strong>&ldquo;Divine&rdquo;</strong> (que foi uma paulada!) e <strong>&ldquo;Let You Go&rdquo;</strong> (que trouxe uma vibe mais emocional).</p>
@@ -331,7 +331,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="01rW8JxwpO8" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/all-that-remains/" rel="tag">All that remains</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/philip-labonte/" rel="tag">Philip labonte</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tom-flynn/" rel="tag">Tom flynn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/josh-wilbur/" rel="tag">Josh wilbur</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metalcore/" rel="tag">Metalcore</a></li>
@@ -355,6 +357,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

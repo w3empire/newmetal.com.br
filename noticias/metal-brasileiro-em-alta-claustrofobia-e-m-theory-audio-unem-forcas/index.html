@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240808184832_huc2e527d51f9f96e2e7410fdb6503736b_81344_c802f290e77e2c18eb8ca485b1f78c7f.webp" alt="Metal Brasileiro em Alta: Claustrofobia e M-Theory Audio Unem Forças" title="Metal Brasileiro em Alta: Claustrofobia e M-Theory Audio Unem Forças" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Quem diria, hein? O Claustrofobia está <strong>quebrando tudo</strong> e agora com um novo selo. Sim, senhoras e senhores, a banda assinou com a gravadora americana <strong>M-Theory Audio</strong>!</p>
 <p>E não é só isso: o álbum <em>Unleeched</em> vai ganhar uma versão relançada, incluindo faixas bônus como &ldquo;Riff Cult&rdquo; e &ldquo;Força além da Força&rdquo; – a versão em português de &ldquo;Strength Beyond Strength&rdquo;, do Pantera. Tá bom pra vocês?</p>
 <p>O disco já tem data marcada para chegar nas lojas: <strong>13 de setembro</strong>. Anota aí no calendário porque esse lançamento promete ser destruidor!</p>
@@ -349,7 +349,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="EPBxxs6a_K8" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/claustrofobia/" rel="tag">Claustrofobia</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/obituary/" rel="tag">Obituary</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/agnostic-front/" rel="tag">Agnostic front</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/marcus-d-angelo/" rel="tag">Marcus d angelo</a></li>
@@ -373,6 +375,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

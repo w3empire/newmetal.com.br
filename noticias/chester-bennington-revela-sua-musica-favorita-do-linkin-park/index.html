@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728015703_hu0cafd526664d99267e87c97c5e62361e_229508_efbc528bf038472a1fd2b5ed3d914469.webp" alt="Chester Bennington Revela Sua Música Favorita do Linkin Park" title="Chester Bennington Revela Sua Música Favorita do Linkin Park" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Não é todo dia que você vê um músico revelando sua faixa preferida de todos os tempos. Chester Bennington, o lendário vocalista do Linkin Park, surpreendeu a todos em 2014 ao compartilhar seu momento favorito da carreira.</p>
 <p>E adivinha só?</p>
 <p>Ele fugiu do clichê de escolher uma faixa do álbum mais recente na época.</p>
@@ -299,7 +299,9 @@
     </div></div>
 <p>E aí, também curte essa música do LP?</p>
 <p>Valeu, obrigado por ler até aqui. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chester-bennington/" rel="tag">Chester bennington</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/linkin-park/" rel="tag">Linkin park</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-shinoda/" rel="tag">Mike shinoda</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -323,6 +325,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

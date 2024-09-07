@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731183533_hu7891ec0662ef3b10ac6924608a51ee55_181104_bab9918bbd31d763fb1c4eb373d530d3.webp" alt="Bruce Dickinson: De Férias do Maiden ao Topo das Paradas" title="Bruce Dickinson: De Férias do Maiden ao Topo das Paradas" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O novo álbum solo do lendário Bruce Dickinson, <strong>“The Mandrake Project”</strong>, não só explodiu nas vendas como também foi elogiado até pelos críticos mais chatos.</p>
 <p>Fazia quase 20 anos que Bruce não lançava nada solo desde o <strong>&ldquo;Tyranny Of Souls&rdquo;</strong> de 2005, e ele voltou com tudo! 💥</p>
 <p>Bruce tirou umas férias do <strong>Iron Maiden</strong> e aproveitou pra fazer uma turnê mundial insana. Ele passou por vários cantos do mundo e ainda foi a atração principal em um monte de festivais europeus, levando cerca de 350 mil fãs enlouquecidos para seus shows. <strong>350 mil</strong>, cara!</p>
@@ -291,7 +291,9 @@
 <p>Fique de olho, porque essa nova fase promete muitas surpresas e músicas que vão mexer com você.</p>
 <p>E, se você ainda não ouviu <strong>“The Mandrake Project”</strong>, tá esperando o quê?</p>
 <p><a href="https://www.youtube.com/watch?v=C-O8sZIqcb4&amp;list=PLQfEQixi55OV484771929ttE21pL1pJyr" target="_blank" rel="noopener noreferrer">Você pode curtir a playlist completa aqui</a>, tá <strong>imperdível</strong>! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bruce-dickinson/" rel="tag">Bruce dickinson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/iron-maiden/" rel="tag">Iron maiden</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nicko-mcbrain/" rel="tag">Nicko mcbrain</a></li>
@@ -315,6 +317,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

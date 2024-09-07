@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726194030_hu66318f9fd27f0d152dad29afd1f5cf93_113916_5ed112f64e6aa83ca0c357623a0d3d6b.webp" alt="Como a troca de guitarras transformou a carreira de Ritchie Blackmore" title="Como a troca de guitarras transformou a carreira de Ritchie Blackmore" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Ja pensou? Você tá tocando na sua banda de rock, todo feliz com sua guitarra, e então, do nada, surge uma oportunidade de ouro que muda tudo. 😮</p>
 <p><strong>Ritchie Blackmore</strong>, ex-membro do Deep Purple, compartilhou uma história incrível sobre como um encontro casual mudou para sempre a sua escolha de guitarra. E essa história envolve ninguém menos que <strong>Eric Clapton</strong> (ou quase isso, já que foi o roadie dele que fez a mágica acontecer).</p>
 <blockquote>
@@ -289,7 +289,9 @@
 <p>E você? Que instrumento você usaria se tivesse a chance de tocar algo que pertenceu a um ídolo? 🎸</p>
 <p>Essas histórias nos mostram como pequenas mudanças e encontros inesperados podem influenciar não só a carreira, mas também o estilo e a identidade de um músico. E, claro, nos lembram que, às vezes, vale a pena arriscar e seguir aquela curiosidade.</p>
 <p>Quem sabe onde isso pode te levar? 😉</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ritchie-blackmore/" rel="tag">Ritchie blackmore</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eric-clapton/" rel="tag">Eric clapton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deep-purple/" rel="tag">Deep purple</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jeff-beck/" rel="tag">Jeff beck</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jimi-hendrix/" rel="tag">Jimi hendrix</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/colin-manley/" rel="tag">Colin manley</a></li>
@@ -313,6 +315,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

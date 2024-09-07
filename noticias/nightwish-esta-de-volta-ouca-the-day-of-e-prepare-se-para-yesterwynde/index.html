@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240808225027_hu0acb6b067566d46d2fc965e6bf31cffd_217794_65ab6d3304ab234843d4c698005ff97f.webp" alt="Nightwish Está de Volta: Ouça &#34;The Day Of…&#34; e Prepare-se para Yesterwynde" title="Nightwish Está de Volta: Ouça &#34;The Day Of…&#34; e Prepare-se para Yesterwynde" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Aqueles que amam um som pesado já podem começar a contar os dias.</p>
 <p>O <strong>Nightwish</strong> está de volta, e com força total! A banda finlandesa, que praticamente inventou o termo &ldquo;metal sinfônico&rdquo;, acaba de revelar seu mais novo single: <strong>&ldquo;The Day Of…&rdquo;</strong>. E olha, se o nome não te causa arrepios, o som vai fazer isso rapidinho.</p>
 <p>A faixa é uma prévia do que podemos esperar de <strong>&ldquo;Yesterwynde&rdquo;</strong>, o próximo álbum que promete abalar as estruturas do metal mundial.</p>
@@ -339,7 +339,9 @@
 <p>E se você já ouviu, aposto que está tão ansioso quanto eu para o álbum completo. O <strong>20 de setembro</strong> não chega rápido o suficiente, mas enquanto isso, temos <strong>&ldquo;The Day Of…&rdquo;</strong> para nos manter ocupados.</p>
 <p>Aumenta o volume, e deixe o Nightwish te levar para mais uma viagem inesquecível.</p>
 <p>E que viagem será essa! \m/</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nightwish/" rel="tag">Nightwish</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-sinfonico/" rel="tag">Metal sinfonico</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/floor-jansen/" rel="tag">Floor jansen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tuomas-holopainen/" rel="tag">Tuomas holopainen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -363,6 +365,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

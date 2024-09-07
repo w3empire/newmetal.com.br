@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240819164024_hua473802801b17bb6ddbe75b06b0355b1_44608_4c607b499b9a0ed0f57b037817e5fc84.webp" alt="Sweet Pill Revitaliza Emo com Cover Audacioso do The Wonder Years" title="Sweet Pill Revitaliza Emo com Cover Audacioso do The Wonder Years" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>É impossível ignorar a força de uma banda que transforma um clássico em algo novo e empolgante.</p>
 <p><strong>Sweet Pill</strong>, uma banda em ascensão na cena emo, conseguiu fazer exatamente isso ao lançar um cover que promete ser inesquecível.</p>
 <p>A faixa escolhida? Nada menos do que “<strong>There, There</strong>”, a abertura do icônico álbum <em>The Greatest Generation</em>, do <strong>The Wonder Years</strong>. 🎸</p>
@@ -328,7 +328,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="XGQAzQgJs7I" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sweet-pill/" rel="tag">Sweet pill</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/emo/" rel="tag">Emo</a></li>
@@ -352,6 +354,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

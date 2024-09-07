@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728164251_hud2cc228ff4164c0de02537b49dbee847_50856_ba19e4fbbb64b1536befe5420b73db5f.webp" alt="ASSISTA: Metallica Surpreende Fãs com Clássico ao Vivo na Polônia" title="ASSISTA: Metallica Surpreende Fãs com Clássico ao Vivo na Polônia" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Fala, galera! 🎸</p>
 <p>Se você curte um bom show de rock pesado, prepare-se para uma novidade animal. O Metallica, esses titãs do metal, acabaram de liberar uma versão ao vivo de <strong>&ldquo;Welcome Home (Sanitarium)&rdquo;</strong> gravada na Polônia, em 7 de julho de 2024. Que espetáculo!</p>
 <p>Depois de rodar boa parte da Europa com a <strong>M72 Tour</strong> — tudo para promover seu mais novo álbum de estúdio, <strong>72 Seasons</strong>, lançado em 14 de abril de 2023 — os caras ainda arranjaram um tempinho para tocar alguns clássicos.</p>
@@ -295,7 +295,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="vEhMU7cvoK8" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li>
@@ -319,6 +321,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

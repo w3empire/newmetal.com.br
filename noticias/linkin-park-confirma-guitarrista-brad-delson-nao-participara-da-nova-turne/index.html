@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240906231627_hu2985d8521cf79bf6e4e89ec1415282c1_80489_7174a5d11e5f8a0e5068ea5d362a38b6.webp" alt="Bbrad Delson guitarrista do Likin Park. — Imagem: James Minchin III / Reprodução / Divulgação." title="Bbrad Delson guitarrista do Likin Park. — Imagem: James Minchin III / Reprodução / Divulgação." class="lazy-img"><figcaption>Bbrad Delson guitarrista do Likin Park. — Imagem: James Minchin III / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O Linkin Park está de volta. Grandes novidades surgiram ontem à noite (5 de setembro). Novo álbum, nova turnê e mudanças na formação da banda.</p>
 <p>Mas o que mais chamou atenção hoje (6 de setembro)? <strong>Brad Delson</strong>, guitarrista e membro fundador, anunciou que não participará da turnê.</p>
 <h2 id="brad-fica-mas-não-vai-para-a-estrada">Brad Fica, Mas Não Vai Para a Estrada</h2>
@@ -299,7 +299,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="pQto8npSUC0" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brad-delson/" rel="tag">Brad delson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/linkin-park/" rel="tag">Linkin park</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alex-feder/" rel="tag">Alex feder</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/emily-armstrong/" rel="tag">Emily armstrong</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/colin-brittain/" rel="tag">Colin brittain</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rob-bourdon/" rel="tag">Rob bourdon</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-alternativo/" rel="tag">Rock alternativo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -323,6 +325,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

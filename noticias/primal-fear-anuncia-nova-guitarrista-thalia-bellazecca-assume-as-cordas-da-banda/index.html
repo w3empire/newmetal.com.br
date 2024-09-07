@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828191600_hu9a9fa436d87596817f31c537a7bc39f9_21894_1e8a2853816596df5993750a75ffd48e.webp" alt="Foto: Reprodução / Divulgação." title="Foto: Reprodução / Divulgação." class="lazy-img"><figcaption>Foto: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O <strong>Primal Fear</strong>, uma das bandas mais icônicas da cena <strong>heavy metal</strong> e <strong>power metal</strong>, está passando por uma fase de reestruturação significativa após a saída de quatro de seus membros.</p>
 <p>Com a debandada dos guitarristas <strong>Alex Beyrodt</strong> e <strong>Tom Naumann</strong>, do baterista <strong>Michael Ehré</strong> e do baixista <strong>Alex Jansen</strong>, a banda alemã começa a reconstruir sua formação com a adição de uma nova integrante: a guitarrista italiana <strong>Thalìa Bellazecca</strong>.</p>
 <p><strong>LEIA TAMBÉM:</strong> <a href="/noticias/primal-fear-enfrenta-mudanca-drastica-quatro-membros-saem-da-banda-entenda/">Primal Fear Enfrenta Mudança Drástica: Quatro Membros Saem da Banda; entenda</a></p>
@@ -312,7 +312,9 @@
 <p>Thalìa tem diante de si uma oportunidade importante, mas não garantida, de se destacar como uma guitarrista de renome na cena metal internacional.</p>
 <p>Enquanto os fãs aguardam as próximas produções e turnês com curiosidade, o futuro do Primal Fear ainda é incerto.</p>
 <p>Embora haja talento e energia na nova formação, não há garantias de que a banda conseguirá manter a trajetória de sucesso que a consolidou no heavy metal. Com Thalìa Bellazecca na formação, o grupo tem a chance de evoluir, mas apenas o tempo dirá se eles conseguirão equilibrar inovação com a essência que os tornou uma das potências do gênero.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/primal-fear/" rel="tag">Primal fear</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thalia-bellazecca/" rel="tag">Thalia bellazecca</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kiko-loureiro/" rel="tag">Kiko loureiro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/frozen-crown/" rel="tag">Frozen crown</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/power-metal/" rel="tag">Power metal</a></li>
@@ -336,6 +338,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

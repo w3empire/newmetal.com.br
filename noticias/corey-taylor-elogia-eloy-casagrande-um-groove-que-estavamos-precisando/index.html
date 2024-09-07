@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240827172213_hu95933edf99462dee8b419821087421cf_99718_7a7d6eee2a2c73c6eebc4015324b01e3.webp" alt="Corey Taylor e Eloy Casagrande, vocalista e baterista do Slipknot. - Foto: richfury / MSGE." title="Corey Taylor e Eloy Casagrande, vocalista e baterista do Slipknot. - Foto: richfury / MSGE." class="lazy-img"><figcaption>Corey Taylor e Eloy Casagrande, vocalista e baterista do Slipknot. - Foto: richfury / MSGE.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A galera do metal não para de falar sobre o novo batera do <strong>Slipknot</strong>. E não é pra menos! Quando Eloy Casagrande subiu ao palco em Las Vegas, em abril, parecia que um furacão havia passado por ali.</p>
 <p>Esse cara, que passou 13 anos quebrando tudo no <strong>Sepultura</strong>, agora trouxe sua fúria controlada para o caos do Slipknot.</p>
 <p>E o impacto? Parece que foi como uma bomba explodindo na alma do metal. Em uma entrevista para a revista <a href="https://www.altpress.com/slipknot-25th-anniversary-tour-interview/" target="_blank" rel="noopener noreferrer">AltPress</a> (em inglês), alguns integrantes do Slipknot falaram sobre o baterista brasileiro. Veja:</p>
@@ -323,7 +323,9 @@
 <p>Pois é, animado para ver o que vem por aí? 🔥</p>
 <p>Eu mal posso esperar pelo novo som do Slipknot.</p>
 <p>\m/</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jim-root/" rel="tag">Jim root</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jay-weinberg/" rel="tag">Jay weinberg</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -347,6 +349,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

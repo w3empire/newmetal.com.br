@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802154911_hu8adf8f53fae720d1ef56a79ed99c9099_9842_58e2fd2acccc00b6887e9dfe2c433ec8.webp" alt="VEJA: O Polêmico Marilyn Manson Está de Volta com Novo Single" title="VEJA: O Polêmico Marilyn Manson Está de Volta com Novo Single" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Marilyn Manson</strong> voltou com tudo!</p>
 <p>O cara soltou o clipe de &ldquo;<em>As Sick As The Secrets Within</em>&rdquo; (vídeo no fim da matéria), dirigido pelo Bill Yukich, e já tá fazendo barulho.</p>
 <p>Essa nova música foi produzida com o parceiro de longa data, Tyler Bates, e marca a estreia de Manson com a Nuclear Blast Records.</p>
@@ -345,7 +345,9 @@
 <li>22 de fevereiro - Newcastle, UK - O2 City Hall*</li>
 <li>23 de fevereiro - Wolverhampton, UK - Civic Hall*</li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/marilyn-manson/" rel="tag">Marilyn manson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bill-yukich/" rel="tag">Bill yukich</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tyler-bates/" rel="tag">Tyler bates</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -369,6 +371,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

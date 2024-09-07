@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728163606_huafffbe6984a6de138d13522a7ba9d797_140206_d8980d883027d733d82ca24a40b801d6.webp" alt="&#34;Não respeito a mídia&#34;, diz Nikki Sixx do Motley Crue" title="&#34;Não respeito a mídia&#34;, diz Nikki Sixx do Motley Crue" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🤘 <strong>Nikki Sixx Solta o Verbo Sobre a Mídia!</strong> 🤘</p>
 <p>Em uma entrevista para a rádio Razor, o baixista do Motley Crue, Nikki Sixx, não poupou palavras ao criticar a mídia. O cara está bolado com a repercussão dos seus comentários sobre o futuro da banda no estúdio.</p>
 <blockquote>
@@ -297,7 +297,9 @@
 <p>Parece que Nikki tem um ponto válido. A mídia adora criar um drama onde não existe. E no fim, quem sofre são os fãs, bombardeados com notícias exageradas.</p>
 <p>Fique ligado, porque o Motley Crue está longe de parar. E sempre tem coisa nova saindo do forno. 🎤🔥</p>
 <p>Aguarde os novos singles e continue apoiando suas bandas favoritas, não importa o que a mídia diga! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/motley-crue/" rel="tag">Motley crue</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nikki-sixx/" rel="tag">Nikki sixx</a></li>
@@ -321,6 +323,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

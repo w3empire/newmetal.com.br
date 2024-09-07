@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240817093956_hu04e99c1e7a6ba2294a922947e5dcc66e_59284_71b73b8458ab8f4e961dceb49b27f353.webp" alt="Are You Ready? Creed Lança Novo Clipe e Reacende a Nostalgia dos Anos 90" title="Are You Ready? Creed Lança Novo Clipe e Reacende a Nostalgia dos Anos 90" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Tá sentado?</p>
 <p>Porque essa notícia vai te fazer levantar e&hellip;</p>
 <p>Pois é, quem diria ein? <strong>Creed</strong> voltou com tudo, ou quase isso.</p>
@@ -385,7 +385,9 @@
 <li>Wash Away Those Years</li>
 <li>Inside Us All</li>
 </ol>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/creed/" rel="tag">Creed</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/post-grunge/" rel="tag">Post grunge</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/scott-stapp/" rel="tag">Scott stapp</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mark-tremonti/" rel="tag">Mark tremonti</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brian-marshall/" rel="tag">Brian marshall</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/scott-phillips/" rel="tag">Scott phillips</a></li>
@@ -409,6 +411,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240729180815_hu67db13a832979cb291543371cd66d42e_177708_2f3efe038058330e8ef9440e3cc55518.webp" alt="Ozzy Osbourne Faz Mea Culpa com Britney Spears, Ela Aceita?" title="Ozzy Osbourne Faz Mea Culpa com Britney Spears, Ela Aceita?" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Ozzy Osbourne, o lendário vocalista do Black Sabbath, causou alvoroço recentemente com um comentário ácido sobre Britney Spears no podcast “The Osbournes”. O príncipe das trevas disse que estava &ldquo;farto de ver a pobre e velha Britney Spears no YouTube&rdquo;. Bem, isso não caiu nada bem com a princesa do pop.</p>
 <p>Britney, conhecida por não levar desaforo para casa, não perdeu tempo e disparou no Instagram. Ela chamou a família Osbourne de &ldquo;a mais chata da humanidade&rdquo; e mandou um belo &ldquo;se ferrem&rdquo; para todos.</p>
 <p>Agora, o velho Ozzy está tentando consertar a situação. No episódio que foi ao ar nesta segunda-feira (29), ele disse:</p>
@@ -287,7 +287,9 @@
 <p>Mas, pensa bem, galera. Dois ícones de eras completamente diferentes trocando farpas pela internet? Isso é o tipo de drama que só a cultura pop moderna poderia nos proporcionar. E, cá entre nós, quem não ama um bom barraco entre celebridades?</p>
 <p>E você? Acha que a Britney deveria perdoar o Ozzy? Ou acha que a nossa estrela do metal precisa aprender a segurar a língua?</p>
 <p>🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ozzy-osbourne/" rel="tag">Ozzy osbourne</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-sabbath/" rel="tag">Black sabbath</a></li>
@@ -311,6 +313,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

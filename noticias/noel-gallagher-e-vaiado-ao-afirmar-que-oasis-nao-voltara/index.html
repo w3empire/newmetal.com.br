@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240807184233_hubd8b70391476183a16e9954597d021bf_77140_62986cc9bb0e73fe25175a7a7cb4a1a4.webp" alt="Noel Gallagher é Vaiado ao Afirmar que Oasis Não Voltará" title="Noel Gallagher é Vaiado ao Afirmar que Oasis Não Voltará" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Quem diria, hein? Noel Gallagher, o eterno rebelde do rock, foi vaiado no último domingo (4) no Y Not Festival em Derbyshire, Inglaterra.</p>
 <p>A razão? Ele jogou um balde de água fria nos fãs do Oasis. Pois é, <strong>não vai ter reunião da banda</strong>.</p>
 <p>Pelo menos não por enquanto.</p>
@@ -323,7 +323,9 @@
     </div></div>
 <p>E você, o que acha dessa novela toda?</p>
 <p>Será que ainda tem esperança?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/oel-gallagher/" rel="tag">Oel gallagher</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/oasis/" rel="tag">Oasis</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/y-not-festival/" rel="tag">Y not festival</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/liam-gallagher/" rel="tag">Liam gallagher</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-britanico/" rel="tag">Rock britanico</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gene-gallagher/" rel="tag">Gene gallagher</a></li>
@@ -347,6 +349,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

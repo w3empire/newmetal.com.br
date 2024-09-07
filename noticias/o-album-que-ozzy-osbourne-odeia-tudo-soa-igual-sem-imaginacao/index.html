@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731164252_hub3156ebf1463b7b4870b7759da053197_184546_11591ecc3f3b4997a195cdf7b54a169a.webp" alt="O Álbum que Ozzy Osbourne Odeia: &#34;Tudo soa igual, sem imaginação.&#34;" title="O Álbum que Ozzy Osbourne Odeia: &#34;Tudo soa igual, sem imaginação.&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Pensa que as lendas do metal não têm seus arrependimentos? 🤔 Pois é, nem tudo que brilha é ouro na carreira do Príncipe das Trevas.</p>
 <p>Na vasta discografia de <strong>Ozzy Osbourne</strong>, seja no <strong>Black Sabbath</strong> ou na carreira solo, sempre há aquele álbum que o próprio artista queria esquecer.</p>
 <p>Em uma entrevista recuperada pela <a href="https://faroutmagazine.co.uk/the-album-ozzy-osbourne-has-always-hated/" target="_blank" rel="noopener noreferrer">Far Out</a> (em inglês), Ozzy desabafa sobre seu desgosto com o álbum <strong>&ldquo;The Ultimate Sin&rdquo;</strong> de 1986. Isso mesmo, aquele que tem clássicos como <strong>&ldquo;Shot in the Dark&rdquo;</strong>. 🤯</p>
@@ -301,7 +301,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="wtHEN518VCM" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ozzy-osbourne/" rel="tag">Ozzy osbourne</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ron-nevison/" rel="tag">Ron nevison</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jake-e-lee/" rel="tag">Jake e lee</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-soussan/" rel="tag">Phil soussan</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/randy-castillo/" rel="tag">Randy castillo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-moran/" rel="tag">Mike moran</a></li>
@@ -325,6 +327,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

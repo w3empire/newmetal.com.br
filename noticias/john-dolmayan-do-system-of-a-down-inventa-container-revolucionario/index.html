@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730210755_hu2c5610b309a31f9327e256f34b48f201_116130_36ac41098c38f9d24cd6149875b70c9b.webp" alt="John Dolmayan, do System Of A Down, Inventa Container Revolucionário" title="John Dolmayan, do System Of A Down, Inventa Container Revolucionário" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>É isso mesmo, John Dolmayan, baterista do System Of A Down, virou <strong>inventor</strong> agora!</p>
 <p>Sim, você leu certo. O cara que destrói na bateria agora também quer revolucionar o mundo das entregas.</p>
 <p>Tá, vamos por partes.</p>
@@ -288,7 +288,9 @@
 <p>A gente ainda não sabe quando essa belezura vai estar disponível no mercado, mas é um passo e tanto para alguém vindo do mundo da música. E convenhamos, Dolmayan não é só um baterista, ele é um cara que sabe reinventar a roda (ou o container, nesse caso).</p>
 <p>E aí, tá animado para ver essa inovação em ação? Se prepara, porque o futuro das entregas pode estar prestes a mudar, e um dos seus músicos favoritos está no comando dessa revolução. 🤘</p>
 <p>Você pode conferir o post no <a href="https://www.instagram.com/p/C9xQwhMPJoV/" target="_blank" rel="noopener noreferrer">instagram oficial do batera do SOAD</a>.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/john-dolmayan/" rel="tag">John dolmayan</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/system-of-a-down/" rel="tag">System of a down</a></li>
@@ -312,6 +314,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

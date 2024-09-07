@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728182821_hu18802dc8dcb59b3531d969f23b3c0058_151842_77f70ce497b5c55f4d1b10a37669738e.webp" alt="Lollapalooza Argentina Pira com Limp Bizkit &#34;100 Mil Fãs Pulando&#34;" title="Lollapalooza Argentina Pira com Limp Bizkit &#34;100 Mil Fãs Pulando&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Cara, você não vai acreditar no que rolou no Lollapalooza Argentina!</p>
 <p>A galera pirou total com o Limp Bizkit.</p>
 <p><strong>Mais de 100 mil pessoas</strong> estavam lá, cantando junto com o Fred Durst cada verso de &ldquo;Break Stuff&rdquo;. Não é qualquer banda que consegue isso, hein?</p>
@@ -313,7 +313,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="nUnnx6PrLZQ" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/limp-bizkit/" rel="tag">Limp bizkit</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lollapalooza-argentina/" rel="tag">Lollapalooza argentina</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/fred-durst/" rel="tag">Fred durst</a></li>
@@ -337,6 +339,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

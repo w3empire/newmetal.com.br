@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806115957_hua1dbebd85208c4bd2e6e1e2245bf8b69_121946_f79d6f7333589bacc8b75c2e712f422b.webp" alt="Banda de Folk Nórdico Faz Cover Bizarro de Wait And Bleed do Slipknot" title="Banda de Folk Nórdico Faz Cover Bizarro de Wait And Bleed do Slipknot" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Essa versão folk viking de Wait And Bleed do Slipknot é a coisa mais bizarra que você vai ouvir hoje!</p>
 <p>A banda <strong>Nytt Land</strong> lançou uma versão de <strong>Wait And Bleed</strong> do Slipknot, e cara, é algo que você precisa ouvir pra acreditar, sério.</p>
 <p>Essa dupla formada por Anatoly e Natalya Pakhalenko soltou a versão ontem (5 de agosto) com um videoclipe cheio de vibe xamânica.</p>
@@ -356,7 +356,9 @@
 <li>20 de dezembro: London O2 Arena, Reino Unido</li>
 <li>21 de dezembro: London O2 Arena, Reino Unido</li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nytt-land/" rel="tag">Nytt land</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/folk/" rel="tag">Folk</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/anatoly-pakhalenko/" rel="tag">Anatoly pakhalenko</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/natalya-pakhalenko/" rel="tag">Natalya pakhalenko</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/midgardsblot-festival/" rel="tag">Midgardsblot festival</a></li>
@@ -380,6 +382,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

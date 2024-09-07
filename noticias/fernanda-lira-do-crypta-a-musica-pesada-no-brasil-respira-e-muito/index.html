@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801132544_hu8bffe5b5da10319b5e98b79b72d2832d_251512_1887d0d96d032b894000c0586fbfbc7d.webp" alt="FERNANDA LIRA do Crypta: &#34;A música pesada no Brasil respira e muito&#34;" title="FERNANDA LIRA do Crypta: &#34;A música pesada no Brasil respira e muito&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A Vocalista e baixista do <strong>CRYPTA</strong>, Fernanda, compartilhou suas impressões em uma <a href="https://www.wikimetal.com.br/entrevista-fernanda-lira/" target="_blank" rel="noopener noreferrer">entrevista ao Wikimetal</a>, e deixou claro que o rock e o metal no Brasil estão mais vivos do que nunca.</p>
 <blockquote>
 <p>&ldquo;Eu vejo o rock no Brasil vivíssimo. Não só o rock como o metal, o crossover, toda essa parte da música pesada no Brasil, eu acho que ela respira e muito.&rdquo;</p>
@@ -307,7 +307,9 @@
 <p>Quer saber mais sobre o que tá rolando no mundo do metal?</p>
 <p>Fica de olho aqui, que a gente traz tudo pra você.</p>
 <p>Flw, até a próxima, metalhead! 🤟</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/fernanda-lira/" rel="tag">Fernanda lira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/crypta/" rel="tag">Crypta</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-pantera/" rel="tag">Black pantera</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -331,6 +333,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

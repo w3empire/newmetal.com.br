@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240816111711_hu40937ae07d1b9dea22ef373f3794b56b_68560_6d60d9920289b1e395e7175a45f85fe7.webp" alt="Assista: Metallica e Pantera Juntos em &#34;Walk&#34;? Veja Vídeos" title="Assista: Metallica e Pantera Juntos em &#34;Walk&#34;? Veja Vídeos" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Não é todo dia que você vê dois gigantes do metal no mesmo palco, mas quando rola&hellip; Ah, meu amigo, é de arrepiar até o último fio de cabelo da nuca&hellip;da nuca, viu? 🎸</p>
 <p>Na última quinta-feira, dia 15 de agosto, <strong>Robert Trujillo</strong> e <strong>Kirk Hammett</strong> do <strong>Metallica</strong> decidiram fazer uma visitinha especial ao show do <strong>Pantera</strong> no famoso First Avenue, em Minneapolis.</p>
 <p>E, como bons camaradas do metal que são, eles não foram só para bater cabeça na plateia – os caras subiram ao palco para detonar <strong>&ldquo;Walk&rdquo;</strong>, um dos hinos mais icônicos da carreira do Pantera.</p>
@@ -322,7 +322,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="Dug8WKBlhcQ" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Que comece o mosh pit, porque o show não pode parar! 🎤🎸</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pantera/" rel="tag">Pantera</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kirk-hammett/" rel="tag">Kirk hammett</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/robert-trujillo/" rel="tag">Robert trujillo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/zakk-wylde/" rel="tag">Zakk wylde</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/charlie-benante/" rel="tag">Charlie benante</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-anselmo/" rel="tag">Phil anselmo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rex-brown/" rel="tag">Rex brown</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dimebag-darrell/" rel="tag">Dimebag darrell</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/vinnie-paul/" rel="tag">Vinnie paul</a></li>
@@ -346,6 +348,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

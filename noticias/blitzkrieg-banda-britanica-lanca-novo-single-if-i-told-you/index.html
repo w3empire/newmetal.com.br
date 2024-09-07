@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802203820_hu3358dbadc37249fd82cbb394ba7d3dc3_86882_5bb495a44a2ab18d8f51cb3a9d4e31ed.webp" alt="BLITZKRIEG: Banda Britânica Lança Novo Single &#39;If I Told You&#39;" title="BLITZKRIEG: Banda Britânica Lança Novo Single &#39;If I Told You&#39;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Galera, se liga! Os veteranos do <strong>NWOBHM</strong>, <em>Blitzkrieg</em>, estão de volta com tudo!</p>
 <p>Eles acabaram de soltar a nova faixa &ldquo;<strong>If I Told You</strong>&rdquo;, do álbum autointitulado que vai sair em 6 de setembro pela Mighty Music. 🎸🔥</p>
 <p>Vocês podem conferir o clipe oficial no final da matéria.</p>
@@ -324,7 +324,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="rjJ2M4K1wAc" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Valeu. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/blitzkrieg/" rel="tag">Blitzkrieg</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nwobhm/" rel="tag">Nwobhm</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brian-ross/" rel="tag">Brian ross</a></li>
@@ -348,6 +350,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

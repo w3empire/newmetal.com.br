@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828185911_hu88d6dbfaa181079d6744b4e76da63e08_59116_ae71903eeadfcfc0dcd878dfe28c41e5.webp" alt="Foto: @grifflotz / Instagram / Reprodução / Divulgação." title="Foto: @grifflotz / Instagram / Reprodução / Divulgação." class="lazy-img"><figcaption>Foto: @grifflotz / Instagram / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Em uma entrevista recente à revista <a href="https://www.altpress.com/slipknot-25th-anniversary-tour-interview/" target="_blank" rel="noopener noreferrer">AltPress</a> (em inglês), Shawn Crahan, mais conhecido como <strong>Clown</strong>, cofundador e percussionista do Slipknot, revelou que a banda pode entrar em estúdio para gravar um novo álbum em 2025.</p>
 <p>Essa notícia vem como uma grata surpresa para os fãs, que estão sempre ansiosos por novos lançamentos do grupo (principalmente com a entrada do novo baterista, Eloy Casagrande).</p>
 <p>O Slipknot, que recentemente encerrou um contrato de longa duração com a gravadora Roadrunner Records, está agora em uma posição única e estratégica, como <strong>agentes livres</strong> no mercado da música.</p>
@@ -318,7 +318,9 @@
 <p>Com um novo baterista talentoso, a liberdade de escolher como lançar sua música e um compromisso contínuo com a inovação, o <strong>Slipknot</strong> está preparado para entrar em uma nova fase de sua carreira.</p>
 <p>As palavras de Clown sugerem que, embora não haja pressa, a banda está determinada a não desperdiçar essa oportunidade de redefinir seu som e sua abordagem ao mundo da música pesada.</p>
 <p>Seja em um novo álbum lançado por uma grande gravadora ou de forma independente, uma coisa é certa: o Slipknot continua a ser uma força a ser reconhecida, e os fãs podem esperar por mais uma obra-prima do metal nos próximos anos.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/clown/" rel="tag">Clown</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -342,6 +344,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

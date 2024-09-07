@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728134658_huf90812ef0bf924918434f69e46a3c99f_124734_96f157a5fac1195b98654dd17533de47.webp" alt="VÍDEO: Eloy Casagrande Detona em Nova Drum Cam de &#34;Duality&#34;" title="VÍDEO: Eloy Casagrande Detona em Nova Drum Cam de &#34;Duality&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você já viu o Eloy Casagrande tocando &ldquo;Duality&rdquo; do Slipknot? Se não, está perdendo um verdadeiro show de brutalidade e técnica! O novo baterista do Slipknot lançou uma nova drum cam, e, cara, que espetáculo!</p>
 <p>Quem já conhece o Eloy sabe que ele não brinca em serviço. Cada batida, cada virada é uma aula de bateria. Mas, desta vez, ele se superou. A performance é tão intensa que você quase consegue sentir o chão tremer.</p>
 <blockquote>
@@ -305,7 +305,9 @@
 <p>Os caras do Slipknot estavam de olho. Com sua técnica afiada e estilo explosivo, Eloy era o nome perfeito para preencher a vaga. Eles fizeram o convite, e o resto é história.</p>
 <p>Hoje, ele traz toda sua experiência e paixão para a banda, adicionando uma nova camada de intensidade às performances.</p>
 <p>Curtiu? Aproveita e compartilha com a galera. Valeu!</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -329,6 +331,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

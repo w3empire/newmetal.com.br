@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240821233759_huf88deb7d784a903fa633433bed320283_63632_f305d0b922bad38815c31c9be4676953.webp" alt="Banda SOAD tocando ao vivo em 2024. - Foto: devilman.138 / Instagram." title="Banda SOAD tocando ao vivo em 2024. - Foto: devilman.138 / Instagram." class="lazy-img"><figcaption>Banda SOAD tocando ao vivo em 2024. - Foto: devilman.138 / Instagram.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Quem diria que uma noite de sábado em San Francisco poderia se transformar em um dos maiores eventos do ano? <strong>System of a Down</strong> não só provou que ainda domina o palco, mas fez isso de uma maneira que deixou todo mundo de boca aberta e com a cabeça explodindo.</p>
 <p>Uma multidão de 50.000 fãs enlouquecidos estava lá para testemunhar esse <strong>evento épico</strong> na Golden Gate Park, e ninguém saiu decepcionado.</p>
 <p>Os caras de Glendale, Califórnia, trouxeram um show que misturou o peso de suas músicas com uma performance inesquecível, reafirmando por que eles ainda são uma das bandas mais queridas do metal mundial.</p>
@@ -344,7 +344,9 @@
     </div></div>
 <p>System of a Down mostrou que ainda está no topo, e enquanto eles continuarem assim, nós vamos continuar aqui, prontos para o próximo show, a próxima música, o próximo momento inesquecível.</p>
 <p>\m/ <strong>Longa vida ao metal!</strong> \m/</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/system-of-a-down/" rel="tag">System of a down</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deftones/" rel="tag">Deftones</a></li>
@@ -368,6 +370,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

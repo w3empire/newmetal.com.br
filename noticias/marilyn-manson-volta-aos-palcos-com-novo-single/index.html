@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240805172016_huc1b867ea446d988209968545acd1f086_39878_ade1122ec49661edca9354beeb9f421f.webp" alt="Assista: MARILYN MANSON Volta aos Palcos com NOVO SINGLE" title="Assista: MARILYN MANSON Volta aos Palcos com NOVO SINGLE" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>E aí, galera do metal!</strong></p>
 <p><strong>Marilyn Manson</strong> voltou aos palcos recentemente e, como sempre, não decepcionou!</p>
 <p>No último sábado (3 de agosto), Manson estreou seu novo single <strong>&ldquo;As Sick As The Secrets Within&rdquo;</strong> ao vivo pela primeira vez no The Fillmore, em Silver Spring, Maryland.</p>
@@ -313,7 +313,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="v-mJxJXuh3U" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Fique ligado para mais novidades e, enquanto isso, aumente o volume e curta essa nova fase do Manson! 🎸</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/marilyn-manson/" rel="tag">Marilyn manson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tyler-bates/" rel="tag">Tyler bates</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gil-sharone/" rel="tag">Gil sharone</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/reba-meyers/" rel="tag">Reba meyers</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/matt-montgomery/" rel="tag">Matt montgomery</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/five-finger-death-punch/" rel="tag">Five finger death punch</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -337,6 +339,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

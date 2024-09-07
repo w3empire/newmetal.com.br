@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728013606_huf82543eee0381087703b3efa0faafa03_156494_d3d556f4d4ba02f89b12d31d3607e8be.webp" alt="Pesado e Poderoso: Conheça o Primeiro Álbum do &#34;Category 7&#34;" title="Pesado e Poderoso: Conheça o Primeiro Álbum do &#34;Category 7&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Na última sexta-feira (26 de julho), a banda <strong>Category 7</strong> finalmente soltou o grito e lançou seu primeiro disco de estúdio! E olha, o álbum tá pesadíssimo, daqueles que te fazem querer bater cabeça até perder a noção do tempo.</p>
 <p>A formação do <strong>Category 7</strong> é de peso! Temos <strong>John Bush</strong> (aquele mesmo, do Armored Saint e ex-Anthrax) nos vocais, <strong>Phil Demmel</strong> (da gangue do Kerry King e ex-Machine Head) nas guitarras, ao lado de <strong>Mike Orlando</strong> (ex-Adrenaline Mob).</p>
 <p>No baixo, temos <strong>Jack Gibson</strong> (Exodus) e nas baquetas, o monstro <strong>Jason Bittner</strong> (Overkill e Shadows Fall).</p>
@@ -294,7 +294,9 @@
     </div></div>
 <p><em>Você já ouviu o álbum do Category 7? O que achou?</em></p>
 <p>🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/category-7/" rel="tag">Category 7</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/john-bush/" rel="tag">John bush</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-demmel/" rel="tag">Phil demmel</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-orlando/" rel="tag">Mike orlando</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jack-gibson/" rel="tag">Jack gibson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jason-bittner/" rel="tag">Jason bittner</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nwobhm/" rel="tag">Nwobhm</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/punk-metal/" rel="tag">Punk metal</a></li>
@@ -318,6 +320,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

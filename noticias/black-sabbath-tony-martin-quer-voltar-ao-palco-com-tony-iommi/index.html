@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806082303_hu6542b325ea9b707c74cf966606c3b6d9_85260_8ae6a132a04001775e83913a617c39f0.webp" alt="Black Sabbath: Tony Martin Quer Voltar ao Palco com Tony Iommi" title="Black Sabbath: Tony Martin Quer Voltar ao Palco com Tony Iommi" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Tony Martin, o lendário ex-vocalista do <strong>Black Sabbath</strong>, tá mandando ver e tá de boa pra trabalhar de novo com o mestre Tony Iommi.</p>
 <p>Quem não gostaria de ver essa dupla reunida? Vamos ser sinceros, seria um sonho pra qualquer fã de metal.</p>
 <p>Martin bateu um papo com a <a href="https://www.rocksverige.se/intervju-tony-martin/" target="_blank" rel="noopener noreferrer">RockSverige</a> (em inglês) e abriu o jogo:</p>
@@ -310,7 +310,9 @@
 <p>Não dá pra falar de <strong>Black Sabbath</strong> sem mencionar Tony Martin. Ele pode não ter sido o membro mais famoso, mas certamente foi um dos mais importantes.</p>
 <p>Sua habilidade de manter a chama do Sabbath acesa durante tempos difíceis é digna de aplausos.</p>
 <p>E aí, já ouviu alguma faixa do Martin que te marcou?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tony-martin/" rel="tag">Tony martin</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tony-iommi/" rel="tag">Tony iommi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-sabbath/" rel="tag">Black sabbath</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -334,6 +336,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905185306_hu74321393f144663d2573bf93f31a8db0_123792_f9dbc99e4b847c5b2e6298132d2fa7a9.webp" alt="Jim Root, guitarrista do Slipknot. — Imagem: Jeff Marques / Reprodução / Divulgação." title="Jim Root, guitarrista do Slipknot. — Imagem: Jeff Marques / Reprodução / Divulgação." class="lazy-img"><figcaption>Jim Root, guitarrista do Slipknot. — Imagem: Jeff Marques / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Os fãs de <strong>Slipknot</strong> são conhecidos por serem exigentes. E quando se trata de um novo álbum, a expectativa está sempre nas alturas. Mas nem sempre tudo sai como planejado – especialmente para uma banda que carrega tanta intensidade e originalidade em cada trabalho.</p>
 <p>O lançamento de <strong>“The End, So Far”</strong> (2022) foi um divisor de opiniões. Mesmo com o sucesso comercial, muitos fãs ficaram decepcionados. A crítica principal? A falta daquela “mágica” que tornou o Slipknot uma das bandas mais icônicas do metal.</p>
 <p>E não foram apenas os fãs que sentiram isso. <strong>Jim Root</strong>, guitarrista da banda, não escondeu seu descontentamento com o resultado. Aliás, ele já vinha sinalizando que algo estava fora do lugar.</p>
@@ -321,7 +321,9 @@
 <p>Com todos esses fatores somados – pandemia, mudanças de formação, pressões externas – fica claro que <strong>“The End, So Far”</strong> foi um álbum feito em condições menos do que ideais.</p>
 <p>Mesmo assim, o Slipknot entregou o que pôde, e talvez o mais importante seja o que vem a seguir.</p>
 <p>🌪</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jim-root/" rel="tag">Jim root</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/michael-pfaff/" rel="tag">Michael pfaff</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/craig-jones/" rel="tag">Craig jones</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jay-weinberg/" rel="tag">Jay weinberg</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -345,6 +347,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

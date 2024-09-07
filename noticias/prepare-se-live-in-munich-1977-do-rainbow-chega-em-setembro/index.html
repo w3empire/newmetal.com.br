@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726165411_hub24f42c4105940b09c715995e596ea7e_115734_93ac841298c6d39bf58f57ba7930f9ec.webp" alt="Prepare-se: Live In Munich 1977 do Rainbow Chega em Setembro" title="Prepare-se: Live In Munich 1977 do Rainbow Chega em Setembro" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Adivinha só? 🎸 Rainbow vai lançar &ldquo;Live In Munich 1977&rdquo; em 19 de setembro!</p>
 <p>Se você, assim como eu, é um fã de carteirinha do bom e velho classic rock, prepare-se para uma verdadeira viagem no tempo.</p>
 <p>Mercury Studios vai liberar essa maravilha em uma edição especial 2CD+DVD, além das versões separadas, ou seja, DVD e 2CD. 🤩</p>
@@ -312,7 +312,9 @@
 <p>Nos vemos em setembro, rockeiros! 🤘</p>
 <hr>
 <p>Isso sim é notícia que vale a pena compartilhar. Sinta a emoção e prepare-se para o rock! 🚀</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rainbow/" rel="tag">Rainbow</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cozy-powell/" rel="tag">Cozy powell</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ronnie-james-dio/" rel="tag">Ronnie james dio</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ritchie-blackmore/" rel="tag">Ritchie blackmore</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mercury-studios/" rel="tag">Mercury studios</a></li>
@@ -336,6 +338,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

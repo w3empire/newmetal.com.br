@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240803162202_hub3facbc271a966209a633c1ce3c66b8c_217568_38f38ca1c371d67d7ffde3ddba327f3d.webp" alt="Vocalista Rob Halford Revela Sua Música Favorita do Judas Priest" title="Vocalista Rob Halford Revela Sua Música Favorita do Judas Priest" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Quem diria, hein? No vasto oceano de clássicos do Judas Priest, <strong>Rob Halford</strong> tem uma favorita definitiva. E não, não é um obscuro lado B. O cara escolheu justamente uma das músicas que mais <strong>definiu o heavy metal</strong> nos anos 80.</p>
 <p>Senta que lá vem história!</p>
 <p>No final dos anos 70, o Judas Priest já era uma potência no cenário do <strong>hard rock</strong> e <strong>heavy metal</strong>. Mas faltava aquele toque mágico para cair nas graças do mainstream.</p>
@@ -327,7 +327,9 @@
 <p>Isso só mostra o quão grande ele é, não apenas como músico, mas como pessoa.</p>
 <p>E aí, qual sua música favorita do Judas Priest?</p>
 <p><strong>Longa vida ao metal!</strong> 🎤🔥</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rob-halford/" rel="tag">Rob halford</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/judas-priest/" rel="tag">Judas priest</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -351,6 +353,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

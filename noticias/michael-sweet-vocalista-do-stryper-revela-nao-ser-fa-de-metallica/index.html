@@ -269,7 +269,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828013104_hub5744259e35af5c8ae69e3821dfea458_31716_552426e5f6841e44ae7b2e8966e291f4.webp" alt="Foto: Reprodução." title="Foto: Reprodução." class="lazy-img"><figcaption>Foto: Reprodução.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Em uma recente entrevista concedida a <strong>Robert Cavuoto</strong>, do site <a href="https://myglobalmind.com/2024/08/26/michael-sweet-of-stryper-on-new-album-when-we-were-kings-these-songs-are-going-to-be-different-from-what-fans-may-expect/" target="_blank" rel="noopener noreferrer">Myglobalmind</a> (em inglês), <strong>Michael Sweet</strong>, vocalista da banda <strong>STRYPER</strong>, fez uma declaração surpreendente ao admitir que nunca foi um grande fã de <strong>Metallica</strong>, uma das bandas mais influentes e respeitadas do Heavy Metal. A entrevista foi publicada em 26 de agosto de 2024 e trouxe à tona a opinião pessoal de Sweet sobre a banda californiana.</p>
 <p>Michael Sweet, que é uma figura central no cenário do metal cristão, expressou seu respeito ao Metallica, reconhecendo a importância e o impacto da banda na indústria musical. Contudo, ele foi sincero ao afirmar que o estilo musical do Metallica não desperta o mesmo entusiasmo nele que outras bandas do gênero.</p>
 <blockquote>
@@ -288,7 +288,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="jyQvSMeS1nM" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/michael-sweet/" rel="tag">Michael sweet</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/stryper/" rel="tag">Stryper</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li>
@@ -312,6 +314,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

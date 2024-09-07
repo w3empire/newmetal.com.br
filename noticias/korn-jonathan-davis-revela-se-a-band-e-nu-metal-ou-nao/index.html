@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730160615_hubfaa9328592c5a6dde8620b716d8d15a_255172_d881b3338158b65cec010d08be410174.webp" alt="KORN: Jonathan Davis Revela se a Banda é &#34;Nu-Metal&#34; ou Não" title="KORN: Jonathan Davis Revela se a Banda é &#34;Nu-Metal&#34; ou Não" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Eu tô aqui pensando sobre o que o vocalista do <strong>Korn</strong>, Jonathan Davis, acha de ser chamado de pioneiro do <strong>nu-metal</strong>?</p>
 <p>Pois é&hellip;</p>
 <p>Vamos ver. 👇</p>
@@ -314,7 +314,9 @@
     </div></div>
 <p>Gostou da matéria?</p>
 <p>Compartilhe com seus amigos e vamos espalhar o legado do <strong>Korn</strong>! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/korn/" rel="tag">Korn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jonathan-davis/" rel="tag">Jonathan davis</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -338,6 +340,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

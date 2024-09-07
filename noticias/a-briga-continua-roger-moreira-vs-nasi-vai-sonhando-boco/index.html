@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240805210424_hue3d88509ed0f6b1ffd7c790d74114d31_96332_0990e248a1871b1b2f04d463f2b10bc4.webp" alt="A Briga Continua: Roger Moreira vs. Nasi &#34;Vai sonhando, bocó&#34;" title="A Briga Continua: Roger Moreira vs. Nasi &#34;Vai sonhando, bocó&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Parece que o vocalista e guitarrista do Ultraje A Rigor, <strong>Roger Moreira</strong>, adora uma boa treta nas redes sociais. 🎸🔥</p>
 <p>Ele e <strong>Nasi</strong>, do <strong>Ira!</strong>, já vêm trocando farpas há um bom tempo, e recentemente a briga ganhou novos capítulos.</p>
 <p>Nasi avisou: &ldquo;Não se mete comigo, que eu quebro a sua cara&rdquo;. Mas Roger, teimoso que só ele, não deixa barato.</p>
@@ -313,7 +313,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="7xqX1jT4qIs" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Vamos continuar acompanhando essa novela (porque é isso que virou) e ver onde vai dar.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/roger-moreira/" rel="tag">Roger moreira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nasi/" rel="tag">Nasi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ultraje-a-rigor/" rel="tag">Ultraje a rigor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ira/" rel="tag">Ira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-brasileiro/" rel="tag">Rock brasileiro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/polemica/" rel="tag">Polemica</a></li>
@@ -337,6 +339,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

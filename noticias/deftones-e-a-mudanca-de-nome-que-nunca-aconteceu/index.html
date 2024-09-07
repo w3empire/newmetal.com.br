@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728185109_hu956687e0e90ca3f07e4b0014d500e775_65954_e00a3823c421d84874221011e47d6b9e.webp" alt="Deftones e a Mudança de Nome Que Nunca Aconteceu" title="Deftones e a Mudança de Nome Que Nunca Aconteceu" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se liga nessa, já pensou na banda do Chino Moreno com outro nome?</p>
 <p>Parece loucura, né? Mas Monte Conner, ex-vice-presidente sênior de A&amp;R da Roadrunner Records, revelou que isso quase aconteceu. 😱</p>
 <p>Em um post recente, Conner contou como ele foi o primeiro executivo a tentar assinar um contrato com os Deftones no início dos anos 90. Só que tinha uma condição: mudar o nome da banda.</p>
@@ -297,7 +297,9 @@
 <p>Aliás, falando em mudanças de nome, sabiam que muitas bandas famosas passaram por isso? Por exemplo, antes de se tornarem Metallica, a banda de James Hetfield quase se chamou &ldquo;Blitzer&rdquo;!</p>
 <p>Curioso como as coisas acontecem nos bastidores do mundo da música. 🤘🖤</p>
 <p>Fique ligado aqui para mais histórias interessantes e continue acompanhando suas bandas favoritas. Afinal, a história da música está sempre cheia de surpresas!</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deftones/" rel="tag">Deftones</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chino-moreno/" rel="tag">Chino moreno</a></li>
@@ -321,6 +323,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

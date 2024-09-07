@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240805215645_hu2153e411992540c6eeaf1416493bc552_171514_cef6c667f6fb347e28d60ba801db85cb.webp" alt="Opeth: Mikael Åkerfeldt diz que a Banda Retornou ao Death Metal" title="Opeth: Mikael Åkerfeldt diz que a Banda Retornou ao Death Metal" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Depois de 16 anos, o OPETH está trazendo de volta aquele som brutal que a gente ama. <strong>&quot;§1&quot;</strong> (sim, esse é o nome da faixa, pronuncia-se &ldquo;Parágrafo 1&rdquo;) vem aí com os vocais guturais que não ouvíamos desde <strong>Watershed</strong> (2008). 🖤</p>
 <p>Em uma conversa com a <a href="https://www.loudersound.com/news/opeth-mikael-akerfeldt-explains-death-metal-comeback-2024" target="_blank" rel="noopener noreferrer">Metal Hammer</a> (em inglês), Mikael Åkerfeldt, o mestre por trás da voz e guitarra do OPETH, explicou porque a banda decidiu ressuscitar suas raízes extremas.</p>
 <p>Segundo ele, o novo álbum <strong>The Last Will and Testament</strong> exigia um toque sombrio e brutal para contar a história de uma família em guerra pela morte do patriarca.</p>
@@ -308,7 +308,9 @@
 <p>Atualmente, o OPETH está rodando o velho continente com sua turnê de verão pela Europa. A banda, que conta com o fundador e vocalista Mikael Åkerfeldt (vocal e guitarra), Fredrik Åkesson (guitarra), Martín Méndez (baixo), Waltteri Väyrynen (bateria) e Joakim Svalberg (teclado), está levando seu som épico e pesado para os fãs europeus.</p>
 <p>E não para por aí! Em setembro, os caras vão cruzar o Atlântico para uma série de shows na América do Norte.</p>
 <p>Fica de olho no cartaz da turnê e não perca a chance de ver essa lenda do metal ao vivo. 👇</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/opeth/" rel="tag">Opeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mikael-akerfeldt/" rel="tag">Mikael akerfeldt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/death-metal/" rel="tag">Death metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/martin-mendez/" rel="tag">Martin mendez</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/waltteri-vayrynen/" rel="tag">Waltteri vayrynen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/prog-metal/" rel="tag">Prog metal</a></li>
@@ -332,6 +334,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

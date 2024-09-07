@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240813034251_hu6297d2f16e210df5f54f1f39d80fa0fd_47106_f5f71885b5d579218692478ac05afdcd.webp" alt="Assista: A Performance Monstruosa do Slipknot no Madison Square Garden" title="Assista: A Performance Monstruosa do Slipknot no Madison Square Garden" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Maluco, se você acha que já viu de tudo no metal, precisa saber o que rolou no último show do <strong>Slipknot</strong> no Madison Square Garden, dia 12 de agosto de 2024. Não, não é o final da turnê, mas esse show entrou para a história.</p>
 <p>São <strong>25 anos</strong> desde o lançamento do primeiro álbum da banda, aquele que virou o mundo do metal de cabeça pra baixo.</p>
 <p>E o Slipknot resolveu trazer essa energia toda de volta.</p>
@@ -433,7 +433,9 @@
 <p>Slipknot está no auge, e shows como esse só provam que eles ainda têm muito a oferecer ao mundo do metal.</p>
 <p>Se prepare, porque a dor ainda está por vir.</p>
 <p><em><strong>Here comes the pain.</strong></em> 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/knotfest/" rel="tag">Knotfest</a></li>
@@ -457,6 +459,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

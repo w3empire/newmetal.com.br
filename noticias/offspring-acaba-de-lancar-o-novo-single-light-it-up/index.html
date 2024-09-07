@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802205626_huc678cdc35d95cb37d85b00c55b53e1a8_302516_a826f3f6a9babce98f0673ac30cbf5ed.webp" alt="ASSISTA: Offspring Acaba de Lançar o Novo Single &#34;Light It Up&#34;" title="ASSISTA: Offspring Acaba de Lançar o Novo Single &#34;Light It Up&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Os veteranos do Offspring estão de volta com tudo! Nesta sexta-feira (02), os caras lançaram o single <strong>&ldquo;Light It Up&rdquo;</strong>, uma faixa que promete incendiar os ouvidos e preparar a galera para o próximo álbum, <em>Supercharged</em>, que chega em 11 de outubro pela Concord Records.</p>
 <blockquote>
 <p>“Essa música é um rolo compressor a toda velocidade!”, comentou Dexter Holland. “Esse personagem na música está farto, ele já teve o suficiente e vai incendiar tudo. Ele está pronto para uma briga. E eu definitivamente sinto muito isso ao meu redor”.</p>
@@ -298,7 +298,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="M601cW8KAqY" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Obrigado por ler até aqui. Fui. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/offspring/" rel="tag">Offspring</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/punk-rock/" rel="tag">Punk rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dexter-holland/" rel="tag">Dexter holland</a></li>
@@ -322,6 +324,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

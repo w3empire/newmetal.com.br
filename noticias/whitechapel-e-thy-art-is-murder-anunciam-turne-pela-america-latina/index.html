@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828145636_hue704fad993abe82ea11e8c438c07ec3c_31246_94719f2ae7e2d222417c659d1bd2af4b.webp" alt="Foto: Marcus Keily / paetrisha / Instagram / Divulgação." title="Foto: Marcus Keily / paetrisha / Instagram / Divulgação." class="lazy-img"><figcaption>Foto: Marcus Keily / paetrisha / Instagram / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>As bandas de <strong>deathcore</strong> Whitechapel e Thy Art Is Murder anunciaram uma turnê conjunta pela América Latina no próximo outono.</p>
 <p>O anúncio foi recebido com entusiasmo pelos fãs, que há muito tempo aguardavam a oportunidade de ver essas duas gigantes do gênero ao vivo na região.</p>
 <p>A turnê, que passará por vários países, promete ser um dos eventos mais marcantes do ano para os admiradores do <strong>metal extremo</strong>.</p>
@@ -333,7 +333,9 @@ Não podemos esperar para ver todos vocês!!! ????????&rdquo;</p>
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="47Plg93oJ1M" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/whitechapel/" rel="tag">Whitechapel</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thy-art-is-murder/" rel="tag">Thy art is murder</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deathcore/" rel="tag">Deathcore</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-extremo/" rel="tag">Metal extremo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cine-joia/" rel="tag">Cine joia</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/teatro-teleton/" rel="tag">Teatro teleton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cafe-iguana/" rel="tag">Cafe iguana</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/boho-room/" rel="tag">Boho room</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/groove/" rel="tag">Groove</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/c4-concert-house/" rel="tag">C4 concert house</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/circo-volador/" rel="tag">Circo volador</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/peppers-club/" rel="tag">Peppers club</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/enterprise-earth/" rel="tag">Enterprise earth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/aron-hetsko/" rel="tag">Aron hetsko</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brandon-zackey/" rel="tag">Brandon zackey</a></li>
@@ -357,6 +359,27 @@ Não podemos esperar para ver todos vocês!!! ????????&rdquo;</p>
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

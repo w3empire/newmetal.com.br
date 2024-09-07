@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240906225813_hud5f514edc67dc5c89d3b2505de2cd139_246650_dec67fa0044d0098e74c65fcccd1af8f.webp" alt="Mike Shinoda e Emily Armstrong. — Imagem: Reprodução / Divulgação." title="Mike Shinoda e Emily Armstrong. — Imagem: Reprodução / Divulgação." class="lazy-img"><figcaption>Mike Shinoda e Emily Armstrong. — Imagem: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Na última quinta-feira, dia 5 de setembro, o <strong>Linkin Park</strong> trouxe uma novidade importante para os fãs.</p>
 <p>A banda anunciou sua nova vocalista, <strong>Emily Armstrong</strong>, conhecida por seu trabalho com a banda <em>Dead Sara</em>.</p>
 <p>O grupo também apresentou <strong>Colin Brittain</strong> como o novo baterista. Colin é compositor e produtor, tendo trabalhado com artistas como <em>G Flip</em>, <em>Illenium</em> e <em>One OK Rock</em>.</p>
@@ -327,7 +327,9 @@
 <p>Aqui fica a pergunta: o Linkin Park conseguirá conquistar essa nova fase sem perder a conexão com seus fãs de longa data?</p>
 <p>E aí, o que cê acha?</p>
 <p>🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mike-shinoda/" rel="tag">Mike shinoda</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/linkin-park/" rel="tag">Linkin park</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/emily-armstrong/" rel="tag">Emily armstrong</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dead-sara/" rel="tag">Dead sara</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/colin-brittain/" rel="tag">Colin brittain</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chester-bennington/" rel="tag">Chester bennington</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brad-delson/" rel="tag">Brad delson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dave-farrell/" rel="tag">Dave farrell</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-hahn/" rel="tag">Joe hahn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/g-flip/" rel="tag">G flip</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/illenium/" rel="tag">Illenium</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/one-ok-rock/" rel="tag">One OK rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -351,6 +353,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

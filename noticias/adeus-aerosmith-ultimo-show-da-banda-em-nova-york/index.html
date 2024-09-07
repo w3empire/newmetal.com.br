@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802224659_hua3c5fefd267c1dd9e8c4de15968d2e1a_115280_481d23a9dc184aad095af9f50a53ccfc.webp" alt="ASSISTA: Adeus Aerosmith, Último Show da Banda em Nova York" title="ASSISTA: Adeus Aerosmith, Último Show da Banda em Nova York" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Aerosmith e seu último suspiro nos palcos em 2023? 😱</p>
 <p>Então galera, parece que o fim chegou mesmo para o Aerosmith. E não tô falando de um &ldquo;até logo&rdquo;. É o <strong>fim</strong> definitivo. 💔</p>
 <p>Fim dos shows ao vivo, pelo menos.</p>
@@ -324,7 +324,9 @@
 </ol>
 <h2 id="comunicado-oficial-da-banda-no-instagram">Comunicado oficial da banda no instagram</h2>
 <p>A banda anunciou o fim dos shows ao vivo <a href="https://www.instagram.com/aerosmith/" target="_blank" rel="noopener noreferrer">pelo instagram</a>. Confira abaixo.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/aerosmith/" rel="tag">Aerosmith</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/steven-tyler/" rel="tag">Steven tyler</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-perry/" rel="tag">Joe perry</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/brad-whitford/" rel="tag">Brad whitford</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tom-hamilton/" rel="tag">Tom hamilton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joey-kramer/" rel="tag">Joey kramer</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/john-douglas/" rel="tag">John douglas</a></li>
@@ -348,6 +350,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

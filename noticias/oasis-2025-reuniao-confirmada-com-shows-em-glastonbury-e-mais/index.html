@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240825231048_hufc386eef6b61d15302f0dc0a559a3166_27014_f47a91b6d0ad0abc11c5c90a3eb27e54.webp" alt="Banda Oasis. - Foto: Reprodução." title="Banda Oasis. - Foto: Reprodução." class="lazy-img"><figcaption>Banda Oasis. - Foto: Reprodução.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A lendária banda britânica Oasis, que fez os anos 90 serem ainda mais sonoros, pode estar de volta. Se você é fã de rock, esse é o tipo de notícia que faz o coração acelerar (no bom sentido, claro).</p>
 <p>Mas calma lá, não vá se empolgar antes da hora. Afinal, estamos falando dos irmãos Gallagher, e você sabe como é: onde tem fumaça, geralmente tem treta. Mas segundo os jornais britânicos &ldquo;The Sun&rdquo; e &ldquo;The Mirror&rdquo;, essa história está ganhando força, e parece que o retorno do Oasis é quase certo para 2025.</p>
 <p>Liam Gallagher, o vocalista que nunca foi de medir palavras (ou socos), está jogando pistas para seus seguidores no X (antigo Twitter). E, cá entre nós, o cara sabe como atiçar uma multidão.</p>
@@ -314,7 +314,9 @@
 <p>Só o tempo dirá, eu acho. Enquanto isso, só nos resta esperar o tão aguardado dia 27 de agosto, quando, quem sabe, o Oasis finalmente anunciará sua volta.</p>
 <p>Vamos reviver a era de ouro do britpop?</p>
 <p><strong>Longa vida ao rock!</strong> 🎸</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/oasis/" rel="tag">Oasis</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/liam-gallagher/" rel="tag">Liam gallagher</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/noel-gallagher/" rel="tag">Noel gallagher</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/britpop/" rel="tag">Britpop</a></li>
@@ -338,6 +340,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

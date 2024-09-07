@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731052521_hu20c110016269141df5aa3c6eb4f7b0c3_101956_c017169d3a8655a2e4785e51f95aefb2.webp" alt="Exodus vs Metallica: A Escolha Difícil do Guitarrista Kirk Hammett" title="Exodus vs Metallica: A Escolha Difícil do Guitarrista Kirk Hammett" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Kirk Hammett trocou o Exodus pelo Metallica em 1983 e, mesmo com todo o sucesso, ainda rola aquela culpa. 🤘</p>
 <p>O guitarrista foi convidado para o Metallica em 1983. A decisão? Deixar sua banda da adolescência, o Exodus.</p>
 <p>Desde então, o cara construiu uma das carreiras mais lendárias do rock. Mas, <strong>a culpa de ter deixado o Exodus</strong> ainda assombra ele.</p>
@@ -297,7 +297,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="CMs9yNlBp4c" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Valeu! Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kirk-hammett/" rel="tag">Kirk hammett</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/exodus/" rel="tag">Exodus</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dave-mustaine/" rel="tag">Dave mustaine</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gary-holt/" rel="tag">Gary holt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tom-hunting/" rel="tag">Tom hunting</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/megadeth/" rel="tag">Megadeth</a></li>
@@ -321,6 +323,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

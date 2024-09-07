@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802161610_hu800b8c109957dc31a23a81cfd23c712a_336798_0885c7fda0687bd13fb16186f1ba5b8b.webp" alt="Comparações com SABATON: O Que Matthew do POWERWOLF Tem a Dizer" title="Comparações com SABATON: O Que Matthew do POWERWOLF Tem a Dizer" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Quando pensamos em <strong>metal</strong>, é impossível não mencionar <strong>IRON MAIDEN</strong>, <strong>JUDAS PRIEST</strong> e <strong>METALLICA</strong>. Mas, e quando a velha guarda pendurar as guitarras? Quem vai segurar a onda? Bem, a resposta está na <strong>Europa</strong> e na <strong>Escandinávia</strong>.</p>
 <p><strong>POWERWOLF</strong> da Alemanha e <strong>SABATON</strong> da Suécia estão prontos para dominar as arenas e festivais quando os grandes se aposentarem. Esses caras já são headliners em arenas e festivais lá fora, e resolveram um problema que atormentava os promotores dos EUA: quem pode liderar os grandes eventos quando a velha guarda se for?</p>
 <p>Mas há uma questão que não sai da cabeça dos fãs: será que o <strong>POWERWOLF</strong> está ficando parecido demais com o <strong>SABATON</strong>?</p>
@@ -298,7 +298,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="VLKKO2Iy_Xs" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/powerwolf/" rel="tag">Powerwolf</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/matthew-greywolf/" rel="tag">Matthew greywolf</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sabaton/" rel="tag">Sabaton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -322,6 +324,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

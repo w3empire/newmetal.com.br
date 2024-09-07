@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240823201027_hu288b9542cdc54cacd7b11859c67b9e6d_88318_eedd21ba44f05f7b94185625a1c5e741.webp" alt="Blink-182 Surpreende com Dois Novos Singles: &#34;All In My Head&#34; e &#34;No Fun&#34;; Veja Vídeos" title="Blink-182 Surpreende com Dois Novos Singles: &#34;All In My Head&#34; e &#34;No Fun&#34;; Veja Vídeos" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você achava que o Blink-182 já tinha dado tudo de si com <em>One More Time…</em>, prepare-se para mais uma porrada na orelha, porque os caras decidiram que ainda não era suficiente.</p>
 <p>Isso mesmo! A banda não só anunciou uma <strong>sequência</strong> do álbum lançado em 2023, como também já jogou dois singles fresquinhos para a galera curtir (veja no fim da matéria).</p>
 <p>E não estamos falando de qualquer coisa, mas de faixas que misturam o velho e o novo Blink, mantendo aquele equilíbrio perfeito entre nostalgia e inovação. 🎸</p>
@@ -352,7 +352,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="nU8JvMTLuMY" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/blink-182/" rel="tag">Blink 182</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pop-punk/" rel="tag">Pop punk</a></li>
@@ -376,6 +378,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806083652_hu341d39debed35799571d39655045984c_79406_68a7b63d553d89c118d300568a4e2935.webp" alt="Assista: Sepultura se Despede em Grande Estilo na Coreia do Sul" title="Assista: Sepultura se Despede em Grande Estilo na Coreia do Sul" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Fãs enlouquecidos, guitarras estridentes e uma energia que só o <strong>SEPULTURA</strong> sabe entregar! 🎸🔥</p>
 <p>A lendária banda de metal brasileira se apresentou no Incheon Pentaport Rock Festival 2024, na Coreia do Sul, e foi de arrepiar!</p>
 <p>Dá pra acreditar que a banda está fazendo sua <strong>turnê de despedida</strong>? Pois é, e a galera foi ao delírio no Songdo Moonlight Festival Park.</p>
@@ -312,7 +312,9 @@
 <p>Eles expressaram gratidão aos fãs que os apoiaram ao longo dos anos, destacando como essa turnê é tanto uma celebração quanto uma despedida.</p>
 <p>Se tu é fã de metal e tem a chance de assistir a um desses shows, não perca mano, porque depois? Depois acabou.</p>
 <p>Essa é uma oportunidade única de celebrar quatro décadas de riffs pesados, baterias estrondosas e pura energia metaleira com o Sepultura. 🚀🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/derrick-green/" rel="tag">Derrick green</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/greyson-nekrutman/" rel="tag">Greyson nekrutman</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-brasileiro/" rel="tag">Metal brasileiro</a></li>
@@ -336,6 +338,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

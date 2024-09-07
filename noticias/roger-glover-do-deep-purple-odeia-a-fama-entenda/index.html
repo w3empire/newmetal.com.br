@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240904161221_hudfd92e22f654d2174d5c94029086c40b_77634_28e513a382ebb58d97d1613784a4561d.webp" alt="Foto: Reprodução / Divulgação." title="Foto: Reprodução / Divulgação." class="lazy-img"><figcaption>Foto: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O <strong>Deep Purple</strong> é uma dessas bandas que dispensam apresentações. Se você gosta de rock, já ouviu <em>Smoke on the Water</em> pelo menos uma dúzia de vezes – até sem querer. Mas, se tem uma coisa que o baixista <strong>Roger Glover</strong> <em>não</em> curte, é o que vem junto com o sucesso: a fama.</p>
 <p>Pois é, você leu certo. Um dos nomes por trás de um dos maiores riffs da história do rock não quer saber dos holofotes.</p>
 <p>Em uma recente entrevista ao site espanhol <a href="https://www.madeinmetal.es/index.php/entrevistas/15986-entrevista-deep-purple-roger-glover-2024" target="_blank" rel="noopener noreferrer">Made in Metal</a>, Glover deixou claro que prefere uma vida mais discreta. E, convenhamos, é um ponto de vista no mínimo curioso vindo de um rockstar, não?</p>
@@ -316,7 +316,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="gZ_kez7WVUU" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/roger-glover/" rel="tag">Roger glover</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deep-purple/" rel="tag">Deep purple</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-in-rio/" rel="tag">Rock in rio</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/espaco-unimed/" rel="tag">Espaco unimed</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/machine-head/" rel="tag">Machine head</a></li>
@@ -340,6 +342,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

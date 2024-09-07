@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802164432_hu197c63d61a6670a3b902950370c0834b_93292_4acb7edd5362622437c3791574089f26.webp" alt="Powerwolf: Veja o que o Guitarrista da Banda Disse Sobre o Ozzy" title="Powerwolf: Veja o que o Guitarrista da Banda Disse Sobre o Ozzy" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Sabe aquele momento em que uma banda manda um cover e você fica de boca aberta?</p>
 <p>Pois é, foi isso que rolou com o Powerwolf ao lançar sua versão de &ldquo;Bark At The Moon&rdquo; do lendário <strong>Ozzy Osbourne</strong>.</p>
 <p>Matthew, em uma entrevista recente à <a href="https://blabbermouth.net/features/matthew-greywolf-talks-powerwolfs-once-in-a-lifetime-ascension-to-become-one-of-europes-top-metal-bands" target="_blank" rel="noopener noreferrer">Blabbermouth</a> (em inglês) o guitarrista da banda, compartilhou de onde veio a inspiração para essa empreitada corajosa.</p>
@@ -296,7 +296,9 @@
     </div></div>
 <p>Em tempos onde muitos covers soam genéricos, essa versão do Powerwolf é um sopro de criatividade e homenagem. 👊</p>
 <p>E aí, qual outro clássico do metal você gostaria de ver esses caras mandando ver?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/powerwolf/" rel="tag">Powerwolf</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ozzy-osbourne/" rel="tag">Ozzy osbourne</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/matthew-powerwolf/" rel="tag">Matthew powerwolf</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/attila-dorn/" rel="tag">Attila dorn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/randy-rhoads/" rel="tag">Randy rhoads</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -320,6 +322,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

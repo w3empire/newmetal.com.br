@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240821223225_hu6de989016df2df0c78fbbaa37b04b755_54686_a01a61d85465c779dfbc3a2794554cfe.webp" alt="State Champs: Novo Álbum, Nova Era. O quinteto de Albany se reinventa com um disco autointitulado. - Foto: Manuel Barajas / Reprodução." title="State Champs: Novo Álbum, Nova Era. O quinteto de Albany se reinventa com um disco autointitulado. - Foto: Manuel Barajas / Reprodução." class="lazy-img"><figcaption><strong>State Champs</strong>: Novo Álbum, Nova Era. O quinteto de Albany se reinventa com um disco autointitulado. - Foto: Manuel Barajas / Reprodução.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Atenção, amantes do pop punk</strong>! A galera do State Champs está de volta, e dessa vez, eles resolveram botar o próprio nome no álbum. Isso mesmo, os caras decidiram que era a hora de lançar um disco autointitulado.</p>
 <p>E quando uma banda faz isso, especialmente depois de já estar bem estabelecida, você sabe que tem algo importante por trás. 🤘</p>
 <p>Esse é o quinto álbum de estúdio dos caras de Albany, e a expectativa está lá em cima, especialmente depois do sucesso de <em>Kings of the New Age</em> de 2022.</p>
@@ -342,7 +342,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="NzBGdb2wcE8" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>🔥</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/state-champs/" rel="tag">State champs</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pop-punk/" rel="tag">Pop punk</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/knuckle-puck/" rel="tag">Knuckle puck</a></li>
@@ -366,6 +368,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731155117_hu6493cecaf0cc6de75c43aea13a6a2e3a_43774_aa4b689171d75e93ace67cb41da2020d.webp" alt="SEPULTURA: Greyson Nekrutman Tocando &#34;Propaganda&#34; ao Vivo" title="SEPULTURA: Greyson Nekrutman Tocando &#34;Propaganda&#34; ao Vivo" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Já viu a performance de Greyson Nekrutman em Propaganda? É coisa de outro mundo!</strong></p>
 <p>O <strong>Sepultura</strong> não brinca em serviço, e o novo baterista, Greyson Nekrutman, está aí para provar isso. O cara assumiu as baquetas depois que Eloy Casagrande foi atrás de novos desafios no Slipknot.</p>
 <p>Greyson é <strong>ativo nas redes sociais</strong> e compartilha seus momentos épicos com a banda brasileira, e o mais recente é uma performance animal de <em>Propaganda</em>, uma das pedradas do álbum <em>Chaos A.D.</em>.</p>
@@ -290,7 +290,9 @@
 <p><strong>Prepara os ouvidos</strong>, porque o Sepultura está na área e promete detonar com tudo! 🤘</p>
 <p>Não deixe de conferir as novidades e marcar presença em um dos shows. E claro, compartilhe com a galera, porque notícia boa é notícia espalhada.</p>
 <p>Fique ligado para mais atualizações e vamos juntos celebrar a vida através da morte, com muito metal na veia!</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/greyson-nekrutman/" rel="tag">Greyson nekrutman</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li>
@@ -314,6 +316,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

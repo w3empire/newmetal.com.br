@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240818153900_hu2d17d75a099f936c0473d62de2fd8ceb_43102_c0510c94f6f40a3fea28e8fd1e43658f.webp" alt="Corey Taylor em última apresentação do Slipknot, encerrando a primeira parte da turnê “Here Comes the Pain” no Canadá. - Foto: Reprodução/Youtube." title="Corey Taylor em última apresentação do Slipknot, encerrando a primeira parte da turnê “Here Comes the Pain” no Canadá. - Foto: Reprodução/Youtube." class="lazy-img"><figcaption><strong>Corey Taylor</strong> em última apresentação do <strong>Slipknot</strong>, encerrando a primeira parte da turnê &ldquo;<em>Here Comes the Pain</em>&rdquo; no Canadá. - <strong>Foto:</strong> Reprodução/Youtube.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Não foi um show qualquer. Foi uma celebração.</strong> A turnê &ldquo;Here Comes the Pain&rdquo; do <a href="/topicos/slipknot/">Slipknot</a> chegou com força total ao Canadá, fechando a primeira perna dos shows em grande estilo. E, claro, o cenário não poderia ser mais épico: a lendária arena Scotiabank em Toronto, onde as paredes estremeceram com a fúria do metal pesado no dia 17 de agosto.</p>
 <p><a href="/topicos/eloy-casagrande/">Eloy Casagrande</a>, o novo baterista da banda, mais uma vez mostrou porque está sendo aclamado pelos fãs e críticos. <strong>Sua performance foi simplesmente brutal</strong> – ele não apenas preencheu o lugar deixado por Jay Weinberg, mas trouxe uma energia nova e selvagem que eletrizou a plateia.</p>
 
@@ -349,7 +349,9 @@
 <p>Essas são algumas das datas mais próximas. O Slipknot vai percorrer diversas cidades nos Estados Unidos antes de encerrar a turnê.</p>
 <p>Se você está planejando assistir a um desses shows, é bom garantir os ingressos o quanto antes, pois a demanda costuma ser alta.</p>
 <p>Para mais informações sobre a turnê e compra de ingressos, visite o <a href="https://slipknot1.com/posts/2024/here-comes-the-pain-north-america-2024/" target="_blank" rel="noopener noreferrer">site oficial do Slipknot</a>.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -373,6 +375,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802185250_hu33bb37195a26b33e01b7a36c012df92e_115620_7cca20be5090ac48f290d9259b46eb6f.webp" alt="Aerosmith não fará mais shows ao vivo por causa de Steven Tyler" title="Aerosmith não fará mais shows ao vivo por causa de Steven Tyler" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A lendária banda de rock Aerosmith anunciou oficialmente sua aposentadoria dos palcos.</p>
 <p>A decisão vem após uma longa batalha do vocalista Steven Tyler para se recuperar de uma lesão vocal.</p>
 <h2 id="uma-jornada-inesquecível">Uma Jornada Inesquecível</h2>
@@ -327,7 +327,9 @@
 <p>Quem comprou ingressos pela Ticketmaster receberá o reembolso automaticamente.</p>
 <p>Para ingressos adquiridos em sites de revenda de terceiros, entre em contato diretamente com o ponto de compra para obter mais detalhes sobre os reembolsos.</p>
 <p>Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/aerosmith/" rel="tag">Aerosmith</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/steven-tyler/" rel="tag">Steven tyler</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -351,6 +353,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

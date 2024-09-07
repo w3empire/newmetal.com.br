@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727185958_hu81ebfeef62f00ca5e02964f37649b791_51782_afe91d720178833cb77af167689c6cc5.webp" alt="ASSISTA: OCEANS Anuncia Novo Álbum &#34;Happy&#34; e Lança Single &#34;Parasite&#34;" title="ASSISTA: OCEANS Anuncia Novo Álbum &#34;Happy&#34; e Lança Single &#34;Parasite&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Prepare-se para o Impacto!</strong> 🌊 OCEANS está de volta com um álbum de estúdio novinho em folha chamado <strong>&lsquo;Happy&rsquo;</strong>, e eles não estão de brincadeira!</p>
 <p>Após uma maratona de três EPs lançados em 2022, que culminou no aclamado álbum <em>Hell Is Where The Heart Is</em>, os caras estão prontos para soltar seu terceiro álbum oficial.</p>
 <p>Sim, você leu certo! O álbum intitulado <em>HAPPY</em> vai desembarcar no dia 27 de setembro, e você já pode sentir o peso das lutas com a saúde mental que eles vão explorar. Um verdadeiro mergulho nos baixos da existência humana, onde o título reflete aquele estado de espírito que todos nós desejamos alcançar.</p>
@@ -287,7 +287,9 @@
 <p>E falando em batalha, o videoclipe de <em>&lsquo;Parasite&rsquo;</em> é um soco na cara, cheio de visuais impactantes e aquela pegada intensa que só o OCEANS sabe entregar. Prepare-se para uma experiência audiovisual de arrepiar! 🤘</p>
 <p>Então, anota aí no calendário: <strong>27 de setembro</strong>. Marca na sua agenda, coloca um alarme, faz o que for preciso, mas não perca o lançamento de <em>HAPPY</em>.</p>
 <p>Esse álbum promete ser um marco na carreira da banda e, quem sabe, na sua vida também.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/oceans/" rel="tag">Oceans</a></li>
@@ -311,6 +313,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

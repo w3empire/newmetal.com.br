@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802223414_hu7e3819198c5880b54887be4ca10a4bf2_217364_87887bdedfe807934dd9e86a46d1544e.webp" alt="Coldplay e DJ Brasileiro Zerb Lançam Versão de &#34;feelslikeimfallinginlove&#34;" title="Coldplay e DJ Brasileiro Zerb Lançam Versão de &#34;feelslikeimfallinginlove&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>E aí, galera? Já ouviram a novidade? A banda <strong>Coldplay</strong> lançou uma versão explosiva do hit <strong>&ldquo;feelslikeimfallinginlove&rdquo;</strong> com ninguém menos que o DJ e produtor brasileiro <strong>Zerb</strong>.</p>
 <p>Essa faixa está disponível em todas as plataformas digitais e promete fazer todo mundo dançar!</p>
 <p>Dá pra imaginar? 🎧</p>
@@ -298,7 +298,9 @@
 <p>Se você ainda não conhece o trabalho dele, tá na hora de dar uma conferida e se deixar levar pelas batidas eletrônicas de Zerb! 🎶</p>
 <p><a href="https://www.instagram.com/zerb/" target="_blank" rel="noopener noreferrer">Instagram do Zerb.</a></p>
 <p>🤟</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/coldplay/" rel="tag">Coldplay</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/zerb/" rel="tag">Zerb</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chris-martin/" rel="tag">Chris martin</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jonny-buckland/" rel="tag">Jonny buckland</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/christian-fandrey/" rel="tag">Christian fandrey</a></li>
@@ -322,6 +324,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

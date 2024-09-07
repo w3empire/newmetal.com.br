@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801135149_hu2161401d9b4d81eb3ef51a55b626b937_205098_482b2dac7876e78945411e6a688b19bc.webp" alt="Ouça: Lacuna Coil Lança &#34;Hosting The Shadow&#34; com Randy Blythe" title="Ouça: Lacuna Coil Lança &#34;Hosting The Shadow&#34; com Randy Blythe" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você que curte um som pesado e está sempre de olho nas novidades, se liga nessa! O <strong>Lacuna Coil</strong>, banda que dispensa apresentações, lançou o <strong>novo single &ldquo;Hosting The Shadow&rdquo;</strong>.</p>
 <p>E não é só isso! O som conta com a participação especial de <strong>Randy Blythe</strong>, o cara do <strong>Lamb Of God</strong>. Sabe aquele som que te faz querer sair quebrando tudo? Então, é desse tipo que estamos falando aqui.</p>
 <p>A junção dessas duas potências promete deixar qualquer headbanger com o pescoço doendo de tanto bater cabeça.</p>
@@ -323,7 +323,9 @@
 <hr>
 <p>Se tiver procurando algo novo pra ouvir, ou apenas quer revisitar uma banda que sempre entrega, <strong>Lacuna Coil</strong> é uma boa escolha.</p>
 <p>Flw. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lacuna-coil/" rel="tag">Lacuna coil</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/randy-blythe/" rel="tag">Randy blythe</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lamb-of-god/" rel="tag">Lamb of god</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cristina-scabbia/" rel="tag">Cristina scabbia</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andrea-ferro/" rel="tag">Andrea ferro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-gotico/" rel="tag">Metal gotico</a></li>
@@ -347,6 +349,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

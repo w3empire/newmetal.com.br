@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240803202541_hu29d2cf41488be825a2f51f9f5f620d51_51282_d964cf8763418f5393afaa61545e4fcc.webp" alt="Slipknot: COREY TAYLOR Revela Quando Pretende se Aposentar" title="Slipknot: COREY TAYLOR Revela Quando Pretende se Aposentar" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Aos 50 anos, Corey Taylor está começando a pensar em pendurar o microfone. 😮 E isso pode deixar muitos fãs de cabelo em pé.</p>
 <blockquote>
 <p>&ldquo;Enquanto eu puder fisicamente fazer isso, e enquanto houver pessoas lá para ver, cara, eu continuarei a fazer,&rdquo; disse Taylor em uma entrevista para a Rock Antenne da Alemanha.</p>
@@ -320,7 +320,9 @@
 <p>Os ingressos <a href="https://www.eventim.com.br/campaign/knotfestbrasil" target="_blank" rel="noopener noreferrer">já estão à venda no site da eventim</a>, então corre lá e garanta o seu.</p>
 <p>Essa é uma turnê que você <strong>não</strong> vai querer perder, ainda mais com o nosso querido <strong>Eloy</strong> nas baquetas.</p>
 <p>Bora para o mosh pit? 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/orey-taylor/" rel="tag">Orey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -344,6 +346,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

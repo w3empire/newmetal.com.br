@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240823205857_hu2ae8d7fe310a726b8bfd013da001a898_23806_c0c36a3c59d77601a6d4a22e1f44ed56.webp" alt="SID WILSON, do SLIPKNOT em apresentação ao vivo com a banda. - Foto: Ellie Mitchell" title="SID WILSON, do SLIPKNOT em apresentação ao vivo com a banda. - Foto: Ellie Mitchell" class="lazy-img"><figcaption>SID WILSON, do <strong>SLIPKNOT</strong> em apresentação ao vivo com a banda. - Foto: Ellie Mitchell</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Sid Wilson, o DJ mascarado do <a href="/topicos/slipknot/">Slipknot</a>, foi parar no hospital com queimaduras graves no rosto e nos braços.</p>
 <p>Em um <a href="https://www.instagram.com/p/C_BufY9y6y2/" target="_blank" rel="noopener noreferrer">vídeo recente postado no Instagram</a>, Sid revelou que sofreu um acidente cabuloso: “Teve uma explosão na minha cara”.</p>
 <p>O cara estava claramente abalado, com as mãos tremendo enquanto tentava gravar o vídeo, mas mesmo assim, fez questão de tranquilizar os fãs.</p>
@@ -311,7 +311,9 @@
 <p>Sid Wilson pode ter se queimado feio, mas se depender dele, o fogo que realmente importa – aquele que alimenta a música e o show – vai continuar queimando, mais intenso do que nunca.</p>
 <p>Esse episódio só reforça a intensidade e a loucura que fazem do Slipknot uma das bandas mais icônicas da cena metal.</p>
 <p>E a gente fica aqui, na torcida para que o Sid se recupere logo e volte a fazer o que sabe melhor: destruir tudo no palco, de um jeito que só ele sabe.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sid-wilson/" rel="tag">Sid wilson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li>
@@ -335,6 +337,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

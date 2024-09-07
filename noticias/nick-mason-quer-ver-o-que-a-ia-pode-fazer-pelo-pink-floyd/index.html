@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240729182306_hu7010b61cd48eb3794393bde40c0ff027_60058_20060a8b09a055392dd7ee60f11a24d1.webp" alt="Nick Mason Quer Ver o Que a IA Pode Fazer Pelo Pink Floyd" title="Nick Mason Quer Ver o Que a IA Pode Fazer Pelo Pink Floyd" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você já imaginou como seria ouvir músicas novas do Pink Floyd criadas por inteligência artificial? 🤯</p>
 <p>Roger Waters, David Gilmour, Syd Barrett&hellip; cada um desses caras teve um papel crucial na banda. Mas vamos ser honestos, sem o Nick Mason na bateria, o Pink Floyd não seria o mesmo!</p>
 <p>Ele foi o único a participar de todas as formações, turnês e álbuns. 🎸🥁</p>
@@ -291,7 +291,9 @@
 </blockquote>
 <p>Bom, para os fãs mais conservadores, a ideia de um Pink Floyd virtual pode parecer estranha. Mas quem sabe? Se isso significa manter a magia viva, talvez valha a pena. 🚀✨</p>
 <p>E você, o que acha? Toparia ver um show virtual do Pink Floyd ou prefere ficar com as lembranças dos velhos tempos?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nick-mason/" rel="tag">Nick mason</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pink-floyd/" rel="tag">Pink floyd</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/david-gilmour/" rel="tag">David gilmour</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/roger-waters/" rel="tag">Roger waters</a></li>
@@ -315,6 +317,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

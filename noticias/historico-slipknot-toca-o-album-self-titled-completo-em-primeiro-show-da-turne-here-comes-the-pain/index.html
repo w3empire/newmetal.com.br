@@ -271,7 +271,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806235420_huab42017359aab8a90278224fd11ae94b_134276_808c88d926e6910bb1caa4627630828e.webp" alt="Histórico: Slipknot Toca o Álbum Self-Titled Completo em Primeiro Show da Turnê &#34;Here Comes the Pain&#34;" title="Histórico: Slipknot Toca o Álbum Self-Titled Completo em Primeiro Show da Turnê &#34;Here Comes the Pain&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Cara, se você é fã de <strong>Slipknot</strong>, prepara o coração porque os caras simplesmente destruíram no primeiro show da turnê &ldquo;<em>Here Comes the Pain</em>&rdquo;. 🔥</p>
 <p>Só pensa, só pensa: 25 anos do primeiro álbum, aquela nostalgia pesada e a energia de um novo baterista que não deixou a desejar nem por um segundo.</p>
 <h2 id="a-estréia-de-eloy-casagrande">A Estréia de Eloy Casagrande</h2>
@@ -370,7 +370,9 @@
     </div></div>
 <p>Slipknot mostrou mais uma vez porque são uma das bandas mais insanas do metal.</p>
 <p>Falou. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li>
@@ -394,6 +396,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

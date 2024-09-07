@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731161733_hud007a5ef44984356adfd4c5702961b0d_34368_dd01d042213be51d4be5d8467dd1ee68.webp" alt="Gojira na Abertura das Olimpíadas? Nem Eles Acreditaram" title="Gojira na Abertura das Olimpíadas? Nem Eles Acreditaram" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>😲🤘 Joe Duplantier esperava alguém como Metallica ou AC/DC:</p>
 <blockquote>
 <p>&ldquo;Nunca nos consideramos a maior banda do planeta&rdquo;</p>
@@ -328,7 +328,9 @@
 <p>Outra coisa interessante é que o nome <strong>Gojira</strong> é o nome japonês do Godzilla. E, como o famoso monstro, a banda veio para causar impacto e deixar sua marca no mundo do metal. 🌍🦖</p>
 <p>Além disso, os caras são super engajados em causas ambientais. Eles têm uma fundação chamada <strong>&ldquo;The Sea Shepherd Conservation Society&rdquo;</strong>, que luta pela proteção dos oceanos.</p>
 <p>Rock on! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gojira/" rel="tag">Gojira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-duplantier/" rel="tag">Joe duplantier</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -352,6 +354,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

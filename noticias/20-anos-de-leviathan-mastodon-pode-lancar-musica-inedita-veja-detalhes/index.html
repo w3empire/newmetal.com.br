@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240902203156_hub9ad877af37973cc084f94afe3902cc0_120652_595360b678f4771deaee3ee87fe98707.webp" alt="Banda Mastodon em 2024. - Foto: Reprodução / Divulgação/ Facebook." title="Banda Mastodon em 2024. - Foto: Reprodução / Divulgação/ Facebook." class="lazy-img"><figcaption>Banda Mastodon em 2024. - Foto: Reprodução / Divulgação/ Facebook.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Mastodon</strong> pode estar prestes a lançar uma nova música. A banda, que já não lança material inédito desde <strong>&ldquo;Hushed and Grim&rdquo;</strong> em 2021, deixou essa dica nas redes sociais. Motivo? Comemorar os 20 anos de <strong>&ldquo;Leviathan&rdquo;</strong>. E claro, aumentar a ansiedade dos fãs.</p>
 <p>Ouça o álbum completo no fim da matéria.</p>
 <h2 id="20-anos-de-leviathan">20 Anos de &ldquo;Leviathan&rdquo;</h2>
@@ -310,7 +310,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="4Kp0LxKTZhk" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mastodon/" rel="tag">Mastodon</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lamb-of-god/" rel="tag">Lamb of god</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slayer/" rel="tag">Slayer</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/primus/" rel="tag">Primus</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/new-wave-of-american-heavy-metal/" rel="tag">New wave of american heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sludge-metal/" rel="tag">Sludge metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/prog-metal/" rel="tag">Prog metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -334,6 +336,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

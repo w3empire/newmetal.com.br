@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240729184221_hu93c5bb741bc702ac3484a2e001bf0d27_121796_a6cc4f99ac4aa8e4fec51cc521ecb826.webp" alt="Angra Lembra do Primeiro Astronauta Brasileiro com Música Bônus" title="Angra Lembra do Primeiro Astronauta Brasileiro com Música Bônus" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Todo fã de metal sabe que cada banda tem suas joias escondidas. E, no caso do Angra, &ldquo;Out of this World&rdquo; é uma dessas faixas bônus que merece mais atenção.</p>
 <p>E olha só que legal: essa música é sobre o nosso astronauta brasileiro, Marcos Pontes, o cara que em 2006 foi o primeiro brasileiro a dar um rolê no espaço!</p>
 <p>Em um episódio do <em>Amplifica</em>, Rafael Bittencourt, o guitarrista do Angra, falou sobre essa composição quando foi perguntado sobre as músicas &ldquo;lado B&rdquo; da banda:</p>
@@ -306,7 +306,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="W1WbVZFZARc" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/angra/" rel="tag">Angra</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rafael-bittencourt/" rel="tag">Rafael bittencourt</a></li>
@@ -330,6 +332,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

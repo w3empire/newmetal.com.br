@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240813232044_hua1dea107b687e3d3271f8a94963eb647_120412_a9ec00c9e118379d82375611f515b7c5.webp" alt="&#34;É ótimo para os fãs&#34; Kirk Hammett do Metallica Sobre o Novo Pantera" title="&#34;É ótimo para os fãs&#34; Kirk Hammett do Metallica Sobre o Novo Pantera" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O <strong>Pantera</strong> está de volta, mas não é bem o <strong>Pantera</strong> que conhecemos, né? Não tem como substituir <strong>Dimebag</strong> e <strong>Vinnie Paul</strong>, esses caras são insubstituíveis. Mas aí vem o <strong>Kirk Hammett</strong> numa entrevista ao <a href="https://www.startribune.com/metallica-interview-kirk-hammett-minneapolis-takeover-us-bank-stadium-tickets-james-hetfield-72/601097822" target="_blank" rel="noopener noreferrer">StarTribune</a> (em inglês) e solta que acha tudo isso &ldquo;<strong>ÓTIMO</strong>&rdquo;.</p>
 <p>E olha, até faz sentido.</p>
 <p>Ele não tá errado, não. <strong>Phil Anselmo</strong> e <strong>Rex Brown</strong> estão segurando a bronca, e com <strong>Zakk Wylde</strong> e <strong>Charlie Benante</strong> no comando da guitarra e da bateria, respectivamente, é difícil reclamar do nível dos músicos.</p>
@@ -322,7 +322,9 @@
 <p>Mas uma coisa é certa: <strong>Pantera</strong> nunca foi uma banda qualquer, e se agente tem a oportunidade de ouvir aquelas músicas ao vivo novamente é, no mínimo, algo a ser celebrado.</p>
 <p>Vamos curtir o que vier e deixar os debates para depois. Afinal, o que importa é o som, e o som do <strong>Pantera</strong> é eterno.</p>
 <p>Obrigado por ler até aqui. Fui.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/pantera/" rel="tag">Pantera</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kirk-hammett/" rel="tag">Kirk hammett</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lars-ulrich/" rel="tag">Lars ulrich</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/zakk-wylde/" rel="tag">Zakk wylde</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/charlie-benante/" rel="tag">Charlie benante</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-anselmo/" rel="tag">Phil anselmo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rex-brown/" rel="tag">Rex brown</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dimebag-darrell/" rel="tag">Dimebag darrell</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/vinnie-paul/" rel="tag">Vinnie paul</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -346,6 +348,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

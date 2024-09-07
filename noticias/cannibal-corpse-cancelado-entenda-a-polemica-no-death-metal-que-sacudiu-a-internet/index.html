@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240812132431_hub9d51bf4652326378505eaec1c607deb_65562_e73e42c37bd1408bdb1801a20e90e9a8.webp" alt="Cannibal Corpse Cancelado? Entenda a Polêmica no Death Metal Que Sacudiu a Internet" title="Cannibal Corpse Cancelado? Entenda a Polêmica no Death Metal Que Sacudiu a Internet" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O Retorno do Moralismo? <strong>Cannibal Corpse</strong> na Mira dos Sensíveis de Plantão? Aí, aí&hellip;</p>
 <p>Cara, quem diria que em pleno 2024, <strong>Cannibal Corpse</strong> viraria trending topic por causa das letras? 🧟‍♂️</p>
 <p>Sim, aquelas letras que todo mundo já conhece e que a banda vem cuspindo desde os anos 80, quando nem a sua mãe sabia quem era Metallica, mas agora parece que a geração Z finalmente descobriu o bom e velho death metal.</p>
@@ -344,7 +344,9 @@
 <p>É você é novo nessa parada? Relaxa, ouve sem preconceito e entende que, no final das contas, é tudo uma grande encenação.</p>
 <p><strong>Death metal é sobre ir além do comum</strong>, é uma forma de catarse, uma maneira de lidar com as partes mais sombrias da existência humana – tudo isso embalado em riffs pesados e vocais guturais.</p>
 <p>🎸🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/cannibal-corpse/" rel="tag">Cannibal corpse</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/death-metal/" rel="tag">Death metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-extremo/" rel="tag">Metal extremo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jimmy-urine/" rel="tag">Jimmy urine</a></li>
@@ -368,6 +370,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

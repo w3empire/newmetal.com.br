@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730153738_hu302f909878b64f31965a91230d008580_91970_ee7df63f5240806aa9beea59f55ebe50.webp" alt="Phil Labonte do  All That Remains: &#34;Sem Korn, Não Teríamos Deathcore&#34;" title="Phil Labonte do  All That Remains: &#34;Sem Korn, Não Teríamos Deathcore&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Pois é amigos, o Korn foi de párias do nü-metal nos anos 2010 a lendas incontestáveis nos dias atuais.</p>
 <p>Phil Labonte, vocalista do All That Remains, acertou em cheio ao elogiar a banda. Em uma entrevista com Joshua Toomey, Labonte deixou claro que o impacto de Korn nas bandas modernas de deathcore é enorme. E você sabe, ele está absolutamente certo.</p>
 <blockquote>
@@ -304,7 +304,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="P-zb4C_k7Ek" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/korn/" rel="tag">Korn</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-labonte/" rel="tag">Phil labonte</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/all-that-remains/" rel="tag">All that remains</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deathcore/" rel="tag">Deathcore</a></li>
@@ -328,6 +330,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

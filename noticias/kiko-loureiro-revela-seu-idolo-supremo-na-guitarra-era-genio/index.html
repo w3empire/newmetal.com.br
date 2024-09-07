@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240802230632_hu04275b2e9ce5739c9e4fdc1477796aa5_592386_afb4f08d82bdcc8654b3fc3506c3fc31.webp" alt="Kiko Loureiro Revela Seu Ídolo Supremo na Guitarra &#34;Era gênio!”" title="Kiko Loureiro Revela Seu Ídolo Supremo na Guitarra &#34;Era gênio!”" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Já pensou em quem <strong>Eddie Van Halen</strong> considerava seu Deus da guitarra? Pois é, não foi qualquer um. 🪕</p>
 <p>Kiko Loureiro, o mago das seis cordas, revelou esse mistério durante uma participação no podcast Ciência Sem Fim, do Sérgio Sacani.</p>
 <p>E acredite, o cara era <strong>Allan Holdsworth</strong>.</p>
@@ -315,7 +315,9 @@
 <p><strong>Allan Holdsworth</strong> pode não ser um nome conhecido por todos, mas para os verdadeiros amantes da guitarra, ele é uma lenda que merece ser celebrada.</p>
 <p>Curtiu a história? 🎸 Compartilhe com seus amigos e vamos continuar celebrando os gigantes da música!</p>
 <p>Valeu. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kiko-loureiro/" rel="tag">Kiko loureiro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/allan-holdsworth/" rel="tag">Allan holdsworth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eddie-van-halen/" rel="tag">Eddie van halen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/van-halen/" rel="tag">Van halen</a></li>
@@ -339,6 +341,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

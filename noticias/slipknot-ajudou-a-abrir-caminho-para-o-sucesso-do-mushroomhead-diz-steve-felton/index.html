@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828164533_hu68f61a5bba05bd6ded90ea6f2e61299b_59552_8b72f362945cf63516f105cc693897ea.webp" alt="Mushroomhead em 2024. - Foto: Reprodução / Divulgação." title="Mushroomhead em 2024. - Foto: Reprodução / Divulgação." class="lazy-img"><figcaption>Mushroomhead em 2024. - Foto: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A rivalidade entre <strong>Slipknot</strong> e <strong>Mushroomhead</strong> já foi assunto de muitas discussões no cenário do metal.</p>
 <p>Durante anos, os fãs e a mídia alimentaram um suposto conflito entre as duas bandas, especialmente devido às semelhanças visuais e sonoras que as uniam.</p>
 <p>No entanto, em uma recente entrevista à <a href="https://www.loudersound.com/news/mushroomhead-talk-slipknot-beef-2024" target="_blank" rel="noopener noreferrer">Metal Hammer</a> (em inglês), Steve &ldquo;Skinny&rdquo; Felton, membro fundador e único remanescente original do <strong>Mushroomhead</strong>, trouxe uma nova perspectiva sobre essa questão, demonstrando um respeito mútuo pelo sucesso do <strong>Slipknot</strong> e destacando o impacto positivo que a popularidade da banda teve para outras bandas que também utilizam máscaras e uma abordagem teatral no palco.</p>
@@ -316,7 +316,9 @@
 <p>Steve &ldquo;Skinny&rdquo; Felton, em sua recente entrevista, exemplifica essa mudança, reconhecendo a importância do <strong>Slipknot</strong> e o impacto que a banda teve não apenas no <strong>Mushroomhead</strong>, mas em toda uma cena musical.</p>
 <p>Em última análise, a história dessas duas bandas não é sobre rivalidade, mas sobre como o sucesso de uma pode beneficiar a todos, abrindo portas e criando novas oportunidades em um gênero que continua a evoluir e a surpreender.</p>
 <p>A indústria musical é, e sempre foi, um terreno fértil para rivalidades e competições, mas também é um espaço onde o respeito e a admiração mútua podem florescer, levando a colaborações e a uma maior diversidade dentro do gênero.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mushroomhead/" rel="tag">Mushroomhead</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/steve-skinny-felton/" rel="tag">Steve skinny felton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kiss/" rel="tag">Kiss</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gwar/" rel="tag">Gwar</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -340,6 +342,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -211,7 +211,7 @@
         <header class="post__header">
             <h1 class="post__title">Sobre o site NewMetal.com.br</h1>
             
-        </header><div class="content post__content clearfix">
+        </header><div class="content post__content clearfix" id="content">
             <p>Somos o <strong>New Metal</strong>, seu portal definitivo para todas as novidades do mundo do rock e do metal. Nosso endereço virtual é <a href="https://newmetal.com.br">newmetal.com.br</a>, onde você encontrará uma mistura única de notícias, resenhas, entrevistas e muito mais, tudo apresentado de uma forma descontraída e divertida.</p>
 <h2 id="nossa-história">Nossa História</h2>
 <p>O New Metal foi criado por uma equipe de apaixonados por música que acredita que manter-se atualizado sobre suas bandas e artistas favoritos não precisa ser algo tedioso. Combinamos nossa paixão pelo rock e metal com uma abordagem leve e humorada para tornar a experiência de leitura agradável e envolvente.</p>
@@ -243,7 +243,9 @@
 <li><a href="/institucional/politica-de-privacidade/">Política de Privacidade</a></li>
 <li><a href="/institucional/termos-de-uso/">Termos de Uso</a></li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 
 
         
@@ -251,6 +253,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 
 
 

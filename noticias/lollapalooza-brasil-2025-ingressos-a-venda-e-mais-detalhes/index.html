@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240808174454_hua148e8e6390ba9614055cb3c30864fa9_174560_f2d5b98b6d0e4ce159eda0d5df5ca5d1.webp" alt="Lollapalooza Brasil 2025: Ingressos à venda e Mais Detalhes" title="Lollapalooza Brasil 2025: Ingressos à venda e Mais Detalhes" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Galera, segura essa: <strong>Lollapalooza Brasil 2025</strong> já tem datas e valores para os ingressos! 🤘</p>
 <p>Esse é o evento que a gente espera o ano inteiro, e agora chegou a hora de garantir nosso lugar.</p>
 <p><strong>Anotem aí</strong>: O festival rola nos <strong>dias 28, 29 e 30 de março</strong>, no lendário <strong>Autódromo de Interlagos</strong>, em São Paulo. Sério, se você nunca foi, está perdendo um rolê épico. 😎</p>
@@ -329,7 +329,9 @@
 <li><strong>Vai de metrô ou ônibus</strong>: O trânsito lá perto fica um caos. Transporte público é a melhor pedida.</li>
 </ol>
 <p>Nos vemos em março no Lollapalooza Brasil 2025? 🎤🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lollapalooza-brasil/" rel="tag">Lollapalooza brasil</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -353,6 +355,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

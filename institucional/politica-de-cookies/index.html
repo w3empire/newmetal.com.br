@@ -211,7 +211,7 @@
         <header class="post__header">
             <h1 class="post__title">Política de cookies do site NewMetal.com.br</h1>
             
-        </header><div class="content post__content clearfix">
+        </header><div class="content post__content clearfix" id="content">
             <p>Última Atualização: 20 de Junho de 2024</p>
 <h2 id="1-introdução">1. Introdução</h2>
 <p>Esta Política de Cookies explica o que são cookies, como os utilizamos em nosso site <a href="https://newmetal.com.br">newmetal.com.br</a>, e como você pode gerenciá-los. Utilizamos serviços de terceiros, como Google AdSense, Google Analytics e Google Search, que podem usar cookies em nosso site.</p>
@@ -254,7 +254,9 @@
 <li><a href="/institucional/politica-de-privacidade/">Política de Privacidade</a></li>
 <li><a href="/institucional/termos-de-uso/">Termos de Uso</a></li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 
 
         
@@ -262,6 +264,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 
 
 

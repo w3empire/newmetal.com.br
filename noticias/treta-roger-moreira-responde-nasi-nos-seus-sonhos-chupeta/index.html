@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240804215908_hu87e1c6b747b3b76196c60e0ac9ab9966_51250_1af7706863fb1a88a578e0b02e791ca9.webp" alt="Treta: Roger Moreira Responde Nasi &#34;Nos seus sonhos, Chupeta&#34;" title="Treta: Roger Moreira Responde Nasi &#34;Nos seus sonhos, Chupeta&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Pois é, os barracos do rock! 🎸</p>
 <p>Nada como uma boa treta para animar os fãs e apimentar os bastidores da música. Recentemente, o vocalista do Ira!, Nasi, soltou o verbo em um podcast, prometendo quebrar a cara de Roger Moreira, do Ultraje a Rigor. E, claro, Roger não deixou barato.</p>
 <p>Nasi, que não tem papas na língua, participou do podcast <strong>Futeboteco</strong> e deu uma alfinetada certeira em Roger. Tudo começou porque Roger tentou arrumar confusão com Edgar Scandurra, guitarrista do Ira! e amigo de longa data de Nasi.</p>
@@ -309,7 +309,9 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/roger-moreira/" rel="tag">Roger moreira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nasi/" rel="tag">Nasi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ira/" rel="tag">Ira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ultraje-a-rigor/" rel="tag">Ultraje a rigor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-nacional/" rel="tag">Rock nacional</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -333,6 +335,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

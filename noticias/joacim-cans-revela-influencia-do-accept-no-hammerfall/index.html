@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726200429_hub9360c4c067f45456a060f2024a2f34a_54224_f98f3e3f0e14bd9978feb683961827ca.webp" alt="Joacim Cans Revela Influência do Accept no HammerFall" title="Joacim Cans Revela Influência do Accept no HammerFall" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O HammerFall está de volta com tudo! O novo álbum &ldquo;Avenge The Fallen&rdquo; será lançado no dia 9 de agosto pela Nuclear Blast, e está repleto de surpresas para os fãs de metal. 🎸🔥</p>
 <p>O jornalista <a href="https://whiplash.net/autores/gustavomaiato.html" target="_blank" rel="noopener noreferrer">Gustavo Maiato do whiplash</a> teve a sorte de ouvir o álbum antes de todo mundo e ainda bateu um papo com o vocalista Joacim Cans. E olha, tem muita coisa interessante vindo por aí!</p>
 <hr>
@@ -289,7 +289,9 @@
 <hr>
 <p>Então, prepare-se! Marque na sua agenda: 9 de agosto, o dia em que o HammerFall vai elevar os coros a um novo nível com &ldquo;Avenge The Fallen&rdquo;. Vai ser épico, e você não vai querer perder. 🎤🔥</p>
 <p>Fique ligado no que está por vir e prepare seus ouvidos, porque o martelo vai cair pesado! 💥🛡️</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/hammerfall/" rel="tag">Hammerfall</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joacim-cans/" rel="tag">Joacim cans</a></li>
@@ -313,6 +315,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

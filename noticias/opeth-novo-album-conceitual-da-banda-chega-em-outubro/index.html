@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801204057_hu956ca391f68efdb75e8218eccf192927_393456_8e382c8cdbff37a3b0a65c539793e89c.webp" alt="OPETH: Novo Álbum Conceitual da Banda Chega em Outubro" title="OPETH: Novo Álbum Conceitual da Banda Chega em Outubro" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A banda Opeth está prestes a lançar seu novo álbum, <strong>The Last Will and Testament</strong>, e promete ser uma verdadeira viagem musical.</p>
 <p>O lançamento, marcado para o dia 11 de outubro, será feito pela Atomic Fire e é o 14° trabalho de inéditas da banda sueca de prog metal.</p>
 <p>Esse não é apenas mais um álbum - é um álbum <strong>conceitual</strong>.</p>
@@ -308,7 +308,9 @@
 <p>É isso aí.</p>
 <p>Não esquece de marcar aí no seu calendário: 11 de outubro é o dia em que <strong>The Last Will and Testament</strong> chega para mexer com nossas emoções e nosso senso musical.</p>
 <p>Fique ligado para mais novidades! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/opeth/" rel="tag">Opeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/the-last-will-and-testament/" rel="tag">The last will and testament</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/prog-metal/" rel="tag">Prog metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mikael-akerfeldt/" rel="tag">Mikael akerfeldt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/waltteri-vayrynen/" rel="tag">Waltteri vayrynen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joe-tempest/" rel="tag">Joe tempest</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ian-anderson/" rel="tag">Ian anderson</a></li>
@@ -332,6 +334,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

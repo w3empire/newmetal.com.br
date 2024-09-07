@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905144232_hu5fe5780a8e5268dfeba85ace8676a593_19222_89b11d1da1d10f6fd88b2e33e9644e7c.webp" alt="— Imagem: Youtube / Reprodução / Divulgação." title="— Imagem: Youtube / Reprodução / Divulgação." class="lazy-img"><figcaption>— Imagem: Youtube / Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A rivalidade entre <strong>Slipknot</strong> e <strong>Mushroomhead</strong> foi um dos capítulos mais caóticos do metal nos anos 90. Embora hoje esse clima tenha esfriado, em 1999, a tensão estava no auge.</p>
 <p>Recentemente um vídeo daquele período apareceu, mostrando um dos momentos mais insanos dessa briga: o show do <strong>Slipknot</strong> em Cleveland.</p>
 <p>Tudo começou com fãs de <strong>Mushroomhead</strong> que, ao invés de curtirem o evento, decidiram provocar. Começaram a arremessar objetos no palco e a xingar os integrantes do <strong>Slipknot</strong>.</p>
@@ -336,7 +336,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="28ttberq5iE" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mushroomhead/" rel="tag">Mushroomhead</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/machine-head/" rel="tag">Machine head</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/amen/" rel="tag">Amen</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-industrial/" rel="tag">Metal industrial</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/mick-thomson/" rel="tag">Mick thomson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/m-shawn-clown-crahan/" rel="tag">M shawn clown crahan</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/paul-gray/" rel="tag">Paul gray</a></li>
@@ -360,6 +362,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

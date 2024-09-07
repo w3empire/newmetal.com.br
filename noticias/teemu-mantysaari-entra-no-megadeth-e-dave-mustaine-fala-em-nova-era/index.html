@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828015802_hua34d8dbaf2e0afa68cac76dba7188087_193144_0ef8bfac156bca51c9c8e5ff808ecb38.webp" alt="Foto: Reprodução / Divulgação." title="Foto: Reprodução / Divulgação." class="lazy-img"><figcaption>Foto: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>O Megadeth, uma das bandas mais icônicas do heavy metal, está em um momento de renovação com a adição do guitarrista finlandês Teemu Mäntysaari.</p>
 <p>Em uma recente entrevista ao podcast <a href="https://loudwire.com/podcast/popup/?id=6462804e1c31fe6239bf1f41&amp;item=0&amp;theme=light&amp;playertype=player" target="_blank" rel="noopener noreferrer">Loudwire Nights</a>, o líder da banda, Dave Mustaine, discutiu a importância da nova formação, destacando a forte química entre os membros e comparando a atual fase do grupo ao período em que Marty Friedman, renomado guitarrista, integrava o Megadeth.</p>
 <h2 id="uma-nova-dinâmica-na-banda">Uma Nova Dinâmica na Banda</h2>
@@ -320,7 +320,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="aU-dKoFZT0A" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/megadeth/" rel="tag">Megadeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dave-mustaine/" rel="tag">Dave mustaine</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/teemu-mantysaari/" rel="tag">Teemu mantysaari</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/marty-friedman/" rel="tag">Marty friedman</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kiko-loureiro/" rel="tag">Kiko loureiro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -344,6 +346,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

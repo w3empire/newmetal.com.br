@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240811235628_hu2db35855e6ba127e0a032d2c192f1b4b_56954_923a480b9105e0cac2ebd3137ba036cd.webp" alt="&#34;Fiquei em Choque&#34;: Derrick Green Sobre a Saída de Eloy Casagrande do Sepultura" title="&#34;Fiquei em Choque&#34;: Derrick Green Sobre a Saída de Eloy Casagrande do Sepultura" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Cara, senta aí e se prepara porque o que aconteceu no Sepultura vai deixar até o mais frio dos metaleiros de cabelo em pé. 🥶</p>
 <p>O nosso camarada <strong>Derrick Green</strong>, vocalista do <strong>Sepultura</strong>, ainda está tentando entender o que diabos aconteceu com a saída do baterista <strong>Eloy Casagrande</strong>. E vou te contar, a história é tão maluca que parece roteiro de filme. 😱</p>
 <p>Se liga nisso: dezembro do ano passado, banda pronta pra começar a tão esperada turnê de despedida. Ensaios marcados, roteiro pronto, tudo nos conformes. Mas, como dizem, quando algo pode dar errado, vai dar errado, e esse foi um daqueles momentos que ninguém estava preparado.</p>
@@ -301,7 +301,9 @@
 <p>É meus amigos, o que nos resta agora é esperar e ver o que o futuro reserva para <strong>Derrick</strong>, <strong>Andreas</strong> e o resto da turma do <strong>Sepultura</strong>.</p>
 <p>Uma coisa é certa: <strong>esse é só o começo de mais um capítulo intenso na história da banda</strong>.</p>
 <p>Fiquem ligados, porque a saga do Sepultura está longe de acabar, ou já acabou? 🎸</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/derrick-green/" rel="tag">Derrick green</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/greyson-nekrutman/" rel="tag">Greyson nekrutman</a></li>
@@ -325,6 +327,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240731195620_hucb29f0c2154ff7c7f9028aedb900c693_127494_d397c4cab92805df98ada1b5f2fc2ac3.webp" alt="DEICIDE: GLEN BENTON diz que &#34;Meet and Greet&#34; é Coisa de POSER" title="DEICIDE: GLEN BENTON diz que &#34;Meet and Greet&#34; é Coisa de POSER" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Glen Benton, o lendário frontman do <strong>Deicide</strong>, não mediu palavras ao expressar seu desgosto por meet and greets pagos.</p>
 <p>Em uma entrevista ao programa de rádio <a href="https://www.youtube.com/watch?v=rRFETtr_Wwo" target="_blank" rel="noopener noreferrer">Prescription Punk Rock</a> (em inglês), o cara deixou claro que não vê com bons olhos essa prática de cobrar fãs por autógrafos.</p>
 <blockquote>
@@ -306,7 +306,9 @@
     </div></div>
 <hr>
 <p>E o que cê acha? Meet and greet é coisa de poser mesmo?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/deicide/" rel="tag">Deicide</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/glen-benton/" rel="tag">Glen benton</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/death-metal/" rel="tag">Death metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/neil-peart/" rel="tag">Neil peart</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rush/" rel="tag">Rush</a></li>
@@ -330,6 +332,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

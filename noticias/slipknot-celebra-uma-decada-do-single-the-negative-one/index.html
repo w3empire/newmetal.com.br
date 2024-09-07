@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801175854_hub6612352b70d33095b47550d90b80a16_149928_cc2a69646a89318efe209223265c7bd0.webp" alt="Slipknot Celebra Uma Década do Single &#34;The Negative One&#34;" title="Slipknot Celebra Uma Década do Single &#34;The Negative One&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você é fã de Slipknot, deve estar se sentindo um pouco mais velho hoje.</p>
 <p>Há exatamente <strong>10 anos</strong>, em 2014, eles lançavam &ldquo;The Negative One&rdquo;. Parece que foi ontem, né?</p>
 <p>Essa música marcou um momento crucial na carreira da banda. Foi o primeiro lançamento após a saída do baterista Joey Jordison e a morte do baixista Paul Gray.</p>
@@ -296,7 +296,9 @@
 <p>Você lembra onde estava quando ouviu essa música pela primeira vez?</p>
 <p>E não esquece de compartilhar essa nostalgia com seus amigos.</p>
 <p>Quem sabe você não revive aquele mosh pit épico? 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joey-jordison/" rel="tag">Joey jordison</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/paul-gray/" rel="tag">Paul gray</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -320,6 +322,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

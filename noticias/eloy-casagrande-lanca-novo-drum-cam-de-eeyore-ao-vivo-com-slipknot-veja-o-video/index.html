@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240826123845_hu872ed540bd91d03aca397d9a227deb5f_61964_782a925d6b7c1a0521b129af5b893bae.webp" alt="Eloy Casagrande tocando Eeyore ao vivo com o Slipknot durante turnê Here Comes the Pain. - Foto: Reprodução / Youtube." title="Eloy Casagrande tocando Eeyore ao vivo com o Slipknot durante turnê Here Comes the Pain. - Foto: Reprodução / Youtube." class="lazy-img"><figcaption>Eloy Casagrande tocando <em>Eeyore</em> ao vivo com o <strong>Slipknot</strong> durante turnê <em>Here Comes the Pain</em>. - Foto: Reprodução / Youtube.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você é daqueles que acha que Eloy Casagrande veio para apenas &ldquo;substituir&rdquo; Jay Weinberg, meu amigo, não, não, não&hellip;</p>
 <p>O <strong>bicho tá pegando</strong> nesta segunda-feira, 26 de agosto, já que Eloy soltou um <strong>Drum Cam insano</strong> tocando <strong>&ldquo;Eeyore&rdquo;</strong> ao vivo com o Slipknot. E acredite, é coisa de outro mundo. 🌍🤘</p>
 <p>O vídeo, que foi lançado hoje nas redes sociais do baterista, é um <strong>Short de dois minutos</strong> que mostra somente o som da bateria. Mas esses 120 segundos foram mais do que suficientes para os fãs surtarem online.</p>
@@ -328,7 +328,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="DseT-2bHEVg" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p><strong>Slipknot, Eloy Casagrande, e metal: a combinação perfeita para o caos sonoro que todos amamos</strong>.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li>
@@ -352,6 +354,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

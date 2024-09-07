@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727191328_hu8a5eeffb0baee860427cd12e0abb7e8e_49298_72221ffe9f331e759bd5e616b0b7dc6e.webp" alt="Gojira Faz História: Primeira Banda de Metal a Tocar numa Cerimônia de Abertura Olímpica" title="Gojira Faz História: Primeira Banda de Metal a Tocar numa Cerimônia de Abertura Olímpica" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Gojira mandou ver e encantou o mundo inteiro na cerimônia de abertura das Olimpíadas de Paris nesta sexta-feira (26)!</strong></p>
 <p>Eles dividiram o palco com a incrível cantora de ópera Marina Viotti e deram um show de arrepiar.</p>
 <p>O som da banda foi épico!</p>
@@ -294,7 +294,9 @@
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gojira/" rel="tag">Gojira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -318,6 +320,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

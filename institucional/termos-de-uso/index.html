@@ -211,7 +211,7 @@
         <header class="post__header">
             <h1 class="post__title">Termos de Uso do site NewMetal.com.br</h1>
             
-        </header><div class="content post__content clearfix">
+        </header><div class="content post__content clearfix" id="content">
             <p>Última Atualização: 25 de Julho de 2024</p>
 <h2 id="1-aceitação-dos-termos">1. Aceitação dos Termos</h2>
 <p>Ao acessar e utilizar o site New Metal, localizado em <a href="https://newmetal.com.br">newmetal.com.br</a> (o &ldquo;Site&rdquo;), você concorda em cumprir e estar vinculado aos seguintes Termos de Uso. Se você não concordar com qualquer parte destes termos, por favor, não utilize o Site.</p>
@@ -251,7 +251,9 @@
 <li><a href="/institucional/politica-de-cookies/">Política de Cookies</a></li>
 <li><a href="/institucional/politica-de-privacidade/">Política de Privacidade</a></li>
 </ul>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 
 
         
@@ -259,6 +261,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 
 
 

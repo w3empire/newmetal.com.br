@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728162556_hu07c8cf3e869e3e66fdd80f586a4c2a33_34130_f2d65899c544464e8a6d647cb5a0d6f8.webp" alt="Slash Desabafa: Essa Foi a Pior Fase da Minha Carreira" title="Slash Desabafa: Essa Foi a Pior Fase da Minha Carreira" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🎸 Quando Slash diz que viveu uma época sombria, a gente já sabe que o caos foi grande.</p>
 <h2 id="velvet-revolver-sucesso-comercial-desastre-pessoal">Velvet Revolver: Sucesso Comercial, Desastre Pessoal</h2>
 <p>O Velvet Revolver foi uma banda de superastros, mas também um caldeirão de problemas.</p>
@@ -302,7 +302,9 @@
 <p>As músicas do grupo ainda são tocadas por Slash nos shows com Myles Kennedy &amp; The Conspirators, e “Slither” aparece em algumas turnês do Guns N’ Roses.</p>
 <p>Quem diria hein? Por trás do som, havia muita dor e luta. 🤘</p>
 <p>É isso ae, até mais.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slash/" rel="tag">Slash</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/scott-weiland/" rel="tag">Scott weiland</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/duff-mckagan/" rel="tag">Duff mckagan</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/matt-sorum/" rel="tag">Matt sorum</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dave-kushner/" rel="tag">Dave kushner</a></li>
@@ -326,6 +328,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

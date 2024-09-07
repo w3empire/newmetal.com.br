@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240728012344_hu1c2dadc00f42c78ce93d6c7f0e5d547f_247400_b772cd7d7ac23ab15d53abe4e3daa182.webp" alt="Black Sabbath: Tony Iommi e o Sucesso Imprevisto de &#34;Paranoid&#34;" title="Black Sabbath: Tony Iommi e o Sucesso Imprevisto de &#34;Paranoid&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Cara, cê acredita que o maior sucesso do Black Sabbath, “Paranoid”, surgiu só pra ocupar espaço no álbum?</strong> Pois é, até Tony Iommi achou isso um tanto irônico.</p>
 <p><strong>O sucesso de “Paranoid” é inegável.</strong> Ela tá até nas coletâneas mais genéricas do pop. Sim, rock é um braço do pop, mano! E essa música é aquela pedrada que qualquer um que pega uma guitarra pela primeira vez tenta tocar.</p>
 <p><strong>A criação dela foi pura simplicidade.</strong> Tony Iommi improvisou a parada. Ele mesmo contou essa história em 2021, durante uma entrevista à BBC Radio, transcrita pelo <a href="https://www.ultimate-guitar.com/news/general_music_news/tony_iommi_remembers_how_black_sabbaths_paranoid_was_written_as_filler_explains_issue_band_had_with_the_iconic_songs_success.html" target="_blank" rel="noopener noreferrer">Ultimate Guitar</a>:</p>
@@ -308,7 +308,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="0qanF-91aJo" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Se curtiu a história, compartilha aí com os brothers! Valeu! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-sabbath/" rel="tag">Black sabbath</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tony-iommi/" rel="tag">Tony iommi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/geezer-butler/" rel="tag">Geezer butler</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ozzy-osbourne/" rel="tag">Ozzy osbourne</a></li>
@@ -332,6 +334,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

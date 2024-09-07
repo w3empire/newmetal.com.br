@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240905191536_hu02cee2a1a8397cab35dd722b625136c6_79295_952f12cc5848155ff439f7c230eb409b.webp" alt="— Imagem: Reprodução / Divulgação." title="— Imagem: Reprodução / Divulgação." class="lazy-img"><figcaption>— Imagem: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Chris Adler</strong>, o icônico baterista que já sentou no trono do <strong>Lamb of God</strong> e do <strong>Megadeth</strong>, está de volta com uma nova proposta.</p>
 <p>A nova empreitada se chama <strong>Shallow Rising</strong>, e não, você não vai encontrar o som típico que marcou as bandas anteriores de Adler. Estamos falando de uma coisa nova, algo que mistura metal pesado com&hellip; uma dose surpreendente de positividade. 🤯</p>
 <p>Adler se juntou a <strong>Alex Villarreall</strong> (vocal), <strong>Tim Ossenfort</strong> (guitarra), <strong>Taylor Brandt</strong> (baixo) e <strong>Tim King</strong> (teclado) para formar o núcleo dessa nova banda. A estreia do grupo chega com o single <em>Further</em>, acompanhado de um lyric video que você já pode conferir no YouTube.</p>
@@ -315,7 +315,9 @@
 <p>A intenção aqui, pelo visto, é ser muito mais sobre a mensagem que a música carrega. E em tempos onde o metal é associado a temas sombrios, é interessante ver alguém como <strong>Chris Adler</strong> tentando explorar uma outra direção.</p>
 <p>Se o público vai comprar essa ideia? Bem, aí só o tempo dirá. Mas é difícil não ficar curioso para ouvir mais e ver se houve evolução ou não.</p>
 <p>🎧🔥</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chris-adler/" rel="tag">Chris adler</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/shallow-rising/" rel="tag">Shallow rising</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lamb-of-god/" rel="tag">Lamb of god</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/megadeth/" rel="tag">Megadeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nitro/" rel="tag">Nitro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/firstborne/" rel="tag">Firstborne</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tim-ossenfort/" rel="tag">Tim ossenfort</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/alex-villarreall/" rel="tag">Alex villarreall</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/taylor-brandt/" rel="tag">Taylor brandt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tim-king/" rel="tag">Tim king</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/death-metal/" rel="tag">Death metal</a></li>
@@ -339,6 +341,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

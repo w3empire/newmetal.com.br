@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806102225_hu752c4a58b1d2d1a941ff23cd204fe79c_115706_c61fcf307a22c2b5a9030a00f2ab5a7e.webp" alt="Slipknot: Turnê de &#34;25 Anos&#34; Começa Hoje, 6/8, em Noblesville" title="Slipknot: Turnê de &#34;25 Anos&#34; Começa Hoje, 6/8, em Noblesville" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Fala aí meu povo, só passando aqui para lembrar vocês que&hellip; 👇</p>
 <p>Hoje marca o início da tão aguardada turnê de comemoração dos 25 anos do Slipknot, intitulada &ldquo;Here Comes The Pain&rdquo;.</p>
 <p>O show de abertura acontece em <strong>Noblesville</strong>, Indiana, no Ruoff Music Center. Não há um horário definido para o Slipknot tocar, mas provavelmente, entre 22:30 e 23:00, no horário de Brasília, eles subirão no palco.</p>
@@ -326,7 +326,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="9-Dt4Q6dPSc" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/novo-baterista/" rel="tag">Novo baterista</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/knocked-loose/" rel="tag">Knocked loose</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/orbit-culture/" rel="tag">Orbit culture</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/vended/" rel="tag">Vended</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/knotfest/" rel="tag">Knotfest</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -350,6 +352,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

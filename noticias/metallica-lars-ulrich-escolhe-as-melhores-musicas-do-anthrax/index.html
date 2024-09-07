@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240804221215_hudfef38bcc0b44ac70f6f948b6a2e1fd6_129766_899c0efe4bb4805a50edf06638df24e6.webp" alt="Metallica: Lars Ulrich Escolhe as Melhores Músicas do Anthrax" title="Metallica: Lars Ulrich Escolhe as Melhores Músicas do Anthrax" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Vamos combinar: <strong>Anthrax</strong> é uma das bandas mais icônicas do Thrash Metal. Fundada nos anos 80 por Scott Ian e Dan Lilker, a banda tem um som que faz a gente querer sair batendo cabeça por aí.</p>
 <p>Com clássicos como &ldquo;Spreading The Disease&rdquo; e &ldquo;Among The Living&rdquo;, eles marcaram época e ganharam uma legião de fãs. E entre esses fãs está ninguém menos que Lars Ulrich, baterista e membro fundador do <strong>Metallica</strong>.</p>
 <p>Mas o que será que o dinamarquês mais famoso do metal acha das músicas do Anthrax?</p>
@@ -301,7 +301,9 @@
 <p><strong>Curiosidade:</strong> Sabia que o Anthrax foi uma das primeiras bandas de metal a incorporar rap em sua música? Sim, os caras são pioneiros! O EP &ldquo;I&rsquo;m The Man&rdquo; é uma prova disso. E por falar em Scott Ian, o cara é um monstro no palco e fora dele.</p>
 <p>Além de ser o guitarrista do Anthrax, ele é um contador de histórias nato e tem várias histórias hilárias e insanas sobre a vida na estrada.</p>
 <p>E aí, concorda com as escolhas do Lars? Quais são as suas músicas favoritas do Anthrax? Deixe nos comentários e vamos bater um papo sobre essas lendas do Thrash Metal! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ars-ulrich/" rel="tag">Ars ulrich</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/anthrax/" rel="tag">Anthrax</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/scott-ian/" rel="tag">Scott ian</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dan-lilker/" rel="tag">Dan lilker</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joey-belladonna/" rel="tag">Joey belladonna</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jonathan-donais/" rel="tag">Jonathan donais</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/frank-bello/" rel="tag">Frank bello</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/charlie-benante/" rel="tag">Charlie benante</a></li>
@@ -325,6 +327,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

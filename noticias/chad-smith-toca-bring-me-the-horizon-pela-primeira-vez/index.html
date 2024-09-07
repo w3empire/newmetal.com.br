@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240806122359_hu67d385a6d95f67fbd0b660ccd100078e_312966_ae319c7b7bf4db0cf6c65dcbdfde1231.webp" alt="Assista: Chad Smith toca &#34;Bring Me The Horizon&#34; pela primeira Vez" title="Assista: Chad Smith toca &#34;Bring Me The Horizon&#34; pela primeira Vez" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Tá ligado quando você descobre uma banda nova e sua mente fica tipo &ldquo;Que diabo é isso?&rdquo; 😆</p>
 <p>Pois é, foi exatamente isso que rolou com o Chad Smith, baterista do Red Hot Chili Peppers, no canal do <strong>Drumeo</strong> no YouTube.</p>
 <p>Então né, Chad, um cara que cresceu ouvindo rock pesado em Detroit, é colocado pra ouvir <strong>Bring Me The Horizon</strong> pela primeira vez.</p>
@@ -327,7 +327,9 @@
 <p>O importante é que a música continue a nos surpreender e a nos desafiar, como fez com <strong>Chad Smith</strong>.</p>
 <hr>
 <p>E você, já teve alguma experiência parecida de descobrir uma banda ou música nova que mudou sua perspectiva? 🎸🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chad-smith/" rel="tag">Chad smith</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/red-hot-chili-peppers/" rel="tag">Red hot chili peppers</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bring-me-the-horizon/" rel="tag">Bring me the horizon</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/drumeo/" rel="tag">Drumeo</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metalcore/" rel="tag">Metalcore</a></li>
@@ -351,6 +353,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

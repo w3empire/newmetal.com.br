@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240807014920_hu6cbdd4d8d1442c910398ff1c3577577a_174612_7dbae064c3b8ff1eabdf0e00744e7b6a.webp" alt="Exclusivo: Veja Vídeos da Performance Lendária do Slipknot em Primeiro Show da Turnê &#34;Here Comes the Pain&#34;" title="Exclusivo: Veja Vídeos da Performance Lendária do Slipknot em Primeiro Show da Turnê &#34;Here Comes the Pain&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você perdeu o primeiro show da turnê &ldquo;Here Comes the Pain&rdquo; do Slipknot, você vai querer assistir aos vídeos agora mesmo.</p>
 <p>E a gente traz pra você com exclusividade.</p>
 <p><strong>Foi insano</strong>! A banda detonou tocando o primeiro álbum completo (menos a &ldquo;Diluted&rdquo;). E olha, foi o primeiro show do novo baterista Eloy Casagrande na turnê. E o cara simplesmente <strong>arrasou</strong>! 🤘</p>
@@ -345,7 +345,9 @@
 <p>A turnê promete ser uma das mais lendárias dos últimos tempos. Slipknot provando mais uma vez por que são <strong>os reis do metal</strong>.</p>
 <p>E com o Eloy nas baquetas, o céu é o limite! 🤘🔥</p>
 <p>Fica de olho que a gente vai atualizando vocês por aqui. Falou.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gary-wright/" rel="tag">Gary wright</a></li>
@@ -369,6 +371,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

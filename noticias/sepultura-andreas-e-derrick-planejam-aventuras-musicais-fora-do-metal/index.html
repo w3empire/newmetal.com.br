@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726202911_hucbd286a661eb136a0ccadbe30df2c9c4_68388_6ac4cad4dde6dd3befa76578a9615e83.webp" alt="Sepultura: Andreas e Derrick Planejam Aventuras Musicais Fora do Metal" title="Sepultura: Andreas e Derrick Planejam Aventuras Musicais Fora do Metal" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A notícia pegou todos de surpresa. 🤯</p>
 <p>O final do Sepultura após um álbum tão impactante como &ldquo;Quadra&rdquo; ainda causa estranheza nos fãs. Será que os caras querem longas férias? Ou a saturação do Metal bateu forte? Vamos descobrir!</p>
 <p>Em uma entrevista recente para a revista Metal Hammer, o guitarrista Andreas Kisser e o vocalista Derrick Green compartilharam seus planos pós-turnê de despedida.</p>
@@ -289,7 +289,9 @@
 </blockquote>
 <p>Um projeto de reggae com Andreas e Derrick? Isso eu quero ver! 🌿🎶</p>
 <p>A verdade é que a vida pós-Sepultura parece promissora para esses caras. E você, o que acha? Seria interessante ver Andreas no violão clássico e Derrick como dublador? Ou quem sabe um reggae do Sepultura?</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/derrick-green/" rel="tag">Derrick green</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -313,6 +315,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

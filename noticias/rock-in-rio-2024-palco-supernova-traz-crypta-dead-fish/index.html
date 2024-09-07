@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801182407_hu3037c0beee76b8519f01af700ad8f616_120116_07750c2b7d9010c1b0c1101072f3b9f1.webp" alt="Rock in Rio 2024: Palco Supernova traz Crypta &amp; Dead Fish" title="Rock in Rio 2024: Palco Supernova traz Crypta &amp; Dead Fish" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Prepare-se para um soco de <strong>adrenalina</strong>! 🎸</p>
 <p>O Rock in Rio confirmou que o <strong>Palco Supernova</strong> vai pegar fogo no dia 15 de setembro com bandas que vão fazer o chão tremer.</p>
 <p>No comando da noite, teremos <strong>Dead Fish</strong>, <strong>Crypta</strong>, <strong>Black Pantera</strong>, <strong>The Mönic</strong> e as convidadas <strong>Eskröta</strong>. Se você curte um som pesado, essa é a sua chance de moshar até não aguentar mais!</p>
@@ -401,7 +401,9 @@
 <p>Anota aí: <strong>15 de setembro é o dia para se jogar no mosh</strong> e celebrar o melhor do rock e metal no Rock in Rio 2024. 🎤🔥</p>
 <p>Prepare-se para uma experiência épica!</p>
 <p>Rock on. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-in-rio/" rel="tag">Rock in rio</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dead-fish/" rel="tag">Dead fish</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/crypta/" rel="tag">Crypta</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/black-pantera/" rel="tag">Black pantera</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/the-monic/" rel="tag">The monic</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eskrota/" rel="tag">Eskrota</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-nacional/" rel="tag">Metal nacional</a></li>
@@ -425,6 +427,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727174551_hubb0629c9ddd4539eb54957f7163c48f7_40570_225753cec87acfbc175697e83204ee61.webp" alt="David Bryan Revela a Verdade Sobre a Voz de Jon Bon Jovi" title="David Bryan Revela a Verdade Sobre a Voz de Jon Bon Jovi" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>David Bryan, tecladista do Bon Jovi, abriu o jogo sobre os problemas vocais do nosso querido Jon Bon Jovi em um papo sincero no podcast Rockstrap com Don Jamieson e Keith Roth.</p>
 <p>Afinal, o que rolou com a voz de Jon? 🤔</p>
 <p>Logo de cara, David disse:</p>
@@ -291,7 +291,9 @@
 <p>“Acho que no ano que vem, nos próximos dois anos estaremos em turnê, e ele estará de volta.”</p>
 </blockquote>
 <p>E aí, você tá ansioso pra ver Jon Bon Jovi de volta aos palcos? Acompanhe e fique ligado nas novidades! Rock on! 🤟</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jon-bon-jovi/" rel="tag">Jon bon jovi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bon-jovi/" rel="tag">Bon jovi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/david-bryan/" rel="tag">David bryan</a></li>
@@ -315,6 +317,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

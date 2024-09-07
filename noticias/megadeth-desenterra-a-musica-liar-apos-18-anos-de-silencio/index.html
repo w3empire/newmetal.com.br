@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240812125643_hud6cedbaa5ab12de691cb7f33ebbb7706_117662_d6b5e82e4f654ee10956a0b5c2a93699.webp" alt="Megadeth Desenterra a Música &#34;Liar&#34; Após 18 Anos de Silêncio; Vídeo" title="Megadeth Desenterra a Música &#34;Liar&#34; Após 18 Anos de Silêncio; Vídeo" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você é daqueles que curte um <strong>thrash metal</strong> de verdade, da velha guarda, daqueles que faz o pescoço doer no dia seguinte, se liga nessa.</p>
 <p>No dia 9 de agosto, os caras do Megadeth decidiram abrir o baú e tirar a poeira de um dos seus <strong>clássicos mais obscuros</strong>. Eles mandaram <strong>&ldquo;Liar&rdquo;</strong>, aquela pedrada do álbum <em>So Far, So Good&hellip; So What!</em> que não rolava ao vivo há quase duas décadas!</p>
 <p>Sim, meus amigos, 18 anos se passaram desde a última vez que essa belezura ecoou pelos amplificadores num show da banda.</p>
@@ -366,7 +366,9 @@
         </a></div><div class="caption">Fotos: Reprodução Instagram <a href="https://www.instagram.com/devilman.138/" target="_blank" rel="noopener noreferrer">@devilman.138</a></div></div>
 <p>E aí, curtiu?</p>
 <p>Compartilha essa história com sua galera e vamos manter a chama do metal acesa! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/megadeth/" rel="tag">Megadeth</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/dave-mustaine/" rel="tag">Dave mustaine</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/chris-poland/" rel="tag">Chris poland</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/thrash-metal/" rel="tag">Thrash metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li>
@@ -390,6 +392,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727190646_hu31f9a6b3d14bf5f1f9eaeaa5677c3043_497162_e59e140d685a3d2bc32b0c985cf14b70.webp" alt="Bon Jovi Finalmente Conquista Seu Primeiro Single de Diamante" title="Bon Jovi Finalmente Conquista Seu Primeiro Single de Diamante" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>É isso mesmo, galera! Pode comemorar! 🎉 “Livin’ on a Prayer” finalmente recebeu a tão esperada certificação de diamante. E não foi pouca coisa, não.</p>
 <p>Após vender mais de 130 milhões de cópias ao redor do mundo, o Bon Jovi ainda não tinha um single de diamante. Mas tudo mudou nesta semana.</p>
 <p>A Recording Industry Association of America (RIAA) oficializou: mais de 10 milhões de cópias vendidas nos EUA!</p>
@@ -296,7 +296,9 @@
 <p>E aí, qual sua música favorita da banda?</p>
 <p>Já ouviu essa versão alternativa de &ldquo;Livin’ on a Prayer&rdquo;?</p>
 <p>Conta pra gente <a href="https://www.facebook.com/newmetalnoticias" target="_blank" rel="noopener noreferrer">lá no face</a>!</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bon-jovi/" rel="tag">Bon jovi</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -320,6 +322,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240801202446_hu2872cd646ca7fe303acad00ba84135e2_123486_03b0d4e6cdf532b9fcb3de9c2e9674e9.webp" alt="$0,01? Baterista da Banda de Nu-Metal Taproot Mostra Quanto Ganha dos Streaming" title="$0,01? Baterista da Banda de Nu-Metal Taproot Mostra Quanto Ganha dos Streaming" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>A realidade dos músicos no mundo do streaming pode ser bem desanimadora, e o baterista do Taproot, Jarrod Montague, acaba de nos mostrar isso de um jeito bem humorado.</p>
 <p>No seu último post nas redes sociais, Montague compartilhou seus royalties de streaming do último trimestre de 2023.</p>
 <p>E vamos dizer que, a coisa tá feia.</p>
@@ -306,7 +306,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="9YGL3amPmyc" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>Se quiser, pode seguir os caras pelo <a href="https://open.spotify.com/artist/319rafipfKvd4cqaOwWIvA" target="_blank" rel="noopener noreferrer">Spotify</a>.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/taproot/" rel="tag">Taproot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/jarrod-montague/" rel="tag">Jarrod montague</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/nu-metal/" rel="tag">Nu metal</a></li>
@@ -330,6 +332,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

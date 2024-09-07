@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240818163702_huf5074d785f6ba07a49ed2d0eaa85453d_187540_82a7c841a82121c1308713590024a007.webp" alt="Banda Orbit Culture, com o Slipknot, no último show da primeira perna da turnê “Here Comes the Pain”. - Foto: Reprodução/Instagram." title="Banda Orbit Culture, com o Slipknot, no último show da primeira perna da turnê “Here Comes the Pain”. - Foto: Reprodução/Instagram." class="lazy-img"><figcaption>Banda <strong>Orbit Culture</strong>, com o Slipknot, no último show da primeira perna da turnê &ldquo;<em>Here Comes the Pain</em>&rdquo;. - Foto: Reprodução/Instagram.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Há momentos na vida em que você olha para trás e percebe que viveu algo <strong>incrível</strong>. A última sexta-feira (17/08) foi um desses momentos para o pessoal do <strong>Orbit Culture</strong>, que encerrou sua participação na primeira perna da turnê &ldquo;Here Comes the Pain&rdquo; com o <strong>Slipknot</strong> em grande estilo.</p>
 <p>E quando eu digo &ldquo;grande estilo&rdquo;, estou falando de um show de arrepiar, daqueles que você sai suando, sem voz, mas com a alma renovada.</p>
 <p>O palco? A icônica <strong>Scotiabank Arena</strong>, em Toronto, Canadá. A energia estava lá em cima, e os caras do Orbit Culture não deixaram barato.</p>
@@ -336,7 +336,9 @@
         <iframe class="lazy-yt" data-loader="youtube" data-src="oKecT3UJt3k" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
 <p>🤘 <strong>Longa vida ao metal!</strong> 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/orbit-culture/" rel="tag">Orbit culture</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/knocked-loose/" rel="tag">Knocked loose</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/vended/" rel="tag">Vended</a></li>
@@ -360,6 +362,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

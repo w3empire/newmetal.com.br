@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730182315_hu14dee6f2f627bdbe22b370fe49a9710b_81758_f99b11d37cfb935d4576c60ef5989d00.webp" alt="Joacim Cans Não Gosta do Rótulo de &#34;Power Metal&#34; para o Hammerfall" title="Joacim Cans Não Gosta do Rótulo de &#34;Power Metal&#34; para o Hammerfall" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Joacim Cans diz que &ldquo;Hammerfall não é só Power Metal!&rdquo; 🎤⚡️, então né&hellip;</p>
 <p>Cê também odeia quando seu estilo favorito de metal é rotulado de forma errada? Joacim Cans, vocalista do <strong>Hammerfall</strong>, compartilha do mesmo sentimento!</p>
 <p>Em uma conversa aberta com a revista britânica <em>Metal Hammer</em>, Joacim deixou claro que não curte ver o <strong>Hammerfall</strong> sendo tachado como &ldquo;power metal&rdquo;.</p>
@@ -342,7 +342,9 @@
 <p>Se você quer curtir uma banda que personifique o espírito do metal e que tenha uma longa trajetória de dedicação ao gênero, o <strong>Hammerfall</strong> é a escolha certa.</p>
 <p>Prepare-se para erguer seu punho e gritar junto com eles nos próximos shows! ⚔️</p>
 <p>É isso aí. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/hammerfall/" rel="tag">Hammerfall</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/joacim-cans/" rel="tag">Joacim cans</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/power-metal/" rel="tag">Power metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/john-bush/" rel="tag">John bush</a></li>
@@ -366,6 +368,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240823195242_huc024e90b85014defdbc32cae91281ad7_66680_fdc6f5a67a91b2de04ea21ec32cb6c1f.webp" alt="Foto: Josh Homme © Getty" title="Foto: Josh Homme © Getty" class="lazy-img"><figcaption>Foto: Josh Homme © Getty</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Pois é, imagina estar na metade de uma turnê, com os fãs gritando seu nome e cada acorde ressoando no peito.</p>
 <p>É o sonho de todo músico, certo? Mas, às vezes, o destino tem outros planos. E foi exatamente isso que rolou com o <strong>Queens Of The Stone Age</strong>.</p>
 <p>A banda, que estava botando pra quebrar na Europa com seu mais recente álbum, “In Times New Roman…”, teve que pisar no freio.</p>
@@ -322,7 +322,9 @@
 </div>
 <p>Vamos torcer para que ele volte logo, mais forte do que nunca, e que a gente possa ver o <strong>Queens Of The Stone Age</strong> quebrando tudo no palco de novo.</p>
 <p>Até lá, <strong>fique na torcida</strong> e <strong>continue rockeando</strong>. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/queens-of-the-stone-age/" rel="tag">Queens of the stone age</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/josh-homme/" rel="tag">Josh homme</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-alternativo/" rel="tag">Rock alternativo</a></li>
@@ -346,6 +348,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

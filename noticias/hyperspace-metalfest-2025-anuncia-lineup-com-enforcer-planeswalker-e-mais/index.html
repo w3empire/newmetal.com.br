@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240828125253_hu712d756141ce24cd06f0f955a0c0c933_60538_d96cec7aa693a62843825dad493f3104.webp" alt="Foto: Reprodução / Divulgação." title="Foto: Reprodução / Divulgação." class="lazy-img"><figcaption>Foto: Reprodução / Divulgação.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>Fãs de metal melódico e power metal</strong> já podem começar a planejar suas viagens para o Canadá, pois a sexta edição do Hyperspace Metal Festival está marcada para acontecer entre os dias <strong>10 e 12 de abril de 2025</strong>, em Vancouver, British Columbia.</p>
 <p>O evento, que já se consolidou como um dos principais festivais de metal na América do Norte, promete uma experiência inesquecível para os amantes do gênero.</p>
 <p>O festival será realizado em dois locais icônicos da cidade: <strong>The Cobalt</strong> nos dois primeiros dias e o <strong>Rickshaw Theatre</strong> no último dia.</p>
@@ -312,7 +312,9 @@
 <p>A presença de fãs dedicados e de profissionais da indústria musical faz do festival um ambiente propício para networking e crescimento.</p>
 <hr>
 <p>Para garantir sua participação, acesse a página do festival no <a href="https://www.eventbrite.ca/e/hyperspace-metal-festival-vi-tickets-1000996957847" target="_blank" rel="noopener noreferrer">Eventbrite</a> e adquira seu ingresso o quanto antes.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/enforcer/" rel="tag">Enforcer</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/planeswalker/" rel="tag">Planeswalker</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/hyperspace-metal-festival/" rel="tag">Hyperspace metal festival</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/hyperspace-metalfest/" rel="tag">Hyperspace metalfest</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/glyph/" rel="tag">Glyph</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/lunar/" rel="tag">Lunar</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/solarus/" rel="tag">Solarus</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tower-hill/" rel="tag">Tower hill</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/luminator/" rel="tag">Luminator</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tylor-dory-trio/" rel="tag">Tylor dory trio</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heyoka-s-mirror/" rel="tag">Heyoka s mirror</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-melodico/" rel="tag">Metal melodico</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/power-metal/" rel="tag">Power metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-progressivo/" rel="tag">Metal progressivo</a></li>
@@ -336,6 +338,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

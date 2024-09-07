@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240726202116_hu7831248e93d6f65efb45283055baefed_30114_1cd0892e33009797471b72d141fec62d.webp" alt="Andreas Kisser Revela Seus Planos Após a Despedida do Sepultura" title="Andreas Kisser Revela Seus Planos Após a Despedida do Sepultura" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>É o fim de uma era! 🎤 Após mais de quarenta anos de muito metal, o Sepultura está dando adeus com a turnê &ldquo;Celebrating Life Through Death&rdquo;. 😢</p>
 <p>Andreas Kisser, o lendário guitarrista da banda, revelou à revista inglesa Metal Hammer que vai mergulhar de cabeça no estudo do violão quando tudo acabar.</p>
 <blockquote>
@@ -285,7 +285,9 @@
 <p><strong>Quer saber onde você pode ver esses monstros do metal antes que a banda se despeça para sempre?</strong></p>
 <p>Confira o itinerário completo da derradeira turnê no <a href="https://www.sepultura.com.br" target="_blank" rel="noopener noreferrer">site oficial do Sepultura</a>.</p>
 <p><strong>E aí, pronto para ver Andreas Kisser dominar o violão depois de tantos anos esmagando na guitarra?</strong> 🤘🔥</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andreas-kisser/" rel="tag">Andreas kisser</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal-brasileiro/" rel="tag">Metal brasileiro</a></li>
@@ -309,6 +311,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

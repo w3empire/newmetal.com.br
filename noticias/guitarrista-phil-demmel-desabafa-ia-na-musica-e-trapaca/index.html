@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240814093413_hu39a972db8f1d8fb64f71c9ece466e484_419028_f00b3702c05d23e13461618589ea9a1c.webp" alt="Guitarrista Phil Demmel Desabafa: &#34;IA na Música é Trapaça!&#34;" title="Guitarrista Phil Demmel Desabafa: &#34;IA na Música é Trapaça!&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>🔥 <strong>Phil Demmel</strong> deu sua opinião sobre <strong>inteligência artificial</strong> (IA) na música em uma entrevista ao <a href="https://www.youtube.com/@METALLERIUM" target="_blank" rel="noopener noreferrer">Metallerium</a> (em inglês). O ex-guitarrista do <strong>Machine Head</strong> e atual parceiro de palco do <strong>Kerry King</strong> deixou bem claro que IA e música não combinam – pelo menos, não para ele.</p>
 <p>Pra quem não tá ligado, IA é o tipo de tecnologia que promete revolucionar tudo, desde a forma como você pede pizza até como seus riffs de guitarra favoritos são compostos.</p>
 <p>Mas, se depender do Demmel, esse futuro high-tech pode ficar longe da criação musical.</p>
@@ -311,7 +311,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="vBnYshe3Qgw" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/phil-demmel/" rel="tag">Phil demmel</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/machine-head/" rel="tag">Machine head</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kerry-king/" rel="tag">Kerry king</a></li>
@@ -335,6 +337,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

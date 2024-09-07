@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727173840_hu61c120dc86bded117d07350be80e2df0_88312_e6a714a78f611af086aa84e79cb39037.webp" alt="Rafael Bittencourt Revela Polêmica com Andre Matos no Podcast Amplifica" title="Rafael Bittencourt Revela Polêmica com Andre Matos no Podcast Amplifica" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Na última quinta-feira, dia 25 de julho, o podcast <em>Amplifica</em> recebeu um convidado de peso: Kiko Loureiro, o guitar hero brasileiro. 🤟</p>
 <p><strong>Kiko Loureiro</strong>, parceiro de longa data de Rafael Bittencourt no Angra, estava lá para um papo daqueles. Os dois desenterraram várias histórias e rolês marcantes da banda. Uma delas foi a possível assinatura com a Sanctuary, a gravadora do empresário do Iron Maiden, Rod Smallwood.</p>
 <blockquote>
@@ -301,7 +301,9 @@
     <div class="ui embed">
         <iframe class="lazy-yt" data-loader="youtube" data-src="irV6BvhAx28" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
     </div></div>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rafael-bittencourt/" rel="tag">Rafael bittencourt</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/andre-matos/" rel="tag">Andre matos</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/kiko-loureiro/" rel="tag">Kiko loureiro</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/angra/" rel="tag">Angra</a></li>
@@ -325,6 +327,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

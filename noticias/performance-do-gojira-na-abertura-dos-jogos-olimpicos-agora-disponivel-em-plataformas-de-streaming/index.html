@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240830162534_hue3726d2749f6156e1c1afeefb15fc815_82916_8d1729107e15dd00d5e6363646539b73.webp" alt="Banda Gojira na Cerimônia de Abertura das Olimpíadas de Paris de 2024. - Foto: Reprodução / Divulgação / Youtube." title="Banda Gojira na Cerimônia de Abertura das Olimpíadas de Paris de 2024. - Foto: Reprodução / Divulgação / Youtube." class="lazy-img"><figcaption>Banda <strong>Gojira</strong> na Cerimônia de Abertura das Olimpíadas de Paris de 2024. - Foto: Reprodução / Divulgação / Youtube.</figcaption>
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p><strong>GOJIRA</strong> trouxe uma explosão de intensidade à cerimônia de abertura dos <strong>Jogos Olímpicos</strong> no mês passado. A banda francesa, aclamada no cenário global do metal, surpreendeu a todos com uma performance única. Eles interpretaram <strong>&ldquo;Ah! Ça Ira&rdquo;</strong>, uma canção icônica da <strong>Revolução Francesa</strong>.</p>
 <p>O espetáculo foi enriquecido pela presença da renomada cantora de ópera <strong>Marina Viotti</strong> e de figuras que representavam personagens históricos, como <strong>Maria Antonieta</strong>. A rainha foi decapitada durante a revolução.</p>
 <p>A apresentação ocorreu em um cenário emblemático. Foi realizada na parte externa da <strong>Conciergerie</strong>, uma antiga prisão e residência real francesa. O local possui grande relevância histórica, pois foi onde <strong>Maria Antonieta</strong> ficou presa antes de ser executada em 1793.</p>
@@ -329,7 +329,9 @@
 <p>Mostra que o gênero pode transcender fronteiras culturais e artísticas. A banda, conhecida por sua habilidade de mesclar agressividade sonora com mensagens profundas e reflexivas, continua a desafiar as expectativas.</p>
 <p><strong>GOJIRA</strong> está abrindo novos caminhos para o metal e a música em geral.</p>
 <p>A performance agora disponível nas principais plataformas de <a href="https://open.spotify.com/album/4k6UKb3mWQcQ5yEiyi43DT#login" target="_blank" rel="noopener noreferrer">streaming</a> oferece ao público a oportunidade de revisitar esse momento histórico.</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/gojira/" rel="tag">Gojira</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/marina-viotti/" rel="tag">Marina viotti</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metallica/" rel="tag">Metallica</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/ac-dc/" rel="tag">Ac dc</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/tool/" rel="tag">Tool</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slayer/" rel="tag">Slayer</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slash/" rel="tag">Slash</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/death-metal/" rel="tag">Death metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/punk-rock/" rel="tag">Punk rock</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock-progressivo/" rel="tag">Rock progressivo</a></li>
@@ -353,6 +355,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

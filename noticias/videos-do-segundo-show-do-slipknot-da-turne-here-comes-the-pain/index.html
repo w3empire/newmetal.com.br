@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240808015741_hu57f9b7bd8efc88213e8dbdf30c55273b_78320_07f46375577139602dafb40404772e57.webp" alt="Assista: Vídeos do Segundo Show do Slipknot da Turnê &#34;Here Comes the Pain&#34;" title="Assista: Vídeos do Segundo Show do Slipknot da Turnê &#34;Here Comes the Pain&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Vai dizer que perdeu um dos shows mais épicos de todos os tempos? <em>No problemo</em>, a gente traz os vídeos da performance pra você, mas só pra você, ok?</p>
 <p>O Slipknot levou sua turnê &ldquo;<strong>Here Comes the Pain</strong>&rdquo; para The Pavilion at Star Lake em Burgettstown, PA, e foi insano! Esse é o segundo show da banda nessa turnê.</p>
 <p>A galera foi ao delírio desde o primeiro acorde até o último grito do Corey Taylor. Eles começaram avisando: &ldquo;<strong>Nada do que você vai ouvir hoje à noite foi escrito depois de 1999!</strong>&rdquo; 🕹️</p>
@@ -388,7 +388,9 @@
 <hr>
 <p>E aí, gostou dessa cobertura?</p>
 <p>Compartilha aí com a galera. Valeu. 👍</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/corey-taylor/" rel="tag">Corey taylor</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -412,6 +414,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

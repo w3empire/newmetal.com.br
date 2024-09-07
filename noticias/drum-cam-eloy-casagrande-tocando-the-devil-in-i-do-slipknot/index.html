@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240804152307_hu14d755e0ae6dca47bd1f5c2bffb1ae85_82320_2559372d43c2ea90a74bf93879f09773.webp" alt="Drum Cam: Eloy Casagrande Tocando &#34;The Devil in I&#34; do Slipknot" title="Drum Cam: Eloy Casagrande Tocando &#34;The Devil in I&#34; do Slipknot" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Prepare-se para a loucura! 🤘</p>
 <p>Neste domingo (4 de agosto de 2024), Eloy Casagrande, o novo baterista do <strong>Slipknot</strong>, deu um show à parte.</p>
 <p>Ele postou uma drum cam insana de 1 minuto tocando &ldquo;The Devil In I&rdquo; ao vivo com a banda. Os fãs, é claro, foram à loucura. Quem não iria, né?</p>
@@ -318,7 +318,9 @@
 <p>Eaí o que você achou da nova drum cam do nosso Eloy Casagrande?</p>
 <p>Fiquem ligados para mais novidades do mundo do metal! 🤘🔥</p>
 <p>Compartilha aí com a galera. Valeu. 👍</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/eloy-casagrande/" rel="tag">Eloy casagrande</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/slipknot/" rel="tag">Slipknot</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/sepultura/" rel="tag">Sepultura</a></li>
@@ -342,6 +344,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

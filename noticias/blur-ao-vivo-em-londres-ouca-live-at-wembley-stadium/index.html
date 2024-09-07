@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727192112_hu66ab7dd821d7b5abe299d067c80c440f_277650_aef4f28a878e6371d0adebba448b0b44.webp" alt="Blur ao Vivo em Londres: Ouça &#34;Live at Wembley Stadium&#34;" title="Blur ao Vivo em Londres: Ouça &#34;Live at Wembley Stadium&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Prepare-se para reviver a magia! 🎸 O Blur acabou de lançar &ldquo;Live at Wembley Stadium&rdquo;, um álbum ao vivo que captura aqueles shows lendários de julho de 2023. Se você não estava lá, esta é sua chance de sentir a energia bruta que tomou conta do estádio.</p>
 <p>Um ano depois daqueles shows épicos em Londres, finalmente temos acesso a essa obra-prima. Já está disponível nas plataformas digitais via Parlophone e com distribuição nacional da Warner Music Brasil.</p>
 <p>Ouça agora: <a href="https://blur.lnk.to/liveatwembleystadium" target="_blank" rel="noopener noreferrer">Aqui</a>.</p>
@@ -304,7 +304,9 @@
 <p>Se você é fã de verdade, não pode perder essa. É como se você estivesse lá, no meio da galera, sentindo a vibe e cantando a plenos pulmões.</p>
 <p>Bora dar o play e aproveitar essa experiência única.</p>
 <p>Porque, vamos combinar, não é todo dia que uma banda desse calibre lança um álbum ao vivo de um show histórico. 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/blur/" rel="tag">Blur</a></li>
@@ -328,6 +330,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

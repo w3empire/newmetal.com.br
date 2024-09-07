@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240727175107_hucac0d97f1449aea1a330d3e516d833ac_80656_d5126cfbb69e0b766ae7428f36d846d7.webp" alt="Powerwolf Lança Clipe Épico de &#34;We Don’t Wanna Be No Saints&#34;" title="Powerwolf Lança Clipe Épico de &#34;We Don’t Wanna Be No Saints&#34;" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Se você é fã de Powerwolf, prepare-se para uma avalanche de emoção! 🤘</p>
 <p>Na sexta-feira, dia 26 de julho, o novo álbum <strong>Wake Up The Wicked</strong> foi lançado pela Napalm Records.</p>
 <p>E pra deixar tudo ainda mais épico, eles soltaram o clipe de <strong>We Don’t Wanna Be No Saints</strong>. Assista agora e sinta a energia!</p>
@@ -308,7 +308,9 @@
     </div></div>
 <p>E aí, o que achou do clipe?</p>
 <p>Gostou da notícia? Então, compartilha aí doido! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/powerwolf/" rel="tag">Powerwolf</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/heavy-metal/" rel="tag">Heavy metal</a></li>
@@ -332,6 +334,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />

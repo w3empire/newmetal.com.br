@@ -270,7 +270,7 @@
 
             <figure class="post__thumbnail">
                     <img data-src="https://newmetal.com.br/img/thumb-20240730173218_hu69ae080728f2d3a053d434e03f078d6e_465428_9658b79009abfe073517d9ca7ed45350.webp" alt="ASSISTA: Bruce Dickinson Solta o Clipe Insano de &#34;Resurrection Men&#34;!" title="ASSISTA: Bruce Dickinson Solta o Clipe Insano de &#34;Resurrection Men&#34;!" class="lazy-img">
-                </figure><div class="content post__content clearfix">
+                </figure><div class="content post__content clearfix" id="content">
             <p>Você ouviu isso? Bruce Dickinson, a lenda viva do metal, lançou na semana passada o <strong>CD de edição limitada</strong> do seu novo single solo “<strong>Resurrection Men</strong>”.</p>
 <p>E hoje, terça-feira (30), ele liberou o videoclipe oficial dessa faixa.</p>
 <p>O vídeo é uma verdadeira viagem pela estrada com o vocalista do <strong>Iron Maiden</strong> e sua banda solo.</p>
@@ -308,7 +308,9 @@
 <p>E essa versatilidade toda reflete em sua música.</p>
 <p>Não deixe de conferir esse novo trabalho e se deixar levar pela potência e criatividade do mestre Bruce Dickinson.</p>
 <p>Vamos torcer para que ele traga ainda mais novidades em breve! 🤘</p>
-</div>
+<div id="fadeOverlay"></div>
+        </div>
+        <button id="seeMoreBtn" onclick="toggleContent()">Ver Mais</button>
 <div class="widget-tags widget">
     <div class="widget__content tags">
         <ul class="tags__list"><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/bruce-dickinson/" rel="tag">Bruce dickinson</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/iron-maiden/" rel="tag">Iron maiden</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/metal/" rel="tag">Metal</a></li><li class="tags__item"><a class="tags__link btn" href="https://newmetal.com.br/topicos/rock/" rel="tag">Rock</a></li>
@@ -332,6 +334,27 @@
 
     </article>
 </main>
+
+<script type="text/javascript">
+function toggleContent() {
+    var content = document.getElementById('content');
+    var seeMoreBtn = document.getElementById('seeMoreBtn');
+    var fadeOverlay = document.getElementById('fadeOverlay');
+
+    
+    if (!content.style.maxHeight) {
+        content.style.maxHeight = '600px';
+    }
+
+    
+    content.style.maxHeight = 'none';  
+    fadeOverlay.style.display = 'none'; 
+    seeMoreBtn.style.display = 'none';  
+}
+
+
+</script>
+
 <div class="authorbox clearfix">
         <figure class="authorbox__avatar">
             <img class="avatar lazy-img" data-src="/img/authors/gabriel-rodrigues-avatar_hu0c6943d4ee94ae41ff3882704250e619_1089834_90x0_resize_q100_h2_box.webp" alt="Gabriel Rodrigues dos Santos" width="90" height="90" />
