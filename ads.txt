@@ -1,5 +1,3 @@
-google.com, pub-3427355473051563, DIRECT, f08c47fec0942fa0
-
 mgid.com, 875876, DIRECT, d4c29acad76ce94f
 google.com, pub-2441454515104767, RESELLER, f08c47fec0942fa0
 google.com, pub-2930805104418204, RESELLER, f08c47fec0942fa0
