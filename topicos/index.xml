@@ -6,7 +6,25 @@
     <description>Recent content in Lista de todos os tópicos do site NewMetal.com.br on New Metal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Tue, 10 Sep 2024 04:26:49 -0300</lastBuildDate><atom:link href="https://newmetal.com.br/topicos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 06:18:34 -0300</lastBuildDate><atom:link href="https://newmetal.com.br/topicos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>noticias</title>
+      <link>https://newmetal.com.br/topicos/noticias/</link>
+      <pubDate>Tue, 10 Sep 2024 06:18:34 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/noticias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rock-in-rio</title>
+      <link>https://newmetal.com.br/topicos/rock-in-rio/</link>
+      <pubDate>Tue, 10 Sep 2024 06:18:34 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/rock-in-rio/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>black-label-society</title>
       <link>https://newmetal.com.br/topicos/black-label-society/</link>
@@ -31,15 +49,6 @@
       <pubDate>Tue, 10 Sep 2024 04:26:49 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/jeff-fabb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>noticias</title>
-      <link>https://newmetal.com.br/topicos/noticias/</link>
-      <pubDate>Tue, 10 Sep 2024 04:26:49 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/noticias/</guid>
       <description></description>
     </item>
     
@@ -445,15 +454,6 @@
       <pubDate>Sat, 07 Sep 2024 23:18:40 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/rock-brasileiro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rock-in-rio</title>
-      <link>https://newmetal.com.br/topicos/rock-in-rio/</link>
-      <pubDate>Sat, 07 Sep 2024 23:18:40 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/rock-in-rio/</guid>
       <description></description>
     </item>
     
