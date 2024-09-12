@@ -6,22 +6,58 @@
     <description>Recent content in Lista de todos os tópicos do site NewMetal.com.br on New Metal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Wed, 11 Sep 2024 16:12:23 -0300</lastBuildDate><atom:link href="https://newmetal.com.br/topicos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Sep 2024 03:02:43 -0300</lastBuildDate><atom:link href="https://newmetal.com.br/topicos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>musica-ai</title>
-      <link>https://newmetal.com.br/topicos/musica-ai/</link>
-      <pubDate>Wed, 11 Sep 2024 16:12:23 -0300</pubDate>
+      <title>bon-jovi</title>
+      <link>https://newmetal.com.br/topicos/bon-jovi/</link>
+      <pubDate>Thu, 12 Sep 2024 03:02:43 -0300</pubDate>
       
-      <guid>https://newmetal.com.br/topicos/musica-ai/</guid>
+      <guid>https://newmetal.com.br/topicos/bon-jovi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jon-bon-jovi</title>
+      <link>https://newmetal.com.br/topicos/jon-bon-jovi/</link>
+      <pubDate>Thu, 12 Sep 2024 03:02:43 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/jon-bon-jovi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>noticias</title>
       <link>https://newmetal.com.br/topicos/noticias/</link>
-      <pubDate>Wed, 11 Sep 2024 16:12:23 -0300</pubDate>
+      <pubDate>Thu, 12 Sep 2024 03:02:43 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/noticias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rock</title>
+      <link>https://newmetal.com.br/topicos/rock/</link>
+      <pubDate>Thu, 12 Sep 2024 03:02:43 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/rock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rock-classico</title>
+      <link>https://newmetal.com.br/topicos/rock-classico/</link>
+      <pubDate>Thu, 12 Sep 2024 03:02:43 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/rock-classico/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>musica-ai</title>
+      <link>https://newmetal.com.br/topicos/musica-ai/</link>
+      <pubDate>Wed, 11 Sep 2024 16:12:23 -0300</pubDate>
+      
+      <guid>https://newmetal.com.br/topicos/musica-ai/</guid>
       <description></description>
     </item>
     
@@ -67,15 +103,6 @@
       <pubDate>Tue, 10 Sep 2024 20:56:47 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/nu-metal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rock</title>
-      <link>https://newmetal.com.br/topicos/rock/</link>
-      <pubDate>Tue, 10 Sep 2024 20:56:47 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/rock/</guid>
       <description></description>
     </item>
     
@@ -643,15 +670,6 @@
       <pubDate>Sun, 08 Sep 2024 21:40:53 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/queen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rock-classico</title>
-      <link>https://newmetal.com.br/topicos/rock-classico/</link>
-      <pubDate>Sun, 08 Sep 2024 21:40:53 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/rock-classico/</guid>
       <description></description>
     </item>
     
@@ -5084,15 +5102,6 @@
     </item>
     
     <item>
-      <title>bon-jovi</title>
-      <link>https://newmetal.com.br/topicos/bon-jovi/</link>
-      <pubDate>Sat, 27 Jul 2024 19:06:46 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/bon-jovi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>oceans</title>
       <link>https://newmetal.com.br/topicos/oceans/</link>
       <pubDate>Sat, 27 Jul 2024 18:59:58 -0300</pubDate>
@@ -5107,15 +5116,6 @@
       <pubDate>Sat, 27 Jul 2024 17:45:51 -0300</pubDate>
       
       <guid>https://newmetal.com.br/topicos/david-bryan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jon-bon-jovi</title>
-      <link>https://newmetal.com.br/topicos/jon-bon-jovi/</link>
-      <pubDate>Sat, 27 Jul 2024 17:45:51 -0300</pubDate>
-      
-      <guid>https://newmetal.com.br/topicos/jon-bon-jovi/</guid>
       <description></description>
     </item>
     
