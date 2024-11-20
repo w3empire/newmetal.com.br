@@ -204,6 +204,7 @@ sharethrough.com, 5pFlvV45, RESELLER, d53b998a7bd4ecd2
 sharethrough.com, 1SghQadK, RESELLER, d53b998a7bd4ecd2
 rubiconproject.com, 18694, RESELLER, 0bfd66d529a55807
 mgid.com, 43615, RESELLER, d4c29acad76ce94f
+rubiconproject.com, 9655, RESELLER, 0bfd66d529a55807
 amitydigital.io, 493, RESELLER
 152media.info, 152M658, RESELLER
 appnexus.com, 11924, RESELLER, f5ab79cb980f11d1
@@ -626,7 +627,12 @@ adipolosolutions.com, 22611285429, RESELLER
 pmbmonetize.com, 22611285429, RESELLER
 smartadline.com, 22934895009, DIRECT
 opamarketplace.com, 22934895009, DIRECT
+google.com, pub-9135355251665930, RESELLER, f08c47fec0942fa0
+google.com, pub-2930805104418204, RESELLER, f08c47fec0942fa0
+google.com, pub-4903453974745530, RESELLER, f08c47fec0942fa0
+google.com, pub-4836542095728076, RESELLER, f08c47fec0942fa0
 google.com, pub-5862389829718358, RESELLER, f08c47fec0942fa0
+google.com, pub-6804276076764268, RESELLER, f08c47fec0942fa0
 adipolo.com, 22934895009, DIRECT
 adipolosolutions.com, 22934895009, DIRECT
 pmbmonetize.com, 22934895009, DIRECT
@@ -1006,6 +1012,8 @@ google.com, pub-1490961421801363, RESELLER, f08c47fec0942fa0
 google.com, pub-1546102924523412, RESELLER, f08c47fec0942fa0
 google.com, pub-1724616865008460, RESELLER, f08c47fec0942fa0
 google.com, pub-2676898002317977, RESELLER, f08c47fec0942fa0
+google.com, pub-2930805104418204, RESELLER, f08c47fec0942fa0
+google.com, pub-4903453974745530, RESELLER, f08c47fec0942fa0
 google.com, pub-5041886492880162, RESELLER, f08c47fec0942fa0
 google.com, pub-5995202563537249, RESELLER, f08c47fec0942fa0
 google.com, pub-7279729872265667, RESELLER, f08c47fec0942fa0
@@ -1437,8 +1445,38 @@ yieldmonk.com, 23042747157, DIRECT
 google.com, pub-9422585382673566, RESELLER, f08c47fec0942fa0
 omgstudios.com, 10820241, DIRECT, f08c47fec0942fa0
 google.com, pub-9857612698505806, RESELLER, f08c47fec0942fa0
+# RevBid + LoopMe <3
+loopme.com, 13998, RESELLER, 6c8d5f95897a5a3b
+freewheel.tv, 1138513, RESELLER
+smartadserver.com, 4625, RESELLER, 060d053dcf45cbf3
+axonix.com, 59054, RESELLER, bc385f2b4a87b721
+pubmatic.com, 158154, RESELLER, 5d62403b186f2ace
+sharethrough.com, 6qlnf8SY, RESELLER, d53b998a7bd4ecd2
+openx.com, 540298543, RESELLER, 6a698e2ec38604c6
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807
+xandr.com, 13799, RESELLER
+triplelift.com, 12158, RESELLER, 6c33edb13117fd86
+adform.com, 3083, RESELLER
+sonobi.com, b43e9530e7, RESELLER, d1a215d9eb5aee9e
+freewheel.tv, 1137745, RESELLER
+video.unrulymedia.com, 2148207460, RESELLER
+opera.com, pub7275292332480, RESELLER, 55a0c5fd61378de3
+adwmg.com, 100765, RESELLER, c9688a22012618e7
+thebrave.io, 1234585, RESELLER, c25b2154543746ac
+yeahmobi.com, 5135284, Reseller
+eliteappgrade.com, 494350, RESELLER
+admanmedia.com, 594, RESELLER
+Eskimi.com, eas-2020000005, RESELLER
+improvedigital.com, 1532, RESELLER
+iqzone.com, IQ137, RESELLER
+admixer.net, eab09ea6-bcf7-4eff-965d-b4f43962c73c, RESELLER
+lunamedia.io, 2fb901cd79f4453b90b68bee79da71b5, RESELLER, 524ecb396915caaf
+e-planning.net, 9522026ef023606d,RESELLER, c1ba615865ed87b2
+inmobi.com, ebc44eef6c104f7fbf7bc52ee29f7939, RESELLER, 83e75a7ae333ca9d
+eliteappgrade.com, 494350, RESELLER
+Madopi.media,161153, RESELLER
 
-
+# MGID
 mgid.com, 875876, DIRECT, d4c29acad76ce94f
 google.com, pub-2441454515104767, RESELLER, f08c47fec0942fa0
 google.com, pub-2930805104418204, RESELLER, f08c47fec0942fa0
