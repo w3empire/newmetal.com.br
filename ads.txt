@@ -1475,6 +1475,25 @@ e-planning.net, 9522026ef023606d,RESELLER, c1ba615865ed87b2
 inmobi.com, ebc44eef6c104f7fbf7bc52ee29f7939, RESELLER, 83e75a7ae333ca9d
 eliteappgrade.com, 494350, RESELLER
 Madopi.media,161153, RESELLER
+# RevBid + Kueez <3
+kueez.com, 023bba2412042299d0702b15b00e4c69, direct
+appnexus.com,8826,reseller
+rubiconproject.com,16920,reseller
+openx.com,557564833,reseller
+lijit.com,407406,reseller
+media.net,8cu4jtrf9,reseller
+pubmatic.com,162110,reseller
+sharethrough.com,n98xdzel,reseller
+33across.com,0010b00002odu4haax,reseller
+yieldmo.com,3133660606033240149,reseller
+onetag.com,6e053d779444c00,reseller
+video.unrulymedia.com,3486482593,reseller
+sonobi.com,4c4fba1717,reseller
+smartadserver.com,4288,reseller
+zetaglobal.com,108,reseller
+improvedigital.com,2106,reseller
+loopme.com,11576,reseller
+themediagrid.com,uot45z,reseller
 
 # MGID
 mgid.com, 875876, DIRECT, d4c29acad76ce94f
